@@ -200,7 +200,7 @@ Tento biznis objekt reprezentuje zamestnanca vedeckovýskumného pracoviska, kto
 \item \textbf{priezvisko:} priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu.
 \end{itemize}
 
-\textbf{Vedec\_Publikacia}\\
+\textbf{Vedec_Publikacia}\\
 Tento biznis objekt reprezentuje prepojovaciu tabuľku v systémovej databáze medzi vedcami a publikáciami. K tomuto kroku sme pristúpili z dôvodu, aby sme vedeli korektne vyjadriť vzťah many-to-many. Parametre tohto biznis objektu sú nasledovné:
 
 \begin{itemize}
@@ -216,11 +216,13 @@ Tento biznis objekt reprezentuje publikovaný bibliografický záznam v digitál
 \item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
 \item \textbf{titul:} názov publikácie, pod ktorým je uvedená v digitálnom repozitári,
 \item \textbf{isbn:} medzinárodné štandardné číslo knihy (z angl. international standard book number) pod ktorým bol bibliografický záznam publikovaný,
-\item \textbf{klucove\_slova:} kľúčové slová, ktoré sa využívajú pri vyhľadaní danej publikácie v digitálnom repozitári,
+\item \textbf{klucove_slova:} kľúčové slová, ktoré sa využívajú pri vyhľadaní danej publikácie v digitálnom repozitári,
 \item \textbf{abstrakt:} stručný výťah publikovaného bibliografického záznamu,
-\item \textbf{datum\_publikovania:} dátum, kedy bol daný bibliografický záznam publikovaný v zborníku,
-\item \textbf{datum\_revidovania:} dátum, kedy bola publikácia revidovaná. 
+\item \textbf{datum_publikovania:} dátum, kedy bol daný bibliografický záznam publikovaný v zborníku,
+\item \textbf{datum_revidovania:} 
 \end{itemize}
+
+ name, isbn, keywords, abstract_text, published_date, reviewed_date, 
 
 \section{Zhrnutie}
 TODO

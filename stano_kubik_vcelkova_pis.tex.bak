@@ -69,7 +69,7 @@
 	\vspace{5cm}
 	{\huge\bfseries Repozitár - digitálna knižnica\par}
 	\vspace{0.5cm}
-	{\Large\itshape Martin Staňo, Veronika Včelková, Dávid Kubík\par}
+	{\Large\itshape Dávid Kubík, Martin Staňo, Veronika Včelková\par}
 	\vfill
 	cvičiaci\par
 	RNDr. Marta \textsc{Gnipová}, Ing. Nadežda \textsc{Andrejčíková}, PhD.\par
@@ -151,7 +151,7 @@ Vo vyššie pomenovaných biznis procesoch sme identifikovali nasledujúce entit
 \begin{figure}[h]
 \label{datamodel}
 \centering
-\includegraphics[scale=0.4]{datovymodel.png} 
+\includegraphics[scale=0.4]{datovy_model.png} 
 \caption{ER diagram dátového modelu}
 \end{figure}
 
@@ -176,7 +176,9 @@ Tento biznis objekt reprezentuje vedeckovýskumné pracovisko, ktoré eviduje pu
 
 \begin{itemize}
 \item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
-\item \textbf{nazov} názov inštitúcie, pod ktorým je registrovaná v obchodnom registri Slovenskej republiky.
+\item \textbf{name:} názov inštitúcie, pod ktorým je registrovaná v obchodnom registri Slovenskej republiky,
+\item \textbf{city:} mesto, v ktorom má daná inštitúcia hlavné sídlo,
+\item \textbf{country:} krajina, v ktorom je hlavné sídlo danej inštitúcie.
 \end{itemize}
 
 \textbf{Knihovnik}\\
@@ -184,10 +186,11 @@ Tento biznis objekt reprezentuje zamestnanca vedeckovýskumného pracoviska, kto
 
 \begin{itemize}
 \item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
-\item \textbf{institucia:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu,
-\item \textbf{meno:} krstné meno uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
-\item \textbf{priezvisko:} priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
-\item \textbf{email:} pracovný email uložený v systémovej databáze.
+\item \textbf{name:} krstné meno uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
+\item \textbf{last\_name:} priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
+\item \textbf{email:} emailová schránka pracovníka vedeckovýskumného ústavu,
+\item \textbf{institucia\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu,
+\item \textbf{rank:} úroveň pracovníka k sprístupneniu publikácií.
 \end{itemize}
 
 \textbf{Vedec}\\
@@ -195,34 +198,94 @@ Tento biznis objekt reprezentuje zamestnanca vedeckovýskumného pracoviska, kto
 
 \begin{itemize}
 \item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
-\item \textbf{institucia:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu,
-\item \textbf{meno:} krstné meno uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
-\item \textbf{priezvisko:} priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu.
+\item \textbf{name:} krstné meno uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
+\item \textbf{last\_name:} priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
+\item \textbf{email:} emailová schránka pracovníka vedeckovýskumného ústavu,
+\item \textbf{institucia\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu,
+\item \textbf{rank:} úroveň pracovníka k sprístupneniu publikácií.
 \end{itemize}
 
-\textbf{Vedec_Publikacia}\\
+\textbf{Vedec\_Publikacia}\\
 Tento biznis objekt reprezentuje prepojovaciu tabuľku v systémovej databáze medzi vedcami a publikáciami. K tomuto kroku sme pristúpili z dôvodu, aby sme vedeli korektne vyjadriť vzťah many-to-many. Parametre tohto biznis objektu sú nasledovné:
 
 \begin{itemize}
 \item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
-\item \textbf{autor:} autor publikovaného bibliografického záznamu v digitálnom repozitári,
-\item \textbf{publikacia:} publikovaný bibliografický záznam v digitálnom repozitári.
+\item \textbf{vedec\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na autora publikovaného bibliografického záznamu v digitálnom repozitári,
+\item \textbf{publikacia\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na publikovaný bibliografický záznam v digitálnom repozitári.
 \end{itemize}
 
 \textbf{Publikacia}\\
+Tento biznis objekt reprezentuje bibliografický záznam v databáze vedeckovýskumného pracoviska. Parametre tohto biznis objektu sú nasledovné:
+
+\begin{itemize}
+\item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
+\item \textbf{name:} názov publikácie, pod ktorým je uvedená v databáze vedeckovýskumného pracoviska,
+\item \textbf{isbn:} medzinárodné štandardné číslo knihy (z angl. international standard book number) pod ktorým bol bibliografický záznam publikovaný,
+\item \textbf{keywords:} kľúčové slová, ktoré sa využívajú pri vyhľadaní danej publikácie v digitálnom repozitári,
+\item \textbf{abstrakt\_text:} stručný výťah publikovaného bibliografického záznamu,
+\item \textbf{published\_date:} dátum, kedy bol daný bibliografický záznam publikovaný v zborníku,
+\item \textbf{reviewed\_date:} dátum, kedy bola publikácia revidovaná. 
+\end{itemize}
+
+\textbf{Repozitar}\\
+Tento biznis objekt reprezentuje digitálny repozitár. Parametre tohto biznis objektu sú nasledovné:
+
+\begin{itemize}
+\item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
+\item \textbf{name:} názov digitálneho repozitáru,
+\item \textbf{druh_id} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétny typ digitálneho repozitáru.
+\end{itemize}
+
+\textbf{Druh}\\
+Tento biznis objekt reprezentuje typ digitálneho repozitáru. Digitálny repozitár môže byť napríklad vlastný, konzorcionálny alebo národný. Parametre tohto biznis objektu sú nasledovné:
+
+\begin{itemize}
+\item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
+\item \textbf{name:} typ digitálneho repozitáru.
+\end{itemize}
+
+\textbf{Notifikacia}\\
+Tento biznis objekt reprezentuje notifikácie, ktoré informujú spoluautorov a konkrétneho spracovateľa o vložení údajov ako aj informujú o potvrdení správnosti týchto údajov knihovníkom a informujú tiež o zverejnení publikácie. Parametre tohto biznis objektu sú nasledovné:
+
+\begin{itemize}
+\item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
+\item \textbf{subject:} hlavička (predmet) notifikácie,
+\item \textbf{knihovnik\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétneho knihovníka vedeckovýskumného ústavu, ktorého akcia vyvolala vygenerovanie notifikácie,
+\item \textbf{vedec\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétneho vedca vedeckovýskumného ústavu, ktorý je adresátom notifikácie,
+\item \textbf{notification\_text:} Obsah notifikácie obsahujúci podrobnejšie informácie,
+\item \textbf{type:} typ notifikácie,
+\item \textbf{sent\_date:} dátum odoslania notifikácie.
+\end{itemize}
+
+\textbf{Pripomienka}\\
+Tento biznis objekt reprezentuje pripomienku na zmenu údajov už publikovaného bibliografického záznamu, ktorého údaje boli zároveň skontrolované a ich správnosť potvrdená knihovníkom. Parametre tohto biznis objektu sú nasledovné:
+
+\begin{itemize}
+\item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
+\item \textbf{submitted\_by:} krstné meno a priezvisko vedca vedeckovýskumného pracoviska, ktorý navrhuje úpravu údajov v bibliografickom zázname,
+\item \textbf{zaznam\_id:} 
+\item \textbf{subject:} hlavička (predmet) pripomienky,
+\item \textbf{comment\_text:} Obsah pripomienky obsahujúci podrobnejšie informácie o zmenách, ktoré chce vedec vykonať v bibliografickom zázname,
+\item \textbf{submited\_date:} dátum podania pripomienky,
+\item \textbf{commited:} pravdivostná hodnota, či knihovník zapracoval úpravy údajov v publikovanom bibliografickom zázname.
+\end{itemize}
+
+\textbf{Zaznam}\\
 Tento biznis objekt reprezentuje publikovaný bibliografický záznam v digitálnom repozitári. Parametre tohto biznis objektu sú nasledovné:
 
 \begin{itemize}
 \item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
-\item \textbf{titul:} názov publikácie, pod ktorým je uvedená v digitálnom repozitári,
-\item \textbf{isbn:} medzinárodné štandardné číslo knihy (z angl. international standard book number) pod ktorým bol bibliografický záznam publikovaný,
-\item \textbf{klucove_slova:} kľúčové slová, ktoré sa využívajú pri vyhľadaní danej publikácie v digitálnom repozitári,
-\item \textbf{abstrakt:} stručný výťah publikovaného bibliografického záznamu,
-\item \textbf{datum_publikovania:} dátum, kedy bol daný bibliografický záznam publikovaný v zborníku,
-\item \textbf{datum_revidovania:} 
-\end{itemize}
+\item \textbf{name:} názov publikácie, pod ktorým je uvedená v digitálnom repozitári,
+\item \textbf{valid:} pravdivostná hodnota, ktorá vyjadruje, či sú údaje v publikácii správne,
+\item \textbf{edited:} dátum, kedy bola publikácia v digitálnom repozitári naposledy upravená,
+\item \textbf{knihovnik\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétneho knihovníka,
+\item \textbf{publikacia\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu publikáciu,
+\item \textbf{repozitar\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétny repozitár,
 
- name, isbn, keywords, abstract_text, published_date, reviewed_date, 
+
+
+\item \textbf{accessible\_by:} vyjadruje minimálnu požadovanú úroveň pracovníka k sprístupneniu publikácie.
+\end{itemize}
 
 \section{Zhrnutie}
 TODO

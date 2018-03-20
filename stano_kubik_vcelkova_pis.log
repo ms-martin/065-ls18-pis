@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.10)  20 MAR 2018 08:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.10)  20 MAR 2018 08:37
 entering extended mode
 **./stano_kubik_vcelkova_pis.tex
 (stano_kubik_vcelkova_pis.tex
@@ -695,9 +695,17 @@ LaTeX Info: Redefining \nameref on input line 60.
 [1
 
 {C:/Users/David/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(stano_kubik_vcelkova_pis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write4
 \openout4 = `stano_kubik_vcelkova_pis.toc'.
 
@@ -707,15 +715,6 @@ been already used, duplicate ignored
                    \relax 
 l.83 \newpage
               [1]
-LaTeX Font Info:    Try loading font information for U+msa on input line 90.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 90.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 Underfull \hbox (badness 8094) in paragraph at lines 94--95
 []\IL2/cmr/m/n/10 Veronika V�el-
  []
@@ -764,7 +763,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
  [4]
-<datovy_model.png, id=96, 881.2925pt x 616.3025pt>
+<datovy_model.png, id=111, 881.2925pt x 616.3025pt>
 File: datovy_model.png Graphic file (type png)
 <use datovy_model.png>
 Package pdftex.def Info: datovy_model.png  used on input line 169. on input lin
@@ -789,7 +788,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.188 \newpage
                <./datovy_model.png>] [6] [7]
-<forms/formChooseRole.jpg, id=113, 221.32687pt x 71.51718pt>
+<forms/formChooseRole.jpg, id=128, 221.32687pt x 71.51718pt>
 File: forms/formChooseRole.jpg Graphic file (type jpg)
 <use forms/formChooseRole.jpg>
 Package pdftex.def Info: forms/formChooseRole.jpg  used on input line 297. on i
@@ -803,14 +802,14 @@ Package pdftex.def Info: Requested size: 154.92773pt x 50.06168pt on input line
                                                   \fi \fi 
 l.325 
        <./forms/formChooseRole.jpg>]
-<forms/formLogin.jpg, id=120, 249.93375pt x 153.57375pt>
+<forms/formLogin.jpg, id=135, 249.93375pt x 153.57375pt>
 File: forms/formLogin.jpg Graphic file (type jpg)
 <use forms/formLogin.jpg>
 Package pdftex.def Info: forms/formLogin.jpg  used on input line 328. on input 
 line 328.
 Package pdftex.def Info: Requested size: 174.95242pt x 107.50089pt on input lin
 e 328.
-<forms/formChooseAction.jpg, id=121, 292.84406pt x 71.51718pt>
+<forms/formChooseAction.jpg, id=136, 292.84406pt x 71.51718pt>
 File: forms/formChooseAction.jpg Graphic file (type jpg)
 <use forms/formChooseAction.jpg>
 Package pdftex.def Info: forms/formChooseAction.jpg  used on input line 344. on
@@ -822,7 +821,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-<forms/formAddInformation.jpg, id=122, 670.75594pt x 356.83313pt>
+<forms/formAddInformation.jpg, id=137, 670.75594pt x 356.83313pt>
 File: forms/formAddInformation.jpg Graphic file (type jpg)
 <use forms/formAddInformation.jpg>
 Package pdftex.def Info: forms/formAddInformation.jpg  used on input line 364. 
@@ -850,14 +849,14 @@ y used, duplicate ignored
 l.413 \item \textit
                    {librarian.name} - krstné meno uvedené v rodnom liste k...
  <./forms/formAddInformation.jpg>]
-<forms/formDigitalObjects.jpg, id=134, 229.60782pt x 70.76437pt>
+<forms/formDigitalObjects.jpg, id=149, 229.60782pt x 70.76437pt>
 File: forms/formDigitalObjects.jpg Graphic file (type jpg)
 <use forms/formDigitalObjects.jpg>
 Package pdftex.def Info: forms/formDigitalObjects.jpg  used on input line 431. 
 on input line 431.
 Package pdftex.def Info: Requested size: 91.84149pt x 28.30524pt on input line 
 431.
-<forms/formValidation.jpg, id=135, 692.5875pt x 527.72156pt>
+<forms/formValidation.jpg, id=150, 692.5875pt x 527.72156pt>
 File: forms/formValidation.jpg Graphic file (type jpg)
 <use forms/formValidation.jpg>
 Package pdftex.def Info: forms/formValidation.jpg  used on input line 453. on i
@@ -877,66 +876,103 @@ Package pdftex.def Info: forms/formDigitalObjects.jpg  used on input line 469.
 on input line 469.
 Package pdftex.def Info: Requested size: 91.84149pt x 28.30524pt on input line 
 469.
+File: forms/formLogin.jpg Graphic file (type jpg)
+<use forms/formLogin.jpg>
+Package pdftex.def Info: forms/formLogin.jpg  used on input line 493. on input 
+line 493.
+Package pdftex.def Info: Requested size: 174.95242pt x 107.50089pt on input lin
+e 493.
  [12pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.503 \end{itemize}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.8}) has been already used, duplicate ignored
+l.496 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.503 \end{itemize}
-                    <./forms/formValidation.jpg>]
-<diagrams/diagNotification.jpg, id=148, 942.52126pt x 243.15843pt>
-File: diagrams/diagNotification.jpg Graphic file (type jpg)
-<use diagrams/diagNotification.jpg>
-Package pdftex.def Info: diagrams/diagNotification.jpg  used on input line 531.
- on input line 531.
-Package pdftex.def Info: Requested size: 377.00183pt x 97.26164pt on input line
- 531.
+l.496 
+       <./forms/formValidation.jpg>]
+<forms/formChooseActionLib.png, id=163, 242.40562pt x 51.94406pt>
+File: forms/formChooseActionLib.png Graphic file (type png)
+<use forms/formChooseActionLib.png>
+Package pdftex.def Info: forms/formChooseActionLib.png  used on input line 506.
+ on input line 506.
+Package pdftex.def Info: Requested size: 169.68277pt x 36.36058pt on input line
+ 506.
+<forms/formAddDigital.png, id=164, 435.12563pt x 531.48563pt>
+File: forms/formAddDigital.png Graphic file (type png)
+<use forms/formAddDigital.png>
+Package pdftex.def Info: forms/formAddDigital.png  used on input line 524. on i
+nput line 524.
+Package pdftex.def Info: Requested size: 174.04716pt x 212.59048pt on input lin
+e 524.
  [13pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.547 \end{itemize}
-                    <./diagrams/diagNotification.jpg>]
+l.527 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.527 
+       <./forms/formChooseActionLib.png>]
+<diagrams/diagNotification.jpg, id=172, 942.52126pt x 243.15843pt>
 File: diagrams/diagNotification.jpg Graphic file (type jpg)
 <use diagrams/diagNotification.jpg>
-Package pdftex.def Info: diagrams/diagNotification.jpg  used on input line 553.
- on input line 553.
+Package pdftex.def Info: diagrams/diagNotification.jpg  used on input line 548.
+ on input line 548.
 Package pdftex.def Info: Requested size: 377.00183pt x 97.26164pt on input line
- 553.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.10
+ 548.
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.11
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.559 \newpage
+l.560 \item \textbf
+                   {article.id:} unikátny primárny kľúč v systémovej d...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.560 \item \textbf
+                   {article.id:} unikátny primárny kľúč v systémovej d...
+ <./forms/formAddDigital.png> <./diagrams/diagNotification.jpg>]
+File: diagrams/diagNotification.jpg Graphic file (type jpg)
+<use diagrams/diagNotification.jpg>
+Package pdftex.def Info: diagrams/diagNotification.jpg  used on input line 570.
+ on input line 570.
+Package pdftex.def Info: Requested size: 377.00183pt x 97.26164pt on input line
+ 570.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.576 \newpage
               ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 566.
- [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 566.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 583.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 583.
  (stano_kubik_vcelkova_pis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 566.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 566.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 583.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 583.
 Package rerunfilecheck Info: File `stano_kubik_vcelkova_pis.out' has not change
 d.
 (rerunfilecheck)             Checksum: 3B6849E5E8B5F738CEDEB1DA8D54101C;1156.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 566.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 583.
  ) 
 Here is how much of TeX's memory you used:
- 8423 strings out of 493312
- 120207 string characters out of 3138898
- 218940 words of memory out of 3000000
- 11817 multiletter control sequences out of 15000+200000
+ 8439 strings out of 493312
+ 120624 string characters out of 3138898
+ 218999 words of memory out of 3000000
+ 11825 multiletter control sequences out of 15000+200000
  13477 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,8n,32p,641b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -955,9 +991,9 @@ r\public\csfonts\dpi600\csr12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\font
 s\pk\ljfour\public\csfonts\dpi864\cscsc10.pk> <C:\Users\David\AppData\Local\MiK
 TeX\2.9\fonts\pk\ljfour\public\csfonts\dpi1037\cscsc10.pk><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on stano_kubik_vcelkova_pis.pdf (16 pages, 712835 bytes).
+Output written on stano_kubik_vcelkova_pis.pdf (17 pages, 751593 bytes).
 PDF statistics:
- 629 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

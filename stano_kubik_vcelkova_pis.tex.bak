@@ -421,15 +421,6 @@ Prostredníctvom grafického používateľského rozhrania používateľ zvolí 
  - ľudská úloha}
 \end{itemize}
 
-\textbf{Rola:} Librarian\\
-\textbf{Vstup:} objekt \textit{logged\_librarian}\\ typu \textit{Librarian}
-\textbf{Výstup:} objekt \textit{article} typu \textit{Article} s nastavenými atribútmi:
-
-\begin{itemize}
-\item \textbf{Choice to add more digital objects by researcher
- - ľudská úloha}
-\end{itemize}
-
 \textbf{Rola:} Researcher\\
 \textbf{Výstup:} objekt \textit{more\_digital\_objects} typu \textit{Boolean} je nastavený na pravdivostnú hodnotu podľa toho, či vedec chce ešte pridať ďalší digitálny objekt alebo nie.
 
@@ -464,20 +455,58 @@ Prostredníctvom grafického používateľského rozhrania používateľ zvolí 
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Validate digital object
+\item \textbf{Choice to add more digital objects by librarian
  - ľudská úloha}
 \end{itemize}
 
 \textbf{Rola:} Librarian\\
-\textbf{Vstup:} objekt \textit{librarian} typu \textit{Librarian}.
+\textbf{Výstup:} objekt \textit{more\_digital\_objects} typu \textit{Boolean} je nastavený na pravdivostnú hodnotu podľa toho, či knihovník chce ešte pridať ďalší digitálny objekt alebo nie.
 
-Prostredníctvom grafického používateľského rozhrania používateľ zvolí konferenciu a po kliknutí na tlačidlo \textit{Filter proceedings} vyfiltruje zborníky, ktoré patria k zvolenej konferencii. Následne používateľ vyberie konkrétny zborník a klikne na tlačidlo \textit{Filter articles}, to má za následok, že sa vyfiltrujú články pre zvolený zborník. Napokon používateľ vyberie konkrétny článok a klikne na tlačidlo \textit{Filter digital objects}. Následne si používateľ vyberie digitálny objekt a rozhodne, či sú jeho údaje korektné alebo nie.
+Prostredníctvom grafického používateľského rozhrania používateľ zvolí kliknutím vybraného tlačidla buď \textit{Yes} - pridanie ďalšieho digitálneho objektu, alebo \textit{No} - ukončí sa pridávanie digitálnych objektov k článku.
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/formValidation.jpg} 
+\includegraphics[scale=0.4]{forms/formDigitalObjects.jpg} 
 \caption{Formulár pridania informácií o článku}
 \end{figure}
+
+\begin{itemize}
+\item \textbf{Rozhodovací blok - Do you want to add more digital objects?}
+\end{itemize}
+
+\textbf{Atribút rozhodovania:} \textit{add\_more\_digital\_objects} - zisťujeme, či je hodnota daného atribútu ekvivalentná s pravdivostnou hodnotou false. Ak áno, tak biznis proces sa ukončí. Ak nie, tak biznis proces pokračuje krokom \textit{Add digital object by librarian}.
+
+
+%Martinova cast
+
+\begin{itemize}
+\item \textbf{Login as Librarian}
+\end{itemize}
+
+\textbf{Rola:} Librarian\\
+\textbf{Výstup:} objekt \textit{logged\_librarian} typu \textit{Librarian}, ktorý vyjadruje prihláseného knihovníka.
+
+Prostredníctvom grafického používateľského rozhrania používateľ (knihovník) zadá svoje prihlasovacie údaje, ktoré sa v danom podprocese overia (prebehne autentifikácia). V prípade nesprávnych údajov za zobrazí chybová hláška a tok procesu prihlásenia sa vráti na začiatok procesu. V prípade správnych prihlasovacích údajov pokračuje biznis proces ďalšou aktivitou.
+
+
+\begin{itemize}
+\item \textbf{Validate or Add Digital Object}
+\end{itemize}
+
+\textbf{Rola:} Librarian\\
+\textbf{Výstup:} objekt \textit{chosen\_action} typu \textit{String}, ktorý vyjadruje akciu zvolenú používateľom (knihovníkom).
+
+Prostredníctvom grafického používateľského rozhrania používateľ (knihovník) na základe kliknutia na jedno z dvoch tlačidiel zvolí akciu ktorú si želá ďalej v rámci biznis procesu vykonať.
+
+\begin{itemize}
+\item \textbf{Add Digital Object by Librarian}
+\end{itemize}
+
+\textbf{Rola:} Librarian\\
+\textbf{Vstup:} objekt \textit{librarian} typu \textit{Librarian},  ktorý predstavuje prihláseného knihovníka
+\textbf{Výstup:} objekt \textit{article} typu \textit{Article}, článok ku ktorému bol pridaný digitálny objekt. Článok je výstup procesu pretože, po tomto procese nasleduje proces \textit{Send Notifications by Librarian}, ktorý každému spoluatorovi článku ku ktorému bol pridaný digitálny objekt pošle notifikáciu.
+
+Prostredníctvom grafického používateľského rozhrania používateľ (knihovník) postupne na základe konferencie \textit{(Conference)} a zberníka \textit{(Proceedings)} vyfiltruje články (\textit{Article}). Po vyplnení údajov o digitálnom objekte a kliknutí na potvrdzovacie tlačidlo sa k označenému článku priradí digitálny objekt.
 
 \section{Implementácia systémových úloh}
 
@@ -524,6 +553,8 @@ Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltru
 \includegraphics[scale=0.4]{diagrams/diagNotification.jpg} 
 \caption{Formulár pridania informácií o článku}
 \end{figure}
+
+
 
 \newpage
 

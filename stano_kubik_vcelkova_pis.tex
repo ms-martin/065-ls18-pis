@@ -488,6 +488,11 @@ Prostredníctvom grafického používateľského rozhrania používateľ zvolí 
 
 Prostredníctvom grafického používateľského rozhrania používateľ (knihovník) zadá svoje prihlasovacie údaje, ktoré sa v danom podprocese overia (prebehne autentifikácia). V prípade nesprávnych údajov za zobrazí chybová hláška a tok procesu prihlásenia sa vráti na začiatok procesu. V prípade správnych prihlasovacích údajov pokračuje biznis proces ďalšou aktivitou.
 
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.7]{forms/formLogin.jpg} 
+\caption{Formulár prihlasovania vedca}
+\end{figure}
 
 \begin{itemize}
 \item \textbf{Validate or Add Digital Object}
@@ -495,6 +500,12 @@ Prostredníctvom grafického používateľského rozhrania používateľ (knihov
 
 \textbf{Rola:} Librarian\\
 \textbf{Výstup:} objekt \textit{chosen\_action} typu \textit{String}, ktorý vyjadruje akciu zvolenú používateľom (knihovníkom).
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.7]{forms/formChooseActionLib.png} 
+\caption{Formulár na vybratie akcie, či validovať alebo pridať digitálny objekt}
+\end{figure}
 
 Prostredníctvom grafického používateľského rozhrania používateľ (knihovník) na základe kliknutia na jedno z dvoch tlačidiel zvolí akciu ktorú si želá ďalej v rámci biznis procesu vykonať.
 
@@ -507,6 +518,12 @@ Prostredníctvom grafického používateľského rozhrania používateľ (knihov
 \textbf{Výstup:} objekt \textit{article} typu \textit{Article}, článok ku ktorému bol pridaný digitálny objekt. Článok je výstup procesu pretože, po tomto procese nasleduje proces \textit{Send Notifications by Librarian}, ktorý každému spoluatorovi článku ku ktorému bol pridaný digitálny objekt pošle notifikáciu.
 
 Prostredníctvom grafického používateľského rozhrania používateľ (knihovník) postupne na základe konferencie \textit{(Conference)} a zberníka \textit{(Proceedings)} vyfiltruje články (\textit{Article}). Po vyplnení údajov o digitálnom objekte a kliknutí na potvrdzovacie tlačidlo sa k označenému článku priradí digitálny objekt.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/formAddDigital.png} 
+\caption{Formulár pridania digitálneho objektu}
+\end{figure}
 
 \section{Implementácia systémových úloh}
 

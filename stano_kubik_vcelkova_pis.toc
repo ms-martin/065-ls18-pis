@@ -12,5 +12,5 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} roly}{5}{subsubsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.3}Biznis objekty}{6}{subsubsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.4}Kroky procesu upload a bibliographic record}{8}{subsubsection.3.2.4}
-\contentsline {section}{\numberline {4}Implement\IeC {\'a}cia syst\IeC {\'e}mov\IeC {\'y}ch \IeC {\'u}loh}{13}{section.4}
-\contentsline {section}{\numberline {5}Zhrnutie}{15}{section.5}
+\contentsline {section}{\numberline {4}Implement\IeC {\'a}cia syst\IeC {\'e}mov\IeC {\'y}ch \IeC {\'u}loh}{14}{section.4}
+\contentsline {section}{\numberline {5}Zhrnutie}{16}{section.5}

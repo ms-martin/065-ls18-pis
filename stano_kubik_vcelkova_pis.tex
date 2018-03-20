@@ -153,9 +153,9 @@ Návrh aj implementácia nášho projektu bude realizovaná vo vývojovom prostr
 V tomto projekte budú analyzované a implementované nasledujúce biznis procesy súvisiace s problémovou doménou:
 
 \begin{itemize}
+\item Nahranie digitálneho objektu pre bibliografický záznam
+\item Validácia digitálneho objektu
 \item Nahranie bibliografického záznamu
-\item Aktualizácia bibliografického záznamu
-\item Vyhľadanie bibliografického záznamu
 \end{itemize}
 
 \newpage
@@ -361,12 +361,12 @@ Prostredníctvom grafického používateľského rozhrania používateľ zvolí 
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/formAddInformation.jpg} 
+\includegraphics[scale=0.4]{forms/insert_article.png} 
 \caption{Formulár pridania informácií o článku}
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Add author - ľudská úloha}
+\item \textbf{Add coauthors - ľudská úloha}
 \end{itemize}
 
 \textbf{Rola:} Researcher\\
@@ -381,6 +381,20 @@ Prostredníctvom grafického používateľského rozhrania používateľ zvolí 
 \item \textit{researcher.password} - prístupové heslo do systému,
 \item \textit{researcher.institution\_id} - cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu.
 \end{itemize}
+
+Tento podproces je realizovaný pomocou dvoch prepojených grafických používateľských rozhraní. Používateľ má možnosť buď pridať spolu-autora z tabuľky existujúcich vedcov alebo po kliknutí na príslušné tlačidlo môže pridať nového vedca do systému. O novom vedcovi vyplní údaje v príslušnom formulári.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/add_existing_coauthor.png} 
+\caption{Formulár pridania existujúceho vedca ako spolu-autora}
+\end{figure}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/new_coauthor.png} 
+\caption{Formulár pridania existujúceho vedca ako spolu-autora}
+\end{figure}
 
 \begin{itemize}
 \item \textbf{Add digital object by researcher - ľudská úloha}
@@ -400,21 +414,13 @@ Prostredníctvom grafického používateľského rozhrania používateľ zvolí 
 \item \textit{researcher.institution\_id} - cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu.
 \end{itemize}
 
-\begin{itemize}
-\item \textbf{Add digital object by librarian - ľudská úloha}
-\end{itemize}
+Prostredníctvom grafického používateľského rozhrania používateľ (vedec) postupne na základe konferencie \textit{(Conference)} a zberníka \textit{(Proceedings)} vyfiltruje články (\textit{Article}). Po vyplnení údajov o digitálnom objekte a kliknutí na potvrdzovacie tlačidlo sa k označenému článku priradí digitálny objekt.
 
-\textbf{Rola:} Librarian\\
-\textbf{Vstup:} objekt \textit{logged\_librarian}\\ typu \textit{Librarian}
-\textbf{Výstup:} objekt \textit{article} typu \textit{Article} s nastavenými atribútmi:
-
-\begin{itemize}
-\item \textit{librarian.id} - unikátny primárny kľúč v systémovej databáze,
-\item \textit{librarian.name} - krstné meno uvedené v rodnom liste knihovníka digitálneho repozitáru,
-\item \textit{librarian.surname} -  priezvisko uvedené v rodnom liste knihovníka digitálneho repozitáru,
-\item \textit{librarian.email} - emailová schránka knihovníka digitálneho repozitáru,
-\item \textit{librarian.password} - prístupové heslo do systému,
-\end{itemize}
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/formAddDigital.png} 
+\caption{Formulár pridania digitálneho objektu}
+\end{figure}
 
 \begin{itemize}
 \item \textbf{Choice to add more digital objects by researcher
@@ -450,8 +456,8 @@ Prostredníctvom grafického používateľského rozhrania používateľ zvolí 
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/formValidation.jpg} 
-\caption{Formulár pridania informácií o článku}
+\includegraphics[scale=0.4]{forms/do_validation.png} 
+\caption{Formulár validácie digitálnych objektov}
 \end{figure}
 
 \begin{itemize}
@@ -467,7 +473,7 @@ Prostredníctvom grafického používateľského rozhrania používateľ zvolí 
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.4]{forms/formDigitalObjects.jpg} 
-\caption{Formulár pridania informácií o článku}
+\caption{Formulár pre výber možnosti pridania ďalšieho digitálneho objektu}
 \end{figure}
 
 \begin{itemize}
@@ -546,7 +552,7 @@ Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltru
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.4]{diagrams/diagNotification.jpg} 
-\caption{Formulár pridania informácií o článku}
+\caption{Diagram podprocesu poslania notifikácií}
 \end{figure}
 
 \begin{itemize}
@@ -568,7 +574,7 @@ Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltru
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.4]{diagrams/diagNotification.jpg} 
-\caption{Formulár pridania informácií o článku}
+\caption{Diagram podprocesu poslania notifikácií}
 \end{figure}
 
 
@@ -576,7 +582,23 @@ Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltru
 \newpage
 
 \section{Zhrnutie}
-TODO
+Táto práca je výsledkom analýzy získanej témy pre zadávanie bibliografických dokumentov a digitálnych objektov v systéme digitálneho repozitáru. Spracované sú biznis procesy, ktoré boli identifikované na základe zadania a následných konzultácií. Podobným spôsobom boli identifikované roly používateľov systému, ktoré majú rôzne práva. 
+
+Základom práce bolo navrhnúť proces predstavujúci najpodstatnejšiu časť systému, a to pridanie článku, so všetkými atribútmi, ktoré ho definujú a pridanie a validovanie digitálneho objektu článku - príkladom je náhľad alebo abstrakt konkrétneho bibliografického dokumentu. Spolu s tým boli definované jeho podprocesy spolu s formulármi, ktoré sú základom k implementovaniu funkcionality systému. Formuláre boli navrhnuté tak, aby boli čo najviac prehľadné, intuitívne a aby nimi boli zabezpečené správne entitno-relačné prepojenia v databáze, kde sme sa snažili vyhnúť zadávaniu id objektu, na ktorý má byť vytváraný objekt mapovaný. Riešením bolo ponúknuť používateľovi na výber z dostupných možností alebo ponúknutie vytvorenia objektu a jeho následné mapovanie.
+
+Kvôli komplexnosti problémov vyplývajúcim zo zadania sa však používatelia prihlasujú práve pod spomínaným id a heslom, kde id poskytuje jednoznačný identifikátor, ktorý bolo vhodné použiť pri identifikácii.
+
+V návrhu sú zahrnuté webové služby, najmä na notifikáciu používateľov ale i iné, súvisiace s databázou objektov a manipuláciou s nimi.
+
+Návrhom sme sa snažili pokryť zadanie čo najlepšie nám to dané prostriedky a webové služby dovoľovali.
+
+\section{Report prác členov tímu}
+\subsection{Dávid Kubík}
+K vypracovaniu analýzy zadanej témy sme sa podielali v prvotných krokoch spoločne, kde sa definovali roly používateľov systému a entitno-relačný model. Potom sme prácu spracovávali paralelne v IBM Designer, pričom sme stále medzi sebou konzultovali nápady. To zahŕňalo definovanie webových služieb a najmä tvorbu formulárov. Jedným z ďalších bodov, na ktorom som sa výrazne podielal, bola tvorba dokumentácie k našej analýze, opísanie procesu, podprocesov, biznis objektov a celkovo fungovaniu návrhu.
+\subsection{Martin Staňo}
+K tomu, aby sme boli schopní vypracovať zadanie spoločne bez zbytočných nedorozumení sme zvolili prvotný brainstorming, kde sa definovali základné myšlienky, roly, procesy. Všetko sa konzultovalo až do bodu, kedy bola rozdelená ďalšia práca na projekte. V IBM som následne definoval základné služby, ktoré sme potrebovali k ďalšej práce a následne som pracoval na formulároch pre podprocesy a aj na samotných podprocesoch. Pri dokumentácii som prispel opisom vybraných podprocesov a pridaním screenshotov formulárov, ktoré v práci opisujeme.
+\subsection{Veronika Včelková}
+Náplň mojej práce spočívala v spoločnom prvotnom identifikovaní biznis objektov, ich prepojení a atribútov, rolí, ktoré vystupujú v systéme a náčrtu hlavného biznis procesu. Následne som sa zamerala na implementáciu v IBM Process Designer, kde som mala priradené webové služby vyplývajúce z objektov z nášho dátového modelu a následne priradené podprocesy definujúce hlavný biznis proces.
 
 
 

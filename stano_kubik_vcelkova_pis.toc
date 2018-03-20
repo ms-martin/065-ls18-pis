@@ -14,3 +14,7 @@
 \contentsline {subsubsection}{\numberline {3.2.4}Kroky procesu upload a bibliographic record}{8}{subsubsection.3.2.4}
 \contentsline {section}{\numberline {4}Implement\IeC {\'a}cia syst\IeC {\'e}mov\IeC {\'y}ch \IeC {\'u}loh}{14}{section.4}
 \contentsline {section}{\numberline {5}Zhrnutie}{16}{section.5}
+\contentsline {section}{\numberline {6}Report pr\IeC {\'a}c \IeC {\v c}lenov t\IeC {\'\i }mu}{16}{section.6}
+\contentsline {subsection}{\numberline {6.1}D\IeC {\'a}vid Kub\IeC {\'\i }k}{16}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Martin Sta\IeC {\v n}o}{16}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Veronika V\IeC {\v c}elkov\IeC {\'a}}{16}{subsection.6.3}

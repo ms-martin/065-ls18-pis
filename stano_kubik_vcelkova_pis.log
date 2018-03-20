@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.10)  18 MAR 2018 00:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.10)  20 MAR 2018 06:12
 entering extended mode
 **./stano_kubik_vcelkova_pis.tex
 (stano_kubik_vcelkova_pis.tex
@@ -583,39 +583,47 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@dimlist=\toks21
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks22
+\float@box=\box28
+\@float@everytoks=\toks23
+\@floatcapt=\box29
+)
 (stano_kubik_vcelkova_pis.aux)
 \openout1 = `stano_kubik_vcelkova_pis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 (C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
+\scratchcounter=\count111
 \scratchdimen=\dimen122
-\scratchbox=\box28
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count113
+\scratchbox=\box30
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count114
 \MPscratchDim=\dimen123
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks25
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -629,9 +637,9 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count116
-\AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 59.
+\c@lstlisting=\count117
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 60.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -639,11 +647,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count117
+\c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
 
 (stano_kubik_vcelkova_pis.out) (stano_kubik_vcelkova_pis.out)
 \@outlinefile=\write3
@@ -705,114 +713,145 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82 \newpage
+l.83 \newpage
               [1]
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 8094) in paragraph at lines 94--95
+[]\IL2/cmr/m/n/10 Veronika Vèel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
 []\IL2/cmr/m/n/10 Zapracovanie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
 \IL2/cmr/m/n/10 pri-po-mie-nok z
  []
 
 
-Underfull \hbox (badness 5359) in paragraph at lines 97--97
+Underfull \hbox (badness 5359) in paragraph at lines 98--98
 \IL2/cmr/m/n/10 kon-zul-tá-cií a vy-
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 97--97
+Underfull \hbox (badness 1418) in paragraph at lines 98--98
 \IL2/cmr/m/n/10 tvo-re-nie ná-vrhu v
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 104--104
 []\IL2/cmr/m/n/10 Implementácia v
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
 []\IL2/cmr/m/n/10 Vypracovanie
  []
 
 
-Overfull \hbox (49.37485pt too wide) in paragraph at lines 89--109
+Overfull \hbox (49.37485pt too wide) in paragraph at lines 90--110
 [] 
  []
 
 [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 142.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 141.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
-<datovy_model.png, id=91, 1093.08376pt x 624.3325pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
+ [4]
+<datovy_model.png, id=111, 881.2925pt x 616.3025pt>
 File: datovy_model.png Graphic file (type png)
 <use datovy_model.png>
-Package pdftex.def Info: datovy_model.png  used on input line 154. on input lin
-e 154.
-Package pdftex.def Info: Requested size: 437.22575pt x 249.72858pt on input lin
-e 154.
-
-Overfull \hbox (27.62032pt too wide) in paragraph at lines 154--155
- [][] 
- []
+Package pdftex.def Info: datovy_model.png  used on input line 169. on input lin
+e 169.
+Package pdftex.def Info: Requested size: 352.51076pt x 246.51663pt on input lin
+e 169.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 161.
+(hyperref)                removing `\textasciicaron' on input line 176.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 164.
+(hyperref)                removing `\textasciicaron' on input line 179.
 
-[4 <./datovy_model.png>] [5] [6]
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
 
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 292.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.188 \newpage
+               <./datovy_model.png>] [6] [7]
+<forms/formChooseRole.jpg, id=128, 221.32687pt x 71.51718pt>
+File: forms/formChooseRole.jpg Graphic file (type jpg)
+<use forms/formChooseRole.jpg>
+Package pdftex.def Info: forms/formChooseRole.jpg  used on input line 295. on i
+nput line 295.
+Package pdftex.def Info: Requested size: 154.92773pt x 50.06168pt on input line
+ 295.
+<forms/formLogin.jpg, id=130, 249.93375pt x 153.57375pt>
+File: forms/formLogin.jpg Graphic file (type jpg)
+<use forms/formLogin.jpg>
+Package pdftex.def Info: forms/formLogin.jpg  used on input line 326. on input 
+line 326.
+Package pdftex.def Info: Requested size: 174.95242pt x 107.50089pt on input lin
+e 326.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.329 
+       <./forms/formChooseRole.jpg>] [9pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.333 \newpage
+               <./forms/formLogin.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
  (stano_kubik_vcelkova_pis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `stano_kubik_vcelkova_pis.out' has not change
 d.
-(rerunfilecheck)             Checksum: D1FBF8472AFD9B6CAF2AAB6F991C5A8E;883.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
+(rerunfilecheck)             Checksum: B6A7CF435A9FF145AE85532F4E6658B3;1161.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
  ) 
 Here is how much of TeX's memory you used:
- 8301 strings out of 493312
- 118230 string characters out of 3138898
- 217651 words of memory out of 3000000
- 11728 multiletter control sequences out of 15000+200000
- 12877 words of font info for 35 fonts, out of 3000000 for 9000
+ 8387 strings out of 493312
+ 119469 string characters out of 3138898
+ 219062 words of memory out of 3000000
+ 11797 multiletter control sequences out of 15000+200000
+ 13477 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,32p,641b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,8n,32p,641b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi6
-00\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\c
-sfonts\dpi600\csbx10.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\public\csfonts\dpi720\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fo
-nts\pk\ljfour\public\csfonts\dpi600\cssl10.pk> <C:\Users\David\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\cscsc10.pk> <C:\Users\David\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\csr10.pk> <C:\Users\
-David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi720\csti12.pk>
- <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi103
-7\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cs
-fonts\dpi600\csr12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\public\csfonts\dpi864\cscsc10.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\public\csfonts\dpi1037\cscsc10.pk><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on stano_kubik_vcelkova_pis.pdf (8 pages, 200258 bytes).
+00\csti10.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\c
+sfonts\dpi600\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\public\csfonts\dpi600\csbx10.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fo
+nts\pk\ljfour\public\csfonts\dpi720\csbx12.pk> <C:\Users\David\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\cssl10.pk> <C:\Users\David\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\cscsc10.pk> <C:\Users
+\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\csr10.pk>
+ <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi720
+\csti12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csf
+onts\dpi1037\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\public\csfonts\dpi600\csr12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\public\csfonts\dpi864\cscsc10.pk> <C:\Users\David\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\public\csfonts\dpi1037\cscsc10.pk><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on stano_kubik_vcelkova_pis.pdf (11 pages, 248726 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

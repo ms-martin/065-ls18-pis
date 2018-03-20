@@ -1,12 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Percentu\341lny podiel pr\341ce autov na projekte}{}% 1
 \BOOKMARK [1][-]{section.2}{\227pecifik\341cia projektu: Repozit\341r - digit\341lna kni\236nica}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{\332vod}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Zadanie - \235pecifik\341cia}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{N\341vrh, anal\375za a opis biznis procesov}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{D\341tov\375 model}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Nahranie bibliografick\351ho z\341znamu}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{Ciel biznis procesu}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.4}{Pou\236\355vatelsk\351 roly}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.5}{Biznis objekty}{section.3}% 10
-\BOOKMARK [1][-]{section.4}{Zhrnutie}{}% 11
-\BOOKMARK [1][-]{section.5}{Report pr\341ce clenov t\355mu}{}% 12
+\BOOKMARK [2][-]{subsection.2.2}{\227pecifik\341cia}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Obmedzenia}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Vypracovanie projektu}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{N\341vrh, anal\375za a opis biznis procesov}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{D\341tov\375 model}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Biznis proces upload a bibliographic record}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Ciel biznis procesu}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Pou\236\355vatelsk\351 roly}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Biznis objekty}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Kroky procesu upload a bibliographic record}{subsection.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Biznis proces login as researcher}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{Zhrnutie}{}% 15

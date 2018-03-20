@@ -233,7 +233,7 @@ Tento biznis objekt reprezentuje digitálny repozitár. Parametre tohto biznis o
 \begin{itemize}
 \item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
 \item \textbf{name:} názov digitálneho repozitáru,
-\item \textbf{druh_id} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétny typ digitálneho repozitáru.
+\item \textbf{druh\_id} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétny typ digitálneho repozitáru.
 \end{itemize}
 
 \textbf{Druh}\\
@@ -278,13 +278,12 @@ Tento biznis objekt reprezentuje publikovaný bibliografický záznam v digitál
 \item \textbf{name:} názov publikácie, pod ktorým je uvedená v digitálnom repozitári,
 \item \textbf{valid:} pravdivostná hodnota, ktorá vyjadruje, či sú údaje v publikácii správne,
 \item \textbf{edited:} dátum, kedy bola publikácia v digitálnom repozitári naposledy upravená,
+\item \textbf{validated:} dátum, kedy bolo rozhodnuté, že údaje v publikácii sú validné,
+\item \textbf{accessible\_by:} vyjadruje minimálnu požadovanú úroveň pracovníka k sprístupneniu publikácie,
 \item \textbf{knihovnik\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétneho knihovníka,
-\item \textbf{publikacia\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu publikáciu,
-\item \textbf{repozitar\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétny repozitár,
+\item \textbf{vedec\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétneho vedca,
+\item \textbf{repozitar\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétny repozitár.
 
-
-
-\item \textbf{accessible\_by:} vyjadruje minimálnu požadovanú úroveň pracovníka k sprístupneniu publikácie.
 \end{itemize}
 
 \section{Zhrnutie}

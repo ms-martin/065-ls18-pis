@@ -290,6 +290,8 @@ V tejto časti uvádzame podrobný opis krokov biznis procesu nahranie bibliogra
 \textbf{Rola:} Super user\\
 \textbf{Výstup:} objekt \textit{chosen\_role} typu \textit{String}, ktorý vyjadruje používateľom zvolenú rolu.
 
+Prostredníctvom grafického používateľského rozhrania používateľ zvolí pod akou rolou chce vystupovať. Ak klikne na tlačidlo \textit{Researcher}, tak bude vystupovať v systéme ako vedec. Ak klikne na tlačidlo \textit{Librarian}, tak bude vystupovať v systéme ako knihovník.
+
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.7]{forms/formChooseRole.jpg} 
@@ -319,11 +321,209 @@ V tejto časti uvádzame podrobný opis krokov biznis procesu nahranie bibliogra
 \item \textit{researcher.institution\_id} - cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu.
 \end{itemize}
 
-Prostredníctvom grafického používateľského rozhrania používateľ zadá \textit{login\_id} a \textit{password}, následne po stlačení tlačidla \textit{OK}, pokračuje hlavný biznis proces. Bližšie sa na tento podproces a jeho kroky pozrieme v kapitole ~\ref{researcher}.
+Prostredníctvom grafického používateľského rozhrania používateľ zadá \textit{login\_id} a \textit{password}, následne po stlačení tlačidla \textit{OK}, pokračuje hlavný biznis proces.
 
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.7]{forms/formLogin.jpg} 
+\caption{Formulár prihlasovania vedca}
+\end{figure}
 
+\begin{itemize}
+\item \textbf{Add publication or digital object
+ - ľudská úloha}
+\end{itemize}
 
-\subsection{Biznis proces login as researcher} \label{researcher}
+\textbf{Rola:} Researcher\\
+\textbf{Výstup:} objekt \textit{chosen\_action} typu \textit{String}, ktorý predstavuje voľbu používateľa, či chce pridať publikáciu alebo digitálny objekt.
+
+Prostredníctvom grafického používateľského rozhrania používateľ zvolí kliknutím vybraného tlačidla buď \textit{Add publication} - pridanie publikácie, alebo \textit{Add digital object} - pridanie digitálneho objektu.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.7]{forms/formChooseAction.jpg} 
+\caption{Formulár výberu akcie na pridanie publikácie alebo digitálneho objektu}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Rozhodovací blok - What do you want to add?}
+\end{itemize}
+
+\textbf{Atribút rozhodovania:} \textit{researcher\_chosen\_action} - zisťujeme, či je obsah daného atribútu ekvivalentný s reťazcom "digital\_object". Ak áno, tak biznis proces pokračuje krokom \textit{Add digital object}. Ak nie, tak biznis proces pokračuje krokom \textit{Add article}.
+
+\begin{itemize}
+\item \textbf{Add article - ľudská úloha}
+\end{itemize}
+
+\textbf{Rola:} Researcher\\
+
+Prostredníctvom grafického používateľského rozhrania používateľ zvolí vedeckú konferenciu a výber potvrdí tlačidlom \textit{Filter Proceedings}. To spôsobí, že sa vyfiltrujú v tabuľke zborníkov len tie zborníky, ktoré patria k danej vedeckej konferencii. Následne zvolí zborník vedeckej konferencie, názov článku, kľúčové slová a svoj výber potvrdí tlačidlo \textit{OK}.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/formAddInformation.jpg} 
+\caption{Formulár pridania informácií o článku}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Add author - ľudská úloha}
+\end{itemize}
+
+\textbf{Rola:} Researcher\\
+\textbf{Výstup:} list objektov \textit{authors\_to\_add} typu \textit{Researcher} s nastavenými atribútmi:
+
+\begin{itemize}
+\item \textit{researcher.id} - unikátny primárny kľúč v systémovej databáze,
+\item \textit{researcher.name} - krstné meno uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
+\item \textit{researcher.surname} -  priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
+\item \textit{researcher.email} - emailová schránka pracovníka vedeckovýskumného ústavu,
+\item \textit{researcher.rank} - úroveň pracovníka k sprístupneniu publikácií,
+\item \textit{researcher.password} - prístupové heslo do systému,
+\item \textit{researcher.institution\_id} - cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu.
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{Add digital object by researcher - ľudská úloha}
+\end{itemize}
+
+\textbf{Rola:} Researcher\\
+\textbf{Vstup:} objekt \textit{logged\_researcher}\\ typu \textit{Researcher}
+\textbf{Výstup:} objekt \textit{article} typu \textit{Article} s nastavenými atribútmi:
+
+\begin{itemize}
+\item \textit{researcher.id} - unikátny primárny kľúč v systémovej databáze,
+\item \textit{researcher.name} - krstné meno uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
+\item \textit{researcher.surname} -  priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
+\item \textit{researcher.email} - emailová schránka pracovníka vedeckovýskumného ústavu,
+\item \textit{researcher.rank} - úroveň pracovníka k sprístupneniu publikácií,
+\item \textit{researcher.password} - prístupové heslo do systému,
+\item \textit{researcher.institution\_id} - cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu.
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{Add digital object by librarian - ľudská úloha}
+\end{itemize}
+
+\textbf{Rola:} Librarian\\
+\textbf{Vstup:} objekt \textit{logged\_librarian}\\ typu \textit{Librarian}
+\textbf{Výstup:} objekt \textit{article} typu \textit{Article} s nastavenými atribútmi:
+
+\begin{itemize}
+\item \textit{librarian.id} - unikátny primárny kľúč v systémovej databáze,
+\item \textit{librarian.name} - krstné meno uvedené v rodnom liste knihovníka digitálneho repozitáru,
+\item \textit{librarian.surname} -  priezvisko uvedené v rodnom liste knihovníka digitálneho repozitáru,
+\item \textit{librarian.email} - emailová schránka knihovníka digitálneho repozitáru,
+\item \textit{librarian.password} - prístupové heslo do systému,
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{Choice to add more digital objects by researcher
+ - ľudská úloha}
+\end{itemize}
+
+\textbf{Rola:} Librarian\\
+\textbf{Vstup:} objekt \textit{logged\_librarian}\\ typu \textit{Librarian}
+\textbf{Výstup:} objekt \textit{article} typu \textit{Article} s nastavenými atribútmi:
+
+\begin{itemize}
+\item \textbf{Choice to add more digital objects by researcher
+ - ľudská úloha}
+\end{itemize}
+
+\textbf{Rola:} Researcher\\
+\textbf{Výstup:} objekt \textit{more\_digital\_objects} typu \textit{Boolean} je nastavený na pravdivostnú hodnotu podľa toho, či vedec chce ešte pridať ďalší digitálny objekt alebo nie.
+
+Prostredníctvom grafického používateľského rozhrania používateľ zvolí kliknutím vybraného tlačidla buď \textit{Yes} - pridanie ďalšieho digitálneho objektu, alebo \textit{No} - ukončí sa pridávanie digitálnych objektov k článku.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/formDigitalObjects.jpg} 
+\caption{Formulár pridania informácií o článku}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Rozhodovací blok - Do you want to add more digital objects?}
+\end{itemize}
+
+\textbf{Atribút rozhodovania:} \textit{add\_more\_digital\_objects} - zisťujeme, či je hodnota daného atribútu ekvivalentná s pravdivostnou hodnotou false. Ak áno, tak biznis proces sa ukončí. Ak nie, tak biznis proces pokračuje krokom \textit{Add digital object by researcher}.
+
+\begin{itemize}
+\item \textbf{Validate digital object
+ - ľudská úloha}
+\end{itemize}
+
+\textbf{Rola:} Librarian\\
+\textbf{Vstup:} objekt \textit{librarian} typu \textit{Librarian}.
+
+Prostredníctvom grafického používateľského rozhrania používateľ zvolí konferenciu a po kliknutí na tlačidlo \textit{Filter proceedings} vyfiltruje zborníky, ktoré patria k zvolenej konferencii. Následne používateľ vyberie konkrétny zborník a klikne na tlačidlo \textit{Filter articles}, to má za následok, že sa vyfiltrujú články pre zvolený zborník. Napokon používateľ vyberie konkrétny článok a klikne na tlačidlo \textit{Filter digital objects}. Následne si používateľ vyberie digitálny objekt a rozhodne, či sú jeho údaje korektné alebo nie.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/formValidation.jpg} 
+\caption{Formulár pridania informácií o článku}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Validate digital object
+ - ľudská úloha}
+\end{itemize}
+
+\textbf{Rola:} Librarian\\
+\textbf{Vstup:} objekt \textit{librarian} typu \textit{Librarian}.
+
+Prostredníctvom grafického používateľského rozhrania používateľ zvolí konferenciu a po kliknutí na tlačidlo \textit{Filter proceedings} vyfiltruje zborníky, ktoré patria k zvolenej konferencii. Následne používateľ vyberie konkrétny zborník a klikne na tlačidlo \textit{Filter articles}, to má za následok, že sa vyfiltrujú články pre zvolený zborník. Napokon používateľ vyberie konkrétny článok a klikne na tlačidlo \textit{Filter digital objects}. Následne si používateľ vyberie digitálny objekt a rozhodne, či sú jeho údaje korektné alebo nie.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/formValidation.jpg} 
+\caption{Formulár pridania informácií o článku}
+\end{figure}
+
+\section{Implementácia systémových úloh}
+
+\begin{itemize}
+\item \textbf{Send notification by librarian - systémová úloha}
+\end{itemize}
+
+\textbf{Rola:} System\\
+\textbf{Vstup:} objekt \textit{article} typu \textit{Article}.
+
+\begin{itemize}
+\item \textbf{article.id:} unikátny primárny kľúč v systémovej databáze,
+\item \textbf{article.name:} názov publikácie, pod ktorým je uvedená v databáze vedeckovýskumného pracoviska,
+\item \textbf{article.keywords:} kľúčové slová, ktoré sa využívajú pri vyhľadaní danej publikácie v digitálnom repozitári,
+\item \textbf{article.proceedings\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na zborník vedeckej konferencie.
+\end{itemize}
+
+Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltruje tie záznamy, ktoré zodpovedajú konkrétnemu článku. Pre každý vyfiltrovaný záznam získa vedca a tomu pošle notifikáciu. Vedec môže byť notifikovaný email-om, alebo prostredníctvo SMS správy, alebo obidvoma spôsobmi.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagNotification.jpg} 
+\caption{Formulár pridania informácií o článku}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Send notification by researcher - systémová úloha}
+\end{itemize}
+
+\textbf{Rola:} System\\
+\textbf{Vstup:} objekt \textit{article} typu \textit{Article}.
+
+\begin{itemize}
+\item \textbf{article.id:} unikátny primárny kľúč v systémovej databáze,
+\item \textbf{article.name:} názov publikácie, pod ktorým je uvedená v databáze vedeckovýskumného pracoviska,
+\item \textbf{article.keywords:} kľúčové slová, ktoré sa využívajú pri vyhľadaní danej publikácie v digitálnom repozitári,
+\item \textbf{article.proceedings\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na zborník vedeckej konferencie.
+\end{itemize}
+
+Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltruje tie záznamy, ktoré zodpovedajú konkrétnemu článku. Pre každý vyfiltrovaný záznam získa vedca a tomu pošle notifikáciu. Vedec môže byť notifikovaný email-om, alebo prostredníctvo SMS správy, alebo obidvoma spôsobmi.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagNotification.jpg} 
+\caption{Formulár pridania informácií o článku}
+\end{figure}
 
 \newpage
 

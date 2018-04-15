@@ -579,6 +579,226 @@ Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltru
 
 
 
+
+
+
+
+\subsection{Webová služba: Získanie vedeckej publikácie}
+\textbf{Názov služby:} WS\_Article\_find
+\textbf{Metóda služby:} getById
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID vedeckej publikácie
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{article} - objekt typu Article
+	\end{itemize}
+	
+\subsection{Webová služba: Získanie všetkých vedeckých publikácií}
+\textbf{Názov služby:}  WS\_Article\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{articles} - list objektov typu Article
+	\end{itemize}
+	
+\subsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
+\textbf{Názov služby:} WS\_Article\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID vedeckých publikácií, z ktorých sa má vyhľadávať
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{articles} - list objektov typu Article
+	\end{itemize}
+	
+\subsection{Webová služba: Vloženie vedeckej publikácie}
+\textbf{Názov služby:} WS\_Article\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{Article} - objekt typu Article s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej vedeckej publikácie
+	\end{itemize}
+	
+\subsection{Webová služba: Získanie všetkých vedeckých konferencií}
+\textbf{Názov služby:} WS\_Conference\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{conferences} - list objektov typu Conference
+	\end{itemize}
+	
+\subsection{Webová služba: Vloženie vedeckej konferencie}
+\textbf{Názov služby:} WS\_Conference\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{Conference} - objekt typu Conference s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej vedeckej konferencie
+	\end{itemize}
+	
+\subsection{Webová služba: Získanie všetkých digitálnych objektov}
+\textbf{Názov služby:} WS\_Digital\_object\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{digital\_objects} - list objektov typu Digital\_object
+	\end{itemize}
+	
+\subsection{Webová služba: Vloženie digitálneho objektu}
+\textbf{Názov služby:} WS\_Digital\_object\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{digital\_object} - objekt typu Digital\_object s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného digitálneho objektu
+	\end{itemize}
+	
+\subsection{Webová služba: Získanie zborníka podľa vedeckej konferencie}
+\textbf{Názov služby:} WS\_Get\_proceedings\_by\_conference
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID zborníkov, z ktorých sa má vyhľadávať
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{proceedings} - list objektov typu Proceeding
+	\end{itemize}
+	
+\subsection{Webová služba: Získanie všetkých inštitúcií}
+\textbf{Názov služby:} WS\_Institution\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{institutions} - list objektov typu Institution
+	\end{itemize}
+	
+\subsection{Webová služba: Vloženie inštitúcie}
+\textbf{Názov služby:} WS\_Institution\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{institution} - objekt typu Institution s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej inštitúcie
+	\end{itemize}
+	
+\subsection{Webová služba: Získanie knihovníka}
+\textbf{Názov služby:} WS\_Librarian\_find
+\textbf{Metóda služby:} getById
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID knihovníka
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{librarian} - objekt typu Librarian
+	\end{itemize}
+	
+\subsection{Webová služba: Získanie všetkých knihovníkov}
+\textbf{Názov služby:} WS\_Librarian\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{librarians} - list objektov typu Librarian
+	\end{itemize}
+	
+\subsection{Webová služba: Vloženie knihovníka}
+\textbf{Názov služby:} WS\_Librarian\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{librarian} - objekt typu Librarian s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného knihovníka
+	\end{itemize}
+	
+\subsection{Webová služba: }
+\textbf{Názov služby:} WS\_
+\textbf{Metóda služby:} 
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{} - 
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{} - 
+	\end{itemize}
+	
+\subsection{Webová služba: }
+\textbf{Názov služby:} WS\_
+\textbf{Metóda služby:} 
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{} - 
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{} - 
+	\end{itemize}
+	
+\subsection{Webová služba: }
+\textbf{Názov služby:} WS\_
+\textbf{Metóda služby:} 
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{} - 
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{} - 
+	\end{itemize}
+	
+\subsection{Webová služba: }
+\textbf{Názov služby:} WS\_
+\textbf{Metóda služby:} 
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{} - 
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{} - 
+	\end{itemize}
+	
+	
+	
+	
+
+
+
 \newpage
 
 \section{Zhrnutie}

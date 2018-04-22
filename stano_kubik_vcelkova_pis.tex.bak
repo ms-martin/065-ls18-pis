@@ -533,7 +533,10 @@ Prostredníctvom grafického používateľského rozhrania používateľ (knihov
 
 \section{Implementácia systémových úloh}
 
-\subsection{Send notification - systémová úloha}
+\begin{itemize}
+\item \textbf{Send notification - systémová úloha}
+\end{itemize}
+
 \textbf{Rola:} System\\
 \textbf{Vstup:} objekt \textit{article} typu \textit{Article}.
 
@@ -549,7 +552,7 @@ Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltru
 \caption{Diagram podprocesu poslania notifikácií}
 \end{figure}
 
-\subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
+\subsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
 \textbf{Názov služby:} WS\_Article\_getByAttribute
 \textbf{Metóda služby:} getByAttributeValue
 \textbf{Vstupy:}
@@ -563,10 +566,10 @@ Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltru
 		\item \textit{articles} - list objektov typu Article
 	\end{itemize}
 
-\subsubsection{Skript: Null counter}
-Vynuluje počítadlo autorov vedeckej publikácie. Tento skript je potrebný pre správne fungovanie cyklu pre poslanie emailovej a telefonickej notifikácie všetkým spoluautorom.
+\subsection{Skript: Null counter}
+Vynuluje počítadlo autorov vedeckej publikácie.
 
-\subsubsection{Webová služba: Získanie vedca}
+\subsection{Webová služba: Získanie vedca}
 \textbf{Názov služby:} WS\_Researcher\_find
 \textbf{Metóda služby:} getById
 \textbf{Vstupy:}
@@ -578,40 +581,8 @@ Vynuluje počítadlo autorov vedeckej publikácie. Tento skript je potrebný pre
 		\item \textit{researcher} - objekt typu Researcher
 	\end{itemize}
 
-\subsubsection{Webová služba: Poslanie emailovej notifikácie}
-\textbf{Názov služby:} WS\_Send\_email
-\textbf{Metóda služby:} notify
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{email} - emailová adresa príjemcu notifikácie
-		\item \textit{"You were added as a coauthor"} - predmet správy, ktorá sa odošle
-		\item \textit{"Coauthor of article: " + tw.local.article\_id.toString()} - správa, ktorá sa odošle, kde article\_id.toString() predstavuje ID článku, ktorého je príjemca spoluautorom
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{success} - pravdivostná hodnota, ktorá vyjadruje, či sa email podarilo odoslať
-	\end{itemize}
 
-\subsubsection{Webová služba: Telefonické notifikovanie}
-\textbf{Názov služby:} WS\_Call
-\textbf{Metóda služby:} notify
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{phone} - telefónne číslo, na ktoré sa má zatelefonovať
-		\item \textit{"You were added as a coauthor"} - predmet správy, ktorá sa odošle
-		\item \textit{"You are coauthor of article: " + tw.local.article\_id.toString()} - správa, ktorá sa telefonicky oznámi, kde article\_id.toString() predstavuje ID článku, ktorého je príjemca telefonátu spoluautorom
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{success} - pravdivostná hodnota, ktorá vyjadruje, či sa podarilo telefonicky notifikovať spoluautora vedeckej publikácie
-	\end{itemize}
 
-\subsubsection{Skript: Increment counter}
-Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potrebný pre správne fungovanie cyklu pre poslanie emailovej a telefonickej notifikácie všetkým spoluautorom.
 
 
 
@@ -698,10 +669,10 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 
 
 
-% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-% DOCASNE SU TU ULOZENE V ABECEDNOM PORADI WEBOVE SLUZBY A ODTIALTO KOPIRUJEM PRI PISANI DOKU
 
-\subsubsection{Webová služba: Získanie vedeckej publikácie}
+%
+
+\subsection{Webová služba: Získanie vedeckej publikácie}
 \textbf{Názov služby:} WS\_Article\_find
 \textbf{Metóda služby:} getById
 \textbf{Vstupy:}
@@ -713,7 +684,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{article} - objekt typu Article
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie všetkých vedeckých publikácií}
+\subsection{Webová služba: Získanie všetkých vedeckých publikácií}
 \textbf{Názov služby:}  WS\_Article\_findAll
 \textbf{Metóda služby:} getAll
 \textbf{Výstupy:}
@@ -721,7 +692,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{articles} - list objektov typu Article
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
+\subsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
 \textbf{Názov služby:} WS\_Article\_getByAttribute
 \textbf{Metóda služby:} getByAttributeValue
 \textbf{Vstupy:}
@@ -735,7 +706,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{articles} - list objektov typu Article
 	\end{itemize}
 	
-\subsubsection{Webová služba: Vloženie vedeckej publikácie}
+\subsection{Webová služba: Vloženie vedeckej publikácie}
 \textbf{Názov služby:} WS\_Article\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -749,7 +720,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{id} - ID novo vytvorenej vedeckej publikácie
 	\end{itemize}
 	
-\subsubsection{Webová služba: Telefonické notifikovanie}
+\subsection{Webová služba: Telefonické notifikovanie}
 \textbf{Názov služby:} WS\_Call
 \textbf{Metóda služby:} notify
 \textbf{Vstupy:}
@@ -765,7 +736,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{success} - pravdivostná hodnota, ktorá vyjadruje, či sa podarilo telefonicky notifikovať spoluautora vedeckej publikácie
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
+\subsection{Webová služba: Získanie všetkých vedeckých konferencií}
 \textbf{Názov služby:} WS\_Conference\_findAll
 \textbf{Metóda služby:} getAll
 \textbf{Výstupy:}
@@ -773,7 +744,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{conferences} - list objektov typu Conference
 	\end{itemize}
 	
-\subsubsection{Webová služba: Vloženie vedeckej konferencie}
+\subsection{Webová služba: Vloženie vedeckej konferencie}
 \textbf{Názov služby:} WS\_Conference\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -787,7 +758,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{id} - ID novo vytvorenej vedeckej konferencie
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie všetkých digitálnych objektov}
+\subsection{Webová služba: Získanie všetkých digitálnych objektov}
 \textbf{Názov služby:} WS\_Digital\_object\_findAll
 \textbf{Metóda služby:} getAll
 \textbf{Výstupy:}
@@ -795,7 +766,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{digital\_objects} - list objektov typu Digital\_object
 	\end{itemize}
 	
-\subsubsection{Webová služba: Vloženie digitálneho objektu}
+\subsection{Webová služba: Vloženie digitálneho objektu}
 \textbf{Názov služby:} WS\_Digital\_object\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -809,7 +780,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{id} - ID novo vytvoreného digitálneho objektu
 	\end{itemize}
 	
-\subsubsection{Webová služba: Aktualizovanie údajov digitálneho objektu}
+\subsection{Webová služba: Aktualizovanie údajov digitálneho objektu}
 \textbf{Názov služby:} WS\_Digital\_object\_update
 \textbf{Metóda služby:} update
 \textbf{Vstupy:}
@@ -824,7 +795,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{changes} - počet atribútov digitálneho objektu, ktoré sa aktualizovali
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie digitálneho objektu na základe ľubovoľného atribútu}
+\subsection{Webová služba: Získanie digitálneho objektu na základe ľubovoľného atribútu}
 \textbf{Názov služby:} WS\_Digital\_objects\_getByAttibute
 \textbf{Metóda služby:} getByAttributeValue
 \textbf{Vstupy:}
@@ -838,7 +809,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{digital\_objects\_array} - list objektov typu Digital\_object
 	\end{itemize}
 	
-\subsubsection{Webová služba: Vloženie logovacieho záznamu}
+\subsection{Webová služba: Vloženie logovacieho záznamu}
 \textbf{Názov služby:} WS\_Events\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -852,7 +823,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{id} - ID novo vytvoreného logovacieho záznamu
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie všetkých inštitúcií}
+\subsection{Webová služba: Získanie všetkých inštitúcií}
 \textbf{Názov služby:} WS\_Institution\_findAll
 \textbf{Metóda služby:} getAll
 \textbf{Výstupy:}
@@ -860,7 +831,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{institutions} - list objektov typu Institution
 	\end{itemize}
 	
-\subsubsection{Webová služba: Vloženie inštitúcie}
+\subsection{Webová služba: Vloženie inštitúcie}
 \textbf{Názov služby:} WS\_Institution\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -874,7 +845,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{id} - ID novo vytvorenej inštitúcie
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie knihovníka}
+\subsection{Webová služba: Získanie knihovníka}
 \textbf{Názov služby:} WS\_Librarian\_find
 \textbf{Metóda služby:} getById
 \textbf{Vstupy:}
@@ -886,7 +857,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{librarian} - objekt typu Librarian
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie všetkých knihovníkov}
+\subsection{Webová služba: Získanie všetkých knihovníkov}
 \textbf{Názov služby:} WS\_Librarian\_findAll
 \textbf{Metóda služby:} getAll
 \textbf{Výstupy:}
@@ -894,7 +865,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{librarians} - list objektov typu Librarian
 	\end{itemize}
 	
-\subsubsection{Webová služba: Vloženie knihovníka}
+\subsection{Webová služba: Vloženie knihovníka}
 \textbf{Názov služby:} WS\_Librarian\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -908,7 +879,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{id} - ID novo vytvoreného knihovníka
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie všetkých zborníkov}
+\subsection{Webová služba: Získanie všetkých zborníkov}
 \textbf{Názov služby:} WS\_Proceedings\_findAll
 \textbf{Metóda služby:} getAll
 \textbf{Výstupy:}
@@ -916,7 +887,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{proceedingss} - list objektov typu Proceedings
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
+\subsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
 \textbf{Názov služby:} WS\_Proceedings\_getByAttribute
 \textbf{Metóda služby:} getByAttributeValue
 \textbf{Vstupy:}
@@ -930,7 +901,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{proceedings} - list objektov typu Proceeding
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie zborníka}
+\subsection{Webová služba: Získanie zborníka}
 \textbf{Názov služby:} WS\_Proceedings\_getById
 \textbf{Metóda služby:} getById
 \textbf{Vstupy:}
@@ -942,7 +913,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{proceedings} - objekt typu Proceedings
 	\end{itemize}
 	
-\subsubsection{Webová služba: Vloženie zborníka}
+\subsection{Webová služba: Vloženie zborníka}
 \textbf{Názov služby:} WS\_Proceedings\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -956,7 +927,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{id} - ID novo vytvoreného zborníka
 	\end{itemize}
 	
-\subsubsection{Webová služba: Aktualizovanie údajov zborníka}
+\subsection{Webová služba: Aktualizovanie údajov zborníka}
 \textbf{Názov služby:} WS\_Proceedings\_update
 \textbf{Metóda služby:} update
 \textbf{Vstupy:}
@@ -971,7 +942,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{changes} - počet atribútov digitálneho objektu, ktoré sa aktualizovali
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie všetkých entít spojovacej tabuľky Vedec-Publikácia}
+\subsection{Webová služba: Získanie všetkých entít spojovacej tabuľky Vedec-Publikácia}
 \textbf{Názov služby:} WS\_Researcher\_Article\_getAll
 \textbf{Metóda služby:} getAll
 \textbf{Výstupy:}
@@ -979,7 +950,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{researcher\_articles} - list objektov typu Researcher\_Article
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získanie entity Vedec-Publikácia podľa ľubovoľného atribútu}
+\subsection{Webová služba: Získanie entity Vedec-Publikácia podľa ľubovoľného atribútu}
 \textbf{Názov služby:} WS\_Researcher\_article\_getByAttribute
 \textbf{Metóda služby:} getByAttributeValue
 \textbf{Vstupy:}
@@ -993,7 +964,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{researcher\_articles} - list objektov typu Researcher\_Article
 	\end{itemize}
 	
-\subsubsection{Webová služba: Vloženie entity spojovacej tabuľky Vedec - Publikácia}
+\subsection{Webová služba: Vloženie entity spojovacej tabuľky Vedec - Publikácia}
 \textbf{Názov služby:} WS\_Researcher\_article\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -1007,7 +978,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{id} - ID novo vytvorenej entity spojovacej tabuľky Vedec - Publikácia
 	\end{itemize}
 
-\subsubsection{Webová služba: Získanie vedca}
+\subsection{Webová služba: Získanie vedca}
 \textbf{Názov služby:} WS\_Researcher\_find
 \textbf{Metóda služby:} getById
 \textbf{Vstupy:}
@@ -1019,7 +990,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{researcher} - objekt typu Researcher
 	\end{itemize}
 
-\subsubsection{Webová služba: Získanie všetkých vedcov}
+\subsection{Webová služba: Získanie všetkých vedcov}
 \textbf{Názov služby:} WS\_Researcher\_findAll
 \textbf{Metóda služby:} getAll
 \textbf{Výstupy:}
@@ -1027,7 +998,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{researchers} - list objektov typu Researcher
 	\end{itemize}
 	
-\subsubsection{Webová služba: Získaj vedca podľa ľubovoľného atribútu}
+\subsection{Webová služba: Získaj vedca podľa ľubovoľného atribútu}
 \textbf{Názov služby:} WS\_Researcher\_getByAttribute
 \textbf{Metóda služby:} getByAttributeValue
 \textbf{Vstupy:}
@@ -1041,7 +1012,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{researchers} - list objektov typu Researcher 
 	\end{itemize}
 	
-\subsubsection{Webová služba: Vloženie vedca}
+\subsection{Webová služba: Vloženie vedca}
 \textbf{Názov služby:} WS\_Reasercher\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -1055,7 +1026,7 @@ Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potreb
 		\item \textit{id} - ID novo vytvoreného vedca
 	\end{itemize}
 	
-\subsubsection{Webová služba: Poslanie emailovej notifikácie}
+\subsection{Webová služba: Poslanie emailovej notifikácie}
 \textbf{Názov služby:} WS\_Send\_email
 \textbf{Metóda služby:} notify
 \textbf{Vstupy:}

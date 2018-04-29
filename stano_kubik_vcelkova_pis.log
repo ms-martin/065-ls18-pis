@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.14)  23 APR 2018 00:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.23)  29 APR 2018 23:05
 entering extended mode
 **./stano_kubik_vcelkova_pis.tex
 (stano_kubik_vcelkova_pis.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -20,29 +20,32 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+) ("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.st
+y"
 Package: babel 2018/02/14 3.18 The Babel package
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+"
 File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-slovak\slovak.ldf
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-slovak\slova
+k.ldf"
 Language: slovak 2008/07/06 v3.1a Slovak support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\txtbabel.def")
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
+ef")
 \bbl@dirlevel=\count88
 )
 Package babel Info: Making ^ an active character on input line 123.
@@ -51,31 +54,29 @@ Package babel Info: Making ' an active character on input line 129.
 \cs@wordlen=\count89
 Package babel Info: Making - an active character on input line 294.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\cslatex\base\il2enc.def
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\cslatex\base\il2enc.def"
 File: il2enc.def 1997/08/20 CSLaTeX
 )
 LaTeX Font Info:    Try loading font information for IL2+cmr on input line 105.
 
-
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\cslatex\base\il2cmr.fd
+ ("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\cslatex\base\il2cmr.fd"
 File: il2cmr.fd 1997/02/06 CSLaTeX font definitions
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -316,7 +317,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -357,7 +358,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -383,31 +384,37 @@ Now handling font encoding IL2 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+sty"
 \lst@mode=\count90
 \lst@gtempboxa=\box26
 \lst@token=\toks17
@@ -421,28 +428,31 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \lst@lineno=\count95
 \lst@maxwidth=\dimen109
 
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
+ty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count96
 \lst@skipnumbers=\count97
 \lst@framebox=\box27
 )
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
+"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks18
 \verbatim@line=\toks19
 \verbatim@in@stream=\read1
-)
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+) ("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks20
 \symAMSa=\mathgroup4
@@ -450,14 +460,17 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
+sty"
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -497,27 +510,32 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
+ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen110
 \Hy@linkcounter=\count98
 \Hy@pagecounter=\count99
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
+f"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count100
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
+cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4509.
@@ -548,24 +566,27 @@ LaTeX Info: Redefining \pageref on input line 6443.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
+ef"
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count106
 \c@bookmark@seq@number=\count107
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
+check.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip43
 )
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count108
 \Gm@cntv=\count109
@@ -580,8 +601,9 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks21
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+cfg"))
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count111
 \float@exts=\toks22
@@ -609,7 +631,8 @@ LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
 
-(C:\Users\David\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen122
@@ -622,10 +645,13 @@ LaTeX Font Info:    ... okay on input line 60.
 \MPnumerator=\count116
 \makeMPintoPDFobject=\count117
 \everyMPtoPDFconversion=\toks25
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+)
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -639,10 +665,12 @@ G,.JBIG2,.JB2,.eps]
 \AtBeginShipoutBox=\box31
 Package hyperref Info: Link coloring OFF on input line 60.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
+ty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
+estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count119
@@ -650,8 +678,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 60.
 LaTeX Info: Redefining \pageref on input line 60.
 LaTeX Info: Redefining \nameref on input line 60.
-
-(stano_kubik_vcelkova_pis.out) (stano_kubik_vcelkova_pis.out)
+ (stano_kubik_vcelkova_pis.out) (stano_kubik_vcelkova_pis.out)
 \@outlinefile=\write3
 \openout3 = `stano_kubik_vcelkova_pis.out'.
 
@@ -696,19 +723,24 @@ LaTeX Info: Redefining \nameref on input line 60.
 (stano_kubik_vcelkova_pis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 4.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 ...\v c}lenov t\IeC {\'\i }mu}{23}{section.6}
-                                                   [1])
+l.54 ...trib\IeC {\'u}tu}{25}{subsubsection.4.7.3}
+                                                   [1]
+Overfull \hbox (2.64531pt too wide) in paragraph at lines 86--86
+ [][] [][]\IL2/cmr/m/n/10 Webová slu-¾ba: Zís-ka-nie v¹et-kých en-tít spo-jo-va
+-cej ta-bu-µky Vedec-Publikácia[] []  
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `stano_kubik_vcelkova_pis.toc'.
 
@@ -755,13 +787,15 @@ Overfull \hbox (49.37485pt too wide) in paragraph at lines 90--110
 [3] [4]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 141.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+
+("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
- [5]
-<datovy_model.png, id=315, 881.2925pt x 668.4975pt>
+
+[5]
+<datovy_model.png, id=523, 881.2925pt x 668.4975pt>
 File: datovy_model.png Graphic file (type png)
 <use datovy_model.png>
 Package pdftex.def Info: datovy_model.png  used on input line 169.
@@ -784,7 +818,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.188 \newpage
                <./datovy_model.png>] [7] [8]
-<forms/formChooseRole.jpg, id=332, 221.32687pt x 71.51718pt>
+<forms/formChooseRole.jpg, id=540, 221.32687pt x 71.51718pt>
 File: forms/formChooseRole.jpg Graphic file (type jpg)
 <use forms/formChooseRole.jpg>
 Package pdftex.def Info: forms/formChooseRole.jpg  used on input line 297.
@@ -796,12 +830,12 @@ Package pdftex.def Info: forms/formChooseRole.jpg  used on input line 297.
                                                   \fi \fi 
 l.325 
        <./forms/formChooseRole.jpg>]
-<forms/formLogin.jpg, id=339, 249.93375pt x 153.57375pt>
+<forms/formLogin.jpg, id=547, 249.93375pt x 153.57375pt>
 File: forms/formLogin.jpg Graphic file (type jpg)
 <use forms/formLogin.jpg>
 Package pdftex.def Info: forms/formLogin.jpg  used on input line 328.
 (pdftex.def)             Requested size: 174.95242pt x 107.50089pt.
-<forms/formChooseAction.jpg, id=340, 292.84406pt x 71.51718pt>
+<forms/formChooseAction.jpg, id=548, 292.84406pt x 71.51718pt>
 File: forms/formChooseAction.jpg Graphic file (type jpg)
 <use forms/formChooseAction.jpg>
 Package pdftex.def Info: forms/formChooseAction.jpg  used on input line 344.
@@ -811,7 +845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-<forms/insert_article.png, id=341, 427.5975pt x 370.38374pt>
+<forms/insert_article.png, id=549, 427.5975pt x 370.38374pt>
 File: forms/insert_article.png Graphic file (type png)
 <use forms/insert_article.png>
 Package pdftex.def Info: forms/insert_article.png  used on input line 364.
@@ -829,13 +863,13 @@ l.367
                                                   \fi \fi 
 l.367 
        <./forms/formLogin.jpg> <./forms/formChooseAction.jpg>]
-<forms/add_existing_coauthor.png, id=348, 438.8897pt x 281.55188pt>
+<forms/add_existing_coauthor.png, id=556, 438.8897pt x 281.55188pt>
 File: forms/add_existing_coauthor.png Graphic file (type png)
 <use forms/add_existing_coauthor.png>
 Package pdftex.def Info: forms/add_existing_coauthor.png  used on input line 38
 9.
 (pdftex.def)             Requested size: 175.55276pt x 112.61874pt.
-<forms/new_coauthor.png, id=349, 447.17062pt x 155.07938pt>
+<forms/new_coauthor.png, id=557, 447.17062pt x 155.07938pt>
 File: forms/new_coauthor.png Graphic file (type png)
 <use forms/new_coauthor.png>
 Package pdftex.def Info: forms/new_coauthor.png  used on input line 395.
@@ -853,7 +887,7 @@ l.398
                                                   \fi \fi 
 l.398 
        <./forms/insert_article.png> <./forms/add_existing_coauthor.png>]
-<forms/formAddDigital.png, id=358, 435.12563pt x 531.48563pt>
+<forms/formAddDigital.png, id=566, 435.12563pt x 531.48563pt>
 File: forms/formAddDigital.png Graphic file (type png)
 <use forms/formAddDigital.png>
 Package pdftex.def Info: forms/formAddDigital.png  used on input line 421.
@@ -872,12 +906,12 @@ l.432
                                                   \fi \fi 
 l.432 
        <./forms/new_coauthor.png> <./forms/formAddDigital.png>]
-<forms/formDigitalObjects.jpg, id=368, 229.60782pt x 70.76437pt>
+<forms/formDigitalObjects.jpg, id=576, 229.60782pt x 70.76437pt>
 File: forms/formDigitalObjects.jpg Graphic file (type jpg)
 <use forms/formDigitalObjects.jpg>
 Package pdftex.def Info: forms/formDigitalObjects.jpg  used on input line 437.
 (pdftex.def)             Requested size: 91.84149pt x 28.30524pt.
-<forms/do_validation.png, id=369, 432.86719pt x 487.8225pt>
+<forms/do_validation.png, id=577, 432.86719pt x 487.8225pt>
 File: forms/do_validation.png Graphic file (type png)
 <use forms/do_validation.png>
 Package pdftex.def Info: forms/do_validation.png  used on input line 459.
@@ -903,7 +937,7 @@ File: forms/formLogin.jpg Graphic file (type jpg)
 <use forms/formLogin.jpg>
 Package pdftex.def Info: forms/formLogin.jpg  used on input line 499.
 (pdftex.def)             Requested size: 174.95242pt x 107.50089pt.
-<forms/formChooseActionLib.png, id=377, 242.40562pt x 51.94406pt>
+<forms/formChooseActionLib.png, id=585, 242.40562pt x 51.94406pt>
 File: forms/formChooseActionLib.png Graphic file (type png)
 <use forms/formChooseActionLib.png>
 Package pdftex.def Info: forms/formChooseActionLib.png  used on input line 512.
@@ -932,67 +966,569 @@ name{figure.13}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.532 \end{figure}
                    <./forms/formChooseActionLib.png>]
-<diagrams/diagNotification.jpg, id=386, 922.94812pt x 238.64156pt>
-File: diagrams/diagNotification.jpg Graphic file (type jpg)
-<use diagrams/diagNotification.jpg>
-Package pdftex.def Info: diagrams/diagNotification.jpg  used on input line 548.
+<diagrams/diagUpload.jpg, id=594, 1318.17468pt x 919.18407pt>
+File: diagrams/diagUpload.jpg Graphic file (type jpg)
+<use diagrams/diagUpload.jpg>
+Package pdftex.def Info: diagrams/diagUpload.jpg  used on input line 547.
+(pdftex.def)             Requested size: 527.26054pt x 367.66711pt.
 
-(pdftex.def)             Requested size: 369.1727pt x 95.45493pt.
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.14
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.560 	\end{itemize}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.15}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.560 	\end{itemize}
-                     <./diagrams/diagNotification.jpg>] [16] [17]
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 827.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 827.
-
-
-Overfull \hbox (24.4343pt too wide) in paragraph at lines 828--831
-\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Digital[]objects[]getByAtti
-bute \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-l
-ue \IL2/cmr/bx/n/10 Vstupy: 
+Overfull \hbox (117.6551pt too wide) in paragraph at lines 547--548
+ [][] 
  []
 
-[18] [19]
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.550 
+      ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 919.
+(hyperref)                removing `\textasciicaron' on input line 553.
+
+<diagrams/diagLoginLibrarian.jpg, id=601, 753.5653pt x 219.82124pt>
+File: diagrams/diagLoginLibrarian.jpg Graphic file (type jpg)
+<use diagrams/diagLoginLibrarian.jpg>
+Package pdftex.def Info: diagrams/diagLoginLibrarian.jpg  used on input line 56
+5.
+(pdftex.def)             Requested size: 301.42078pt x 87.92693pt.
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.568 
+       <./diagrams/diagUpload.jpg>]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 581.
+
+<diagrams/diagLoginResearcher.jpg, id=607, 848.4197pt x 310.15875pt>
+File: diagrams/diagLoginResearcher.jpg Graphic file (type jpg)
+<use diagrams/diagLoginResearcher.jpg>
+Package pdftex.def Info: diagrams/diagLoginResearcher.jpg  used on input line 5
+93.
+(pdftex.def)             Requested size: 339.36186pt x 124.0613pt.
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 609.
+
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.618 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+17}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.618 
+       <./diagrams/diagLoginLibrarian.jpg> <./diagrams/diagLoginResearcher.jpg>
+]
+<diagrams/diagAddCoauthors.jpg, id=614, 1065.9825pt x 320.69812pt>
+File: diagrams/diagAddCoauthors.jpg Graphic file (type jpg)
+<use diagrams/diagAddCoauthors.jpg>
+Package pdftex.def Info: diagrams/diagAddCoauthors.jpg  used on input line 621.
+
+(pdftex.def)             Requested size: 426.38545pt x 128.27696pt.
+
+Overfull \hbox (16.78001pt too wide) in paragraph at lines 621--622
+ [][] 
+ []
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 919.
+(hyperref)                removing `\textasciicaron' on input line 633.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 919.
+(hyperref)                removing `\textasciicaron' on input line 633.
 
 
-Overfull \hbox (16.1676pt too wide) in paragraph at lines 920--923
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 633.
+
+
+Overfull \hbox (11.19531pt too wide) in paragraph at lines 634--637
+\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Researcher[]getByAttribute 
+\IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \I
+L2/cmr/bx/n/10 Vstupy: 
+ []
+
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.18}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.664 		\item \textit
+                     {id} - ID novo vytvorenÃ©ho vedca <./diagrams/diagAddCoaut
+hors.jpg>]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 684.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 704.
+
+<diagrams/diagAddDigital.jpg, id=621, 788.9475pt x 188.20313pt>
+File: diagrams/diagAddDigital.jpg Graphic file (type jpg)
+<use diagrams/diagAddDigital.jpg>
+Package pdftex.def Info: diagrams/diagAddDigital.jpg  used on input line 722.
+(pdftex.def)             Requested size: 315.5734pt x 75.2799pt.
+[19]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 748.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 748.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 748.
+
+
+Overfull \hbox (16.1676pt too wide) in paragraph at lines 749--752
 \IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Proceedings[]getByAttribute
  \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \
 IL2/cmr/bx/n/10 Vstupy: 
  []
 
-[20]
-Overfull \hbox (7.21718pt too wide) in paragraph at lines 974--974
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.19}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.770 	\end{itemize}
+                     <./diagrams/diagAddDigital.jpg>]
+<diagrams/diagNotification.jpg, id=631, 922.94812pt x 238.64156pt>
+File: diagrams/diagNotification.jpg Graphic file (type jpg)
+<use diagrams/diagNotification.jpg>
+Package pdftex.def Info: diagrams/diagNotification.jpg  used on input line 802.
+
+(pdftex.def)             Requested size: 369.1727pt x 95.45493pt.
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.20
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.823 \subsubsection
+                    {WebovÃ¡ sluÅ¾ba: ZÃ­skanie vedca} <./diagrams/diagNotifica
+tion.jpg>]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 870.
+
+[22]
+<diagrams/diagAddDigitalLib.jpg, id=641, 765.6103pt x 174.6525pt>
+File: diagrams/diagAddDigitalLib.jpg Graphic file (type jpg)
+<use diagrams/diagAddDigitalLib.jpg>
+Package pdftex.def Info: diagrams/diagAddDigitalLib.jpg  used on input line 888
+.
+(pdftex.def)             Requested size: 306.2387pt x 69.85976pt.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 914.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 914.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 914.
+
+
+Overfull \hbox (16.1676pt too wide) in paragraph at lines 915--918
+\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Proceedings[]getByAttribute
+ \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \
+IL2/cmr/bx/n/10 Vstupy: 
+ []
+
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.21}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.936 	\end{itemize}
+                     <./diagrams/diagAddDigitalLib.jpg>]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 956.
+
+<diagrams/diagValidate.jpg, id=647, 1285.05093pt x 218.31563pt>
+File: diagrams/diagValidate.jpg Graphic file (type jpg)
+<use diagrams/diagValidate.jpg>
+Package pdftex.def Info: diagrams/diagValidate.jpg  used on input line 968.
+(pdftex.def)             Requested size: 514.01128pt x 87.32469pt.
+
+Overfull \hbox (104.40584pt too wide) in paragraph at lines 968--969
+ [][] 
+ []
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 980.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 980.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 980.
+
+
+Overfull \hbox (16.1676pt too wide) in paragraph at lines 981--984
+\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Proceedings[]getByAttribute
+ \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \
+IL2/cmr/bx/n/10 Vstupy: 
+ []
+
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.22}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.991 		\item \textit
+                     {proceedings} - list objektov typu Proceeding <./diagrams/
+diagValidate.jpg>]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1008.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1008.
+
+
+Overfull \hbox (24.4343pt too wide) in paragraph at lines 1009--1012
+\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Digital[]objects[]getByAtti
+bute \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-l
+ue \IL2/cmr/bx/n/10 Vstupy: 
+ []
+
+[25]
+
+LaTeX Warning: File `forms/Coach for Add digital object.png' not found on input
+ line 1067.
+
+<forms/Coach for Add digital object.png, id=658, 296.10625pt x 413.545pt>
+File: forms/Coach for Add digital object.png Graphic file (type png)
+<use forms/Coach for Add digital object.png>
+Package pdftex.def Info: forms/Coach for Add digital object.png  used on input 
+line 1067.
+(pdftex.def)             Requested size: 118.44038pt x 165.41505pt.
+
+LaTeX Warning: File `forms/Coach for adding information about article.png' not 
+found on input line 1073.
+
+<forms/Coach for adding information about article.png, id=659, 346.29375pt x 32
+6.21875pt>
+File: forms/Coach for adding information about article.png Graphic file (type p
+ng)
+<use forms/Coach for adding information about article.png>
+Package pdftex.def Info: forms/Coach for adding information about article.png  
+used on input line 1073.
+(pdftex.def)             Requested size: 138.51503pt x 130.48518pt.
+
+LaTeX Warning: File `forms/Coach for adding new author.png' not found on input 
+line 1079.
+
+<forms/Coach for adding new author.png, id=660, 313.17pt x 412.54124pt>
+File: forms/Coach for adding new author.png Graphic file (type png)
+<use forms/Coach for adding new author.png>
+Package pdftex.def Info: forms/Coach for adding new author.png  used on input l
+ine 1079.
+(pdftex.def)             Requested size: 125.26576pt x 165.01357pt.
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.23}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1082 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.24}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1082 
+        <./forms/Coach for Add digital object.png> <./forms/Coach for adding in
+formation about article.png>]
+
+LaTeX Warning: File `forms/Coach for Display Institutions.png' not found on inp
+ut line 1085.
+
+<forms/Coach for Display Institutions.png, id=669, 776.9025pt x 225.84375pt>
+File: forms/Coach for Display Institutions.png Graphic file (type png)
+<use forms/Coach for Display Institutions.png>
+Package pdftex.def Info: forms/Coach for Display Institutions.png  used on inpu
+t line 1085.
+(pdftex.def)             Requested size: 310.7555pt x 90.33589pt.
+
+Overfull \hbox (25.09477pt too wide) in paragraph at lines 1085--1086
+ [][] 
+ []
+
+
+LaTeX Warning: File `forms/Coach for displaying researchers.png' not found on i
+nput line 1091.
+
+<forms/Coach for displaying researchers.png, id=670, 765.86125pt x 243.91125pt>
+
+File: forms/Coach for displaying researchers.png Graphic file (type png)
+<use forms/Coach for displaying researchers.png>
+Package pdftex.def Info: forms/Coach for displaying researchers.png  used on in
+put line 1091.
+(pdftex.def)             Requested size: 306.33907pt x 97.56276pt.
+
+Overfull \hbox (29.23386pt too wide) in paragraph at lines 1091--1092
+ [][] 
+ []
+
+
+LaTeX Warning: File `forms/Coach for choosing role.png' not found on input line
+ 1097.
+
+<forms/Coach for choosing role.png, id=671, 231.86626pt x 97.36375pt>
+File: forms/Coach for choosing role.png Graphic file (type png)
+<use forms/Coach for choosing role.png>
+Package pdftex.def Info: forms/Coach for choosing role.png  used on input line 
+1097.
+(pdftex.def)             Requested size: 92.74484pt x 38.9448pt.
+
+LaTeX Warning: File `forms/Coach for login.png' not found on input line 1103.
+
+<forms/Coach for login.png, id=672, 265.99374pt x 173.64874pt>
+File: forms/Coach for login.png Graphic file (type png)
+<use forms/Coach for login.png>
+Package pdftex.def Info: forms/Coach for login.png  used on input line 1103.
+(pdftex.def)             Requested size: 106.3956pt x 69.45825pt.
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.25}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1106 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.26}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1106 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.27}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1106 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.28}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1106 
+        <./forms/Coach for adding new author.png> <./forms/Coach for Display In
+stitutions.png> <./forms/Coach for displaying researchers.png> <./forms/Coach f
+or choosing role.png>]
+
+LaTeX Warning: File `forms/Coach for research action.png' not found on input li
+ne 1109.
+
+<forms/Coach for research action.png, id=685, 333.245pt x 91.34125pt>
+File: forms/Coach for research action.png Graphic file (type png)
+<use forms/Coach for research action.png>
+Package pdftex.def Info: forms/Coach for research action.png  used on input lin
+e 1109.
+(pdftex.def)             Requested size: 133.29562pt x 36.53584pt.
+
+LaTeX Warning: File `forms/Coach for validating publication.png' not found on i
+nput line 1115.
+
+<forms/Coach for validating publication.png, id=686, 791.95876pt x 211.79124pt>
+
+File: forms/Coach for validating publication.png Graphic file (type png)
+<use forms/Coach for validating publication.png>
+Package pdftex.def Info: forms/Coach for validating publication.png  used on in
+put line 1115.
+(pdftex.def)             Requested size: 316.7779pt x 84.715pt.
+
+Overfull \hbox (40.25613pt too wide) in paragraph at lines 1115--1116
+ [][] 
+ []
+
+
+LaTeX Warning: File `forms/Coach choice to add couthors.png' not found on input
+ line 1121.
+
+<forms/Coach choice to add couthors.png, id=687, 323.2075pt x 94.3525pt>
+File: forms/Coach choice to add couthors.png Graphic file (type png)
+<use forms/Coach choice to add couthors.png>
+Package pdftex.def Info: forms/Coach choice to add couthors.png  used on input 
+line 1121.
+(pdftex.def)             Requested size: 129.2807pt x 37.74031pt.
+
+LaTeX Warning: File `forms/Coach Choose article.png' not found on input line 11
+27.
+
+<forms/Coach Choose article.png, id=688, 787.94376pt x 266.9975pt>
+File: forms/Coach Choose article.png Graphic file (type png)
+<use forms/Coach Choose article.png>
+Package pdftex.def Info: forms/Coach Choose article.png  used on input line 112
+7.
+(pdftex.def)             Requested size: 315.17192pt x 106.79709pt.
+
+LaTeX Warning: File `forms/Coach choose conference.png' not found on input line
+ 1133.
+
+<forms/Coach choose conference.png, id=689, 800.9925pt x 289.08pt>
+File: forms/Coach choose conference.png Graphic file (type png)
+<use forms/Coach choose conference.png>
+Package pdftex.def Info: forms/Coach choose conference.png  used on input line 
+1133.
+(pdftex.def)             Requested size: 320.39133pt x 115.62994pt.
+
+Overfull \hbox (10.03604pt too wide) in paragraph at lines 1133--1134
+ [][] 
+ []
+
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.29}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1136 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.30}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1136 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.31}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1136 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.32}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1136 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.33}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1136 
+        <./forms/Coach for login.png> <./forms/Coach for research action.png> <
+./forms/Coach for validating publication.png> <./forms/Coach choice to add cout
+hors.png> <./forms/Coach Choose article.png>]
+
+LaTeX Warning: File `forms/Choach choose proceeding.png' not found on input lin
+e 1139.
+
+<forms/Choach choose proceeding.png, id=704, 753.81625pt x 223.83624pt>
+File: forms/Choach choose proceeding.png Graphic file (type png)
+<use forms/Choach choose proceeding.png>
+Package pdftex.def Info: forms/Choach choose proceeding.png  used on input line
+ 1139.
+(pdftex.def)             Requested size: 301.52116pt x 89.5329pt.
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1143.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1146.
+
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.34}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1185 		\item \textit
+                      {team\_id} - ID tÃ­mu, slÃºÅ¾i na autentifikÃ¡ciu webo...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.35}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1185 		\item \textit
+                      {team\_id} - ID tÃ­mu, slÃºÅ¾i na autentifikÃ¡ciu webo...
+ <./forms/Coach choose conference.png> <./forms/Choach choose proceeding.png>]
+[30]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1269.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1269.
+
+
+Overfull \hbox (24.4343pt too wide) in paragraph at lines 1270--1273
+\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Digital[]objects[]getByAtti
+bute \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-l
+ue \IL2/cmr/bx/n/10 Vstupy: 
+ []
+
+[31]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1361.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1361.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1361.
+
+
+Overfull \hbox (16.1676pt too wide) in paragraph at lines 1362--1365
+\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Proceedings[]getByAttribute
+ \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \
+IL2/cmr/bx/n/10 Vstupy: 
+ []
+
+[32]
+Overfull \hbox (7.21718pt too wide) in paragraph at lines 1416--1416
 []\IL2/cmr/bx/n/10 Webová slu-¾ba: Zís-ka-nie v¹et-kých en-tít spo-jo-va-cej ta
 -bu-µky Vedec-Publikácia 
  []
@@ -1000,216 +1536,105 @@ Overfull \hbox (7.21718pt too wide) in paragraph at lines 974--974
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 974.
+(hyperref)                removing `\textasciicaron' on input line 1416.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 982.
+(hyperref)                removing `\textasciicaron' on input line 1424.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 982.
+(hyperref)                removing `\textasciicaron' on input line 1424.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 982.
+(hyperref)                removing `\textasciicaron' on input line 1424.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 996.
+(hyperref)                removing `\textasciicaron' on input line 1438.
+
+[33]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1472.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1030.
+(hyperref)                removing `\textasciicaron' on input line 1472.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1030.
+(hyperref)                removing `\textasciicaron' on input line 1472.
 
 
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1030.
-
-
-Overfull \hbox (11.19531pt too wide) in paragraph at lines 1031--1034
+Overfull \hbox (11.19531pt too wide) in paragraph at lines 1473--1476
 \IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Researcher[]getByAttribute 
 \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \I
 L2/cmr/bx/n/10 Vstupy: 
  []
 
-[21] [22]
+[34] [35]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1151.
+(hyperref)                removing `\textasciicaron' on input line 1529.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+n'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1154.
+(hyperref)                removing `\textasciicaron' on input line 1532.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1156.
+(hyperref)                removing `\textasciicaron' on input line 1534.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1159.
-[23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1159.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1537.
+[36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1537.
  (stano_kubik_vcelkova_pis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1159.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1159.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1537.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1537.
 
-
-
-Package rerunfilecheck Warning: File `stano_kubik_vcelkova_pis.out' has changed
-.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `stano_kubik_vcelkova_pis.out':
-(rerunfilecheck)             Before: 57C761F4DAF09C0F0723910E2953FA44;5430
-(rerunfilecheck)             After:  2F656B663967DFD740BE774AFF595FB8;5885.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1159.
+Package rerunfilecheck Info: File `stano_kubik_vcelkova_pis.out' has not change
+d.
+(rerunfilecheck)             Checksum: D1A37E861BE3155CF1FB8CC842532B4B;10625.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1537.
  ) 
 Here is how much of TeX's memory you used:
- 8600 strings out of 493305
- 123905 string characters out of 3138874
- 225068 words of memory out of 3000000
- 11901 multiletter control sequences out of 15000+200000
+ 8769 strings out of 493305
+ 130773 string characters out of 3129802
+ 225098 words of memory out of 3000000
+ 12022 multiletter control sequences out of 15000+200000
  13477 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,32p,874b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.4.36} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.35} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.34} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.33} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.32} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.31} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.30} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.29} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.28} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.27} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.26} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.25} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.24} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.23} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.22} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.21} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.20} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.19} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.18} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.17} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.16} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.15} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.14} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.13} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.12} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.11} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.10} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.9} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.8} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.7} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.6} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
- <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600
-\csti10.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csf
-onts\dpi600\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\public\csfonts\dpi600\csbx10.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\public\csfonts\dpi720\csbx12.pk> <C:\Users\David\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\cssl10.pk> <C:\Users\David\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\cscsc10.pk> <C:\Users\D
-avid\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\csr10.pk> <
-C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi720\c
-sti12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfon
-ts\dpi1037\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
-public\csfonts\dpi600\csr12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\public\csfonts\dpi864\cscsc10.pk> <C:\Users\David\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\public\csfonts\dpi1037\cscsc10.pk><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on stano_kubik_vcelkova_pis.pdf (24 pages, 579682 bytes).
+ 28i,8n,32p,874b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi6
+00\csti10.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\c
+sfonts\dpi600\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\public\csfonts\dpi600\csbx10.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fo
+nts\pk\ljfour\public\csfonts\dpi720\csbx12.pk> <C:\Users\David\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\cssl10.pk> <C:\Users\David\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\cscsc10.pk> <C:\Users
+\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\csr10.pk>
+ <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi720
+\csti12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csf
+onts\dpi1037\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\public\csfonts\dpi600\csr12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\public\csfonts\dpi864\cscsc10.pk> <C:\Users\David\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\public\csfonts\dpi1037\cscsc10.pk><C:/Users/David/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on stano_kubik_vcelkova_pis.pdf (37 pages, 1710469 bytes).
 PDF statistics:
- 985 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
- 501 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1299 PDF objects out of 1440 (max. 8388607)
+ 170 named destinations out of 1000 (max. 500000)
+ 929 words of extra memory for PDF output out of 10000 (max. 10000000)
 

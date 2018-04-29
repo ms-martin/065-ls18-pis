@@ -170,14 +170,14 @@ Vo vyššie pomenovaných biznis procesoch sme identifikovali nasledujúce entit
 \caption{ER diagram dátového modelu}
 \end{figure}
 
-\subsection{Biznis proces upload a bibliographic record}
-V nasledujúcich podkapitolách sa bližšie pozrieme na biznis proces - nahranie bibliografického záznamu.
+\subsection{Main Business Process}
+V nasledujúcich podkapitolách sa bližšie pozrieme na hlavný biznis proces.
 
 \subsubsection{Cieľ biznis procesu}
 Cieľom tohto biznis procesu je nahranie bibliografického záznamu do konkrétneho digitálneho repozitára. Knihovník vykoná kontrolu údajov a potvrdí ich potencionálnu správnosť.
 
 \subsubsection{Používateľské roly}
-Jednotlivé kroky procesu sú rozdelené do troch plaveckých dráh.
+Jednotlivé kroky procesu sú rozdelené vo viacerých plaveckých dráhach, ktoré predstavujú dva samostatné systémy.
 
 \begin{itemize}
 \item \textbf{Systém} Táto plavecká dráha obsahuje úlohy, ktoré bude vykonávať nami navrhovaný systém.
@@ -280,8 +280,8 @@ Tento biznis objekt reprezentuje digitálny objekt uložený v digitálnom repoz
 \item \textbf{article\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na bibliografický záznam, z ktorého bol digitálny objekt vytvorený.
 \end{itemize}
 
-\subsubsection{Kroky procesu upload a bibliographic record}
-V tejto časti uvádzame podrobný opis krokov biznis procesu nahranie bibliografického záznamu a rozhodovacích blokov tohto biznis procesu.
+\subsubsection{Kroky Main Business Process}
+V tejto časti uvádzame podrobný opis krokov hlavného biznis procesu a rozhodovacích blokov tohto biznis procesu.
 
 \begin{itemize}
 \item \textbf{Choose role - ľudská úloha}
@@ -532,320 +532,41 @@ Prostredníctvom grafického používateľského rozhrania používateľ (knihov
 \end{figure}
 
 \section{Implementácia systémových úloh}
+\paragraph{Biznis proces - Hlavný biznis proces}
+\textbf{Rola:} Super User, Vedec, Systém, Knihovník\\
+\textbf{Výstup:}
 
 \begin{itemize}
-\item \textbf{Send notification - systémová úloha}
+\item \textbf{finished} - pravdivostná hodnota, či biznis proces skončil
 \end{itemize}
 
-\textbf{Rola:} System\\
-\textbf{Vstup:} objekt \textit{article} typu \textit{Article}.
-
-\begin{itemize}
-\item \textbf{article} - objekt typu Article
-\end{itemize}
-
-Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltruje tie záznamy, ktoré zodpovedajú konkrétnemu článku. Pre každý vyfiltrovaný záznam získa vedca a tomu pošle notifikáciu. Vedec je notifikovaný email-om a prostredníctvo telefonického hovoru.
+Používateľ zadá svoje prihlasovacie údaje. Systém overí správnosť týchto údajov a v prípade správnych prihlasovacích údajov, prihlási používateľa ako knihovníka.
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{diagrams/diagNotification.jpg} 
-\caption{Diagram podprocesu poslania notifikácií}
+\includegraphics[scale=0.4]{diagrams/diagUpload.jpg} 
+\caption{Diagram hlavného biznis procesu}
 \end{figure}
 
-\subsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
-\textbf{Názov služby:} WS\_Article\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{attributes\_name} - názov atribútu
-		\item \textit{attributes\_value} - hodnota atribútu
-		\item \textit{listOf.Integer()} - zoznam ID vedeckých publikácií, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{articles} - list objektov typu Article
-	\end{itemize}
+Predstavuje hlavný biznis proces, ktorý sa skladá z mnoho podprocesov, ktoré vykonávajú samotnú funkcionalitu systému. Hlavný biznis proces zobrazuje dva systémy, ktoré spolupracujú na splnení biznis procesu a jeho cieľov. Na samostatné funkcionality systému sa pozrieme v nasledovných podkapitolách:
 
-\subsection{Skript: Null counter}
-Vynuluje počítadlo autorov vedeckej publikácie.
+\subsection{Login as Librarian - používateľská úloha}
+\textbf{Rola:} Knihovník\\
+\textbf{Výstup:}
 
-\subsection{Webová služba: Získanie vedca}
-\textbf{Názov služby:} WS\_Researcher\_find
-\textbf{Metóda služby:} getById
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID vedca
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{researcher} - objekt typu Researcher
-	\end{itemize}
+\begin{itemize}
+\item \textbf{librarian} - objekt typu Librarian
+\end{itemize}
 
+Používateľ zadá svoje prihlasovacie údaje. Systém overí správnosť týchto údajov a v prípade správnych prihlasovacích údajov, prihlási používateľa ako knihovníka.
 
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagLoginLibrarian.jpg} 
+\caption{Diagram podprocesu prihlásenia ako knihovník}
+\end{figure}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%
-
-\subsection{Webová služba: Získanie vedeckej publikácie}
-\textbf{Názov služby:} WS\_Article\_find
-\textbf{Metóda služby:} getById
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID vedeckej publikácie
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{article} - objekt typu Article
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie všetkých vedeckých publikácií}
-\textbf{Názov služby:}  WS\_Article\_findAll
-\textbf{Metóda služby:} getAll
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{articles} - list objektov typu Article
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
-\textbf{Názov služby:} WS\_Article\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{attributes\_name} - názov atribútu
-		\item \textit{attributes\_value} - hodnota atribútu
-		\item \textit{listOf.Integer()} - zoznam ID vedeckých publikácií, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{articles} - list objektov typu Article
-	\end{itemize}
-	
-\subsection{Webová služba: Vloženie vedeckej publikácie}
-\textbf{Názov služby:} WS\_Article\_insert
-\textbf{Metóda služby:} insert
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{Article} - objekt typu Article s vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID novo vytvorenej vedeckej publikácie
-	\end{itemize}
-	
-\subsection{Webová služba: Telefonické notifikovanie}
-\textbf{Názov služby:} WS\_Call
-\textbf{Metóda služby:} notify
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{phone} - telefónne číslo, na ktoré sa má zatelefonovať
-		\item \textit{"You were added as a coauthor"} - predmet správy, ktorá sa odošle
-		\item \textit{"You are coauthor of article: " + tw.local.article\_id.toString()} - správa, ktorá sa telefonicky oznámi, kde article\_id.toString() predstavuje ID článku, ktorého je príjemca telefonátu spoluautorom
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{success} - pravdivostná hodnota, ktorá vyjadruje, či sa podarilo telefonicky notifikovať spoluautora vedeckej publikácie
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie všetkých vedeckých konferencií}
-\textbf{Názov služby:} WS\_Conference\_findAll
-\textbf{Metóda služby:} getAll
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{conferences} - list objektov typu Conference
-	\end{itemize}
-	
-\subsection{Webová služba: Vloženie vedeckej konferencie}
-\textbf{Názov služby:} WS\_Conference\_insert
-\textbf{Metóda služby:} insert
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{Conference} - objekt typu Conference s vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID novo vytvorenej vedeckej konferencie
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie všetkých digitálnych objektov}
-\textbf{Názov služby:} WS\_Digital\_object\_findAll
-\textbf{Metóda služby:} getAll
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{digital\_objects} - list objektov typu Digital\_object
-	\end{itemize}
-	
-\subsection{Webová služba: Vloženie digitálneho objektu}
-\textbf{Názov služby:} WS\_Digital\_object\_insert
-\textbf{Metóda služby:} insert
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{digital\_object} - objekt typu Digital\_object s vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID novo vytvoreného digitálneho objektu
-	\end{itemize}
-	
-\subsection{Webová služba: Aktualizovanie údajov digitálneho objektu}
-\textbf{Názov služby:} WS\_Digital\_object\_update
-\textbf{Metóda služby:} update
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{id} - ID digitálneho objektu, ktorý sa má aktualizovať
-		\item \textit{digital\_object} - objekt typu Digital\_object s vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{changes} - počet atribútov digitálneho objektu, ktoré sa aktualizovali
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie digitálneho objektu na základe ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Digital\_objects\_getByAttibute
-\textbf{Metóda služby:} getByAttributeValue
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{attribute} - názov atribútu, podľa ktorého sa má vyhľadávať
-		\item \textit{value} - hodnota atribútu, podľa ktorého sa má vyhľadávať
-		\item \textit{listOf.Integer()} - zoznam ID entít Vedec-Publikácia, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{digital\_objects\_array} - list objektov typu Digital\_object
-	\end{itemize}
-	
-\subsection{Webová služba: Vloženie logovacieho záznamu}
-\textbf{Názov služby:} WS\_Events\_insert
-\textbf{Metóda služby:} insert
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{event} - objekt typu Events vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID novo vytvoreného logovacieho záznamu
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie všetkých inštitúcií}
-\textbf{Názov služby:} WS\_Institution\_findAll
-\textbf{Metóda služby:} getAll
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{institutions} - list objektov typu Institution
-	\end{itemize}
-	
-\subsection{Webová služba: Vloženie inštitúcie}
-\textbf{Názov služby:} WS\_Institution\_insert
-\textbf{Metóda služby:} insert
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{institution} - objekt typu Institution s vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID novo vytvorenej inštitúcie
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie knihovníka}
+\subsubsection{Webová služba: Získanie knihovníka}
 \textbf{Názov služby:} WS\_Librarian\_find
 \textbf{Metóda služby:} getById
 \textbf{Vstupy:}
@@ -857,128 +578,23 @@ Vynuluje počítadlo autorov vedeckej publikácie.
 		\item \textit{librarian} - objekt typu Librarian
 	\end{itemize}
 	
-\subsection{Webová služba: Získanie všetkých knihovníkov}
-\textbf{Názov služby:} WS\_Librarian\_findAll
-\textbf{Metóda služby:} getAll
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{librarians} - list objektov typu Librarian
-	\end{itemize}
-	
-\subsection{Webová služba: Vloženie knihovníka}
-\textbf{Názov služby:} WS\_Librarian\_insert
-\textbf{Metóda služby:} insert
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{librarian} - objekt typu Librarian s vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID novo vytvoreného knihovníka
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie všetkých zborníkov}
-\textbf{Názov služby:} WS\_Proceedings\_findAll
-\textbf{Metóda služby:} getAll
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{proceedingss} - list objektov typu Proceedings
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Proceedings\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{attributes\_name} - názov atribútu
-		\item \textit{attributes\_value} - hodnota atribútu
-		\item \textit{listOf.Integer()} - zoznam ID zborníkov, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{proceedings} - list objektov typu Proceeding
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie zborníka}
-\textbf{Názov služby:} WS\_Proceedings\_getById
-\textbf{Metóda služby:} getById
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID zborníka
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{proceedings} - objekt typu Proceedings
-	\end{itemize}
-	
-\subsection{Webová služba: Vloženie zborníka}
-\textbf{Názov služby:} WS\_Proceedings\_insert
-\textbf{Metóda služby:} insert
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{proceedings} - objekt typu Proceedings s vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID novo vytvoreného zborníka
-	\end{itemize}
-	
-\subsection{Webová služba: Aktualizovanie údajov zborníka}
-\textbf{Názov služby:} WS\_Proceedings\_update
-\textbf{Metóda služby:} update
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{id} - ID zborníka, ktorého údaje sa majú aktualizovať
-		\item \textit{proceedings} - objekt typu Proceedings s vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{changes} - počet atribútov digitálneho objektu, ktoré sa aktualizovali
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie všetkých entít spojovacej tabuľky Vedec-Publikácia}
-\textbf{Názov služby:} WS\_Researcher\_Article\_getAll
-\textbf{Metóda služby:} getAll
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{researcher\_articles} - list objektov typu Researcher\_Article
-	\end{itemize}
-	
-\subsection{Webová služba: Získanie entity Vedec-Publikácia podľa ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Researcher\_article\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{attribute\_name} - názov atribútu, podľa ktorého sa má vyhľadávať
-		\item \textit{attribute\_value} - hodnota atribútu, podľa ktorého sa má vyhľadávať
-		\item \textit{listOf.Integer()} - zoznam ID entít Vedec-Publikácia, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{researcher\_articles} - list objektov typu Researcher\_Article
-	\end{itemize}
-	
-\subsection{Webová služba: Vloženie entity spojovacej tabuľky Vedec - Publikácia}
-\textbf{Názov služby:} WS\_Researcher\_article\_insert
-\textbf{Metóda služby:} insert
-\textbf{Vstupy:}
-	\begin{itemize}
-		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
-		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
-		\item \textit{researcher\_article} - objekt typu Researcher\_Article s vyplnenými údajmi
-	\end{itemize}
-\textbf{Výstupy:}
-	\begin{itemize}
-		\item \textit{id} - ID novo vytvorenej entity spojovacej tabuľky Vedec - Publikácia
-	\end{itemize}
+\subsection{Login as Researcher - používateľská úloha}
+\textbf{Rola:} Vedec\\
+\textbf{Výstup:}
 
-\subsection{Webová služba: Získanie vedca}
+\begin{itemize}
+\item \textbf{researcher} - objekt typu Researcher
+\end{itemize}
+
+Používateľ zadá svoje prihlasovacie údaje. Systém overí správnosť týchto údajov a v prípade správnych prihlasovacích údajov, prihlási používateľa ako vedca.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagLoginResearcher.jpg} 
+\caption{Diagram podprocesu prihlásenia ako vedec}
+\end{figure}
+
+\subsubsection{Webová služba: Získanie vedca}
 \textbf{Názov služby:} WS\_Researcher\_find
 \textbf{Metóda služby:} getById
 \textbf{Vstupy:}
@@ -990,15 +606,31 @@ Vynuluje počítadlo autorov vedeckej publikácie.
 		\item \textit{researcher} - objekt typu Researcher
 	\end{itemize}
 
-\subsection{Webová služba: Získanie všetkých vedcov}
-\textbf{Názov služby:} WS\_Researcher\_findAll
+\subsection{Add coauthors - používateľská úloha}
+\textbf{Rola:} Vedec\\
+\textbf{Vstup:}
+
+\begin{itemize}
+\item \textbf{article\_id} - Integer hodnota reprezentujúca ID článku
+\end{itemize}
+
+Používateľ si vyberie článok, ku ktorému chce pridať spoluautorov a následne si buď vyberie zo zoznamu spoluautora, alebo ak v tomto zozname nie je, tak zadá údaje spoluautora manuálne.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagAddCoauthors.jpg} 
+\caption{Diagram podprocesu pridania spoluautorov}
+\end{figure}
+
+\subsubsection{Webová služba: Získanie všetkých inštitúcií}
+\textbf{Názov služby:} WS\_Institution\_findAll
 \textbf{Metóda služby:} getAll
 \textbf{Výstupy:}
 	\begin{itemize}
-		\item \textit{researchers} - list objektov typu Researcher
+		\item \textit{institutions} - list objektov typu Institution
 	\end{itemize}
 	
-\subsection{Webová služba: Získaj vedca podľa ľubovoľného atribútu}
+\subsubsection{Webová služba: Získaj vedca podľa ľubovoľného atribútu}
 \textbf{Názov služby:} WS\_Researcher\_getByAttribute
 \textbf{Metóda služby:} getByAttributeValue
 \textbf{Vstupy:}
@@ -1012,7 +644,13 @@ Vynuluje počítadlo autorov vedeckej publikácie.
 		\item \textit{researchers} - list objektov typu Researcher 
 	\end{itemize}
 	
-\subsection{Webová služba: Vloženie vedca}
+\subsubsection{Skript: Nastav afiláciu}
+Skript na naplnenie pola na data do grafickeho rozhrania ku radio buttonom.
+
+\subsubsection{Skript: Vynuluj index spoluautorov}
+Skript, ktorý nastaví index na nulu. Je to potrebné kvôli cykleniu.
+
+\subsubsection{Webová služba: Vloženie vedca}
 \textbf{Názov služby:} WS\_Reasercher\_insert
 \textbf{Metóda služby:} insert
 \textbf{Vstupy:}
@@ -1025,8 +663,176 @@ Vynuluje počítadlo autorov vedeckej publikácie.
 	\begin{itemize}
 		\item \textit{id} - ID novo vytvoreného vedca
 	\end{itemize}
+
+\subsubsection{Webová služba: Vloženie logovacieho záznamu}
+\textbf{Názov služby:} WS\_Events\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{event} - objekt typu Events vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného logovacieho záznamu
+	\end{itemize}
 	
-\subsection{Webová služba: Poslanie emailovej notifikácie}
+\subsubsection{Skript: Pridaj nového spoluautora ku vedeckej publikácii}
+Skript na vytvorenie nového objektu, ktorý priradí nového spoluautora k danej vedeckej publikácii. Potom tento objekt pridá webová služba do prepojovacej tabuľky Researcher\_Article.
+
+\subsubsection{Webová služba: Vloženie entity spojovacej tabuľky Vedec - Publikácia}
+\textbf{Názov služby:} WS\_Researcher\_article\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{researcher\_article} - objekt typu Researcher\_Article s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej entity spojovacej tabuľky Vedec - Publikácia
+	\end{itemize}
+	
+\subsubsection{Skript: Pridaj existujúceho spoluautora ku vedeckej publikácii}
+Vytvorí objekt do prepojovacej tabuľky. Existujúceho autora priradí k danej vedeckej publikácii.
+
+\subsubsection{Skript: Inkrementuj index spoluautorov}
+Skript na inkrementovanie indexu spoluautorov. Je potrebný pre správne fungovanie cyklu.
+
+\subsection{Add digital object by Researcher - používateľská úloha}
+\textbf{Rola:} Vedec\\
+\textbf{Vstup:}
+
+\begin{itemize}
+\item \textbf{logged\_researcher} - objekt typu Researcher
+\end{itemize}
+
+\textbf{Výstup:}
+
+\begin{itemize}
+\item \textbf{chosen\_article} - objekt typu Article
+\end{itemize}
+
+Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú publikáciu. Následne k tomuto článku priradí digitálny objekt.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagAddDigital.jpg} 
+\caption{Diagram podprocesu pridávania digitálnych objektov vedcom}
+\end{figure}
+
+\subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
+\textbf{Názov služby:} WS\_Article\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID vedeckých publikácií, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{articles} - list objektov typu Article
+	\end{itemize}
+
+\subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
+\textbf{Názov služby:} WS\_Conference\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{conferences} - list objektov typu Conference
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID zborníkov, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{proceedings} - list objektov typu Proceeding
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie digitálneho objektu}
+\textbf{Názov služby:} WS\_Digital\_object\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{digital\_object} - objekt typu Digital\_object s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného digitálneho objektu
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie logovacieho záznamu}
+\textbf{Názov služby:} WS\_Events\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{event} - objekt typu Events vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného logovacieho záznamu
+	\end{itemize}
+
+\subsection{Send notification - systémová úloha}
+\textbf{Rola:} Systém\\
+\textbf{Vstup:}
+
+\begin{itemize}
+\item \textbf{article} - objekt typu Article
+\end{itemize}
+
+Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltruje tie záznamy, ktoré zodpovedajú konkrétnemu článku. Pre každý vyfiltrovaný záznam získa vedca a tomu pošle notifikáciu. Vedec je notifikovaný email-om a prostredníctvo telefonického hovoru.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagNotification.jpg} 
+\caption{Diagram podprocesu poslania notifikácií}
+\end{figure}
+
+\subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
+\textbf{Názov služby:} WS\_Article\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID vedeckých publikácií, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{articles} - list objektov typu Article
+	\end{itemize}
+
+\subsubsection{Skript: Null counter}
+Vynuluje počítadlo autorov vedeckej publikácie. Tento skript je potrebný pre správne fungovanie cyklu pre poslanie emailovej a telefonickej notifikácie všetkým spoluautorom.
+
+\subsubsection{Webová služba: Získanie vedca}
+\textbf{Názov služby:} WS\_Researcher\_find
+\textbf{Metóda služby:} getById
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID vedca
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{researcher} - objekt typu Researcher
+	\end{itemize}
+
+\subsubsection{Webová služba: Poslanie emailovej notifikácie}
 \textbf{Názov služby:} WS\_Send\_email
 \textbf{Metóda služby:} notify
 \textbf{Vstupy:}
@@ -1042,12 +848,273 @@ Vynuluje počítadlo autorov vedeckej publikácie.
 		\item \textit{success} - pravdivostná hodnota, ktorá vyjadruje, či sa email podarilo odoslať
 	\end{itemize}
 
+\subsubsection{Webová služba: Telefonické notifikovanie}
+\textbf{Názov služby:} WS\_Call
+\textbf{Metóda služby:} notify
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{phone} - telefónne číslo, na ktoré sa má zatelefonovať
+		\item \textit{"You were added as a coauthor"} - predmet správy, ktorá sa odošle
+		\item \textit{"You are coauthor of article: " + tw.local.article\_id.toString()} - správa, ktorá sa telefonicky oznámi, kde article\_id.toString() predstavuje ID článku, ktorého je príjemca telefonátu spoluautorom
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{success} - pravdivostná hodnota, ktorá vyjadruje, či sa podarilo telefonicky notifikovať spoluautora vedeckej publikácie
+	\end{itemize}
 
+\subsubsection{Skript: Increment counter}
+Zvýši počítadlo autorov vedeckej publikácie o jedna. Tento skript je potrebný pre správne fungovanie cyklu pre poslanie emailovej a telefonickej notifikácie všetkým spoluautorom.
 
+\subsection{Add digital object by Librarian - používateľská úloha}
+\textbf{Rola:} Knihovník\\
+\textbf{Vstup:}
 
+\begin{itemize}
+\item \textbf{logged\_librarian} - objekt typu Librarian
+\end{itemize}
 
+\textbf{Výstup:}
 
+\begin{itemize}
+\item \textbf{chosen\_article} - objekt typu Article
+\end{itemize}
+
+Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú publikáciu. Následne k tomuto článku priradí digitálny objekt.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagAddDigitalLib.jpg} 
+\caption{Diagram podprocesu pridávania digitálnych objektov knihovníkom}
+\end{figure}
+
+\subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
+\textbf{Názov služby:} WS\_Article\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID vedeckých publikácií, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{articles} - list objektov typu Article
+	\end{itemize}
+
+\subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
+\textbf{Názov služby:} WS\_Conference\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{conferences} - list objektov typu Conference
+	\end{itemize}
 	
+\subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID zborníkov, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{proceedings} - list objektov typu Proceeding
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie digitálneho objektu}
+\textbf{Názov služby:} WS\_Digital\_object\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{digital\_object} - objekt typu Digital\_object s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného digitálneho objektu
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie logovacieho záznamu}
+\textbf{Názov služby:} WS\_Events\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{event} - objekt typu Events vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného logovacieho záznamu
+	\end{itemize}
+	
+\subsection{Validate digital object - používateľská úloha}
+\textbf{Rola:} Knihovník\\
+\textbf{Vstup:}
+
+\begin{itemize}
+\item \textbf{librarian} - objekt typu Librarian
+\end{itemize}
+
+Používateľ vyberie konferenciu, zborník, a článok, pre ktorý sa načítajú digitálne objekty. Používateľ môže validovať viacero digitálnych objektov v cykle.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagValidate.jpg} 
+\caption{Diagram podprocesu validovania digitálneho objektu}
+\end{figure}
+
+\subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
+\textbf{Názov služby:} WS\_Conference\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{conferences} - list objektov typu Conference
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID zborníkov, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{proceedings} - list objektov typu Proceeding
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
+\textbf{Názov služby:} WS\_Article\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID vedeckých publikácií, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{articles} - list objektov typu Article
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie digitálneho objektu na základe ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Digital\_objects\_getByAttibute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attribute} - názov atribútu, podľa ktorého sa má vyhľadávať
+		\item \textit{value} - hodnota atribútu, podľa ktorého sa má vyhľadávať
+		\item \textit{listOf.Integer()} - zoznam ID entít Vedec-Publikácia, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{digital\_objects\_array} - list objektov typu Digital\_object
+	\end{itemize}
+	
+\subsubsection{Skript: Vyber len doteraz nezvalidované digitálne objekty}
+Skript, ktorý vyberie digitálne objekty, ktoré ešte neboli validované a dá ich do listu.
+
+\subsubsection{Skript: Vynuluj index}
+Skript na vynulovanie index digitálnych objektov. Je to potrebné pre správne fungovanie cyklu.
+
+\subsubsection{Webová služba: Vloženie logovacieho záznamu}
+\textbf{Názov služby:} WS\_Events\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{event} - objekt typu Events vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného logovacieho záznamu
+	\end{itemize}
+	
+\subsubsection{Skript: Nabinduj dáta}
+Skript na nabindovanie dát ku digitálnemu objektu.
+
+\subsubsection{Webová služba: Aktualizovanie údajov digitálneho objektu}
+\textbf{Názov služby:} WS\_Digital\_object\_update
+\textbf{Metóda služby:} update
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{id} - ID digitálneho objektu, ktorý sa má aktualizovať
+		\item \textit{digital\_object} - objekt typu Digital\_object s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{changes} - počet atribútov digitálneho objektu, ktoré sa aktualizovali
+	\end{itemize}
+	
+\subsubsection{Skript: Inkrementuj index}
+Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre správne fungovanie cyklu.
+
+\section{Formuláre}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coach for Add digital object.jpg} 
+\caption{Formulár pre pridanie digitálneho objektu}
+\end{figure}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coach for adding information about article.jpg} 
+\caption{Formulár pre pridanie informácií o vedeckej publikácii}
+\end{figure}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coach for adding new author.jpg} 
+\caption{Formulár pre pridanie nového autora}
+\end{figure}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coach for Display Institutions.jpg} 
+\caption{Formulár pre zobrazenie inštitúcií}
+\end{figure}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coach for displaying researchers.jpg} 
+\caption{Formulár pre zobrazenie vedcov}
+\end{figure}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coach for choosing role.jpg} 
+\caption{Formulár pre vybratie role}
+\end{figure}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coach for login.jpg} 
+\caption{Formulár pre prihlásenie}
+\end{figure}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coach for research action.jpg} 
+\caption{Formulár pre výber akcie pridania publikácie alebo digitálneho objektu}
+\end{figure}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coach for research action.jpg} 
+\caption{Formulár pre výber akcie pridania publikácie alebo digitálneho objektu}
+\end{figure}
 
 
 
@@ -1105,6 +1172,392 @@ Vynuluje počítadlo autorov vedeckej publikácie.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% DOCASNE SU TU ULOZENE V ABECEDNOM PORADI WEBOVE SLUZBY A ODTIALTO KOPIRUJEM PRI PISANI DOKU
+\section{Prehľad všetkých webových služieb}
+Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané webové služby na jedno miesto.
+
+\subsubsection{Webová služba: Získanie vedeckej publikácie}
+\textbf{Názov služby:} WS\_Article\_find
+\textbf{Metóda služby:} getById
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID vedeckej publikácie
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{article} - objekt typu Article
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie všetkých vedeckých publikácií}
+\textbf{Názov služby:}  WS\_Article\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{articles} - list objektov typu Article
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
+\textbf{Názov služby:} WS\_Article\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID vedeckých publikácií, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{articles} - list objektov typu Article
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie vedeckej publikácie}
+\textbf{Názov služby:} WS\_Article\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{Article} - objekt typu Article s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej vedeckej publikácie
+	\end{itemize}
+	
+\subsubsection{Webová služba: Telefonické notifikovanie}
+\textbf{Názov služby:} WS\_Call
+\textbf{Metóda služby:} notify
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{phone} - telefónne číslo, na ktoré sa má zatelefonovať
+		\item \textit{"You were added as a coauthor"} - predmet správy, ktorá sa odošle
+		\item \textit{"You are coauthor of article: " + tw.local.article\_id.toString()} - správa, ktorá sa telefonicky oznámi, kde article\_id.toString() predstavuje ID článku, ktorého je príjemca telefonátu spoluautorom
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{success} - pravdivostná hodnota, ktorá vyjadruje, či sa podarilo telefonicky notifikovať spoluautora vedeckej publikácie
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
+\textbf{Názov služby:} WS\_Conference\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{conferences} - list objektov typu Conference
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie vedeckej konferencie}
+\textbf{Názov služby:} WS\_Conference\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{Conference} - objekt typu Conference s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej vedeckej konferencie
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie všetkých digitálnych objektov}
+\textbf{Názov služby:} WS\_Digital\_object\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{digital\_objects} - list objektov typu Digital\_object
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie digitálneho objektu}
+\textbf{Názov služby:} WS\_Digital\_object\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{digital\_object} - objekt typu Digital\_object s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného digitálneho objektu
+	\end{itemize}
+	
+\subsubsection{Webová služba: Aktualizovanie údajov digitálneho objektu}
+\textbf{Názov služby:} WS\_Digital\_object\_update
+\textbf{Metóda služby:} update
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{id} - ID digitálneho objektu, ktorý sa má aktualizovať
+		\item \textit{digital\_object} - objekt typu Digital\_object s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{changes} - počet atribútov digitálneho objektu, ktoré sa aktualizovali
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie digitálneho objektu na základe ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Digital\_objects\_getByAttibute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attribute} - názov atribútu, podľa ktorého sa má vyhľadávať
+		\item \textit{value} - hodnota atribútu, podľa ktorého sa má vyhľadávať
+		\item \textit{listOf.Integer()} - zoznam ID entít Vedec-Publikácia, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{digital\_objects\_array} - list objektov typu Digital\_object
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie logovacieho záznamu}
+\textbf{Názov služby:} WS\_Events\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{event} - objekt typu Events vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného logovacieho záznamu
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie všetkých inštitúcií}
+\textbf{Názov služby:} WS\_Institution\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{institutions} - list objektov typu Institution
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie inštitúcie}
+\textbf{Názov služby:} WS\_Institution\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{institution} - objekt typu Institution s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej inštitúcie
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie knihovníka}
+\textbf{Názov služby:} WS\_Librarian\_find
+\textbf{Metóda služby:} getById
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID knihovníka
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{librarian} - objekt typu Librarian
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie všetkých knihovníkov}
+\textbf{Názov služby:} WS\_Librarian\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{librarians} - list objektov typu Librarian
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie knihovníka}
+\textbf{Názov služby:} WS\_Librarian\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{librarian} - objekt typu Librarian s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného knihovníka
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie všetkých zborníkov}
+\textbf{Názov služby:} WS\_Proceedings\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{proceedingss} - list objektov typu Proceedings
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID zborníkov, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{proceedings} - list objektov typu Proceeding
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie zborníka}
+\textbf{Názov služby:} WS\_Proceedings\_getById
+\textbf{Metóda služby:} getById
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID zborníka
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{proceedings} - objekt typu Proceedings
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie zborníka}
+\textbf{Názov služby:} WS\_Proceedings\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{proceedings} - objekt typu Proceedings s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného zborníka
+	\end{itemize}
+	
+\subsubsection{Webová služba: Aktualizovanie údajov zborníka}
+\textbf{Názov služby:} WS\_Proceedings\_update
+\textbf{Metóda služby:} update
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{id} - ID zborníka, ktorého údaje sa majú aktualizovať
+		\item \textit{proceedings} - objekt typu Proceedings s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{changes} - počet atribútov digitálneho objektu, ktoré sa aktualizovali
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie všetkých entít spojovacej tabuľky Vedec-Publikácia}
+\textbf{Názov služby:} WS\_Researcher\_Article\_getAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{researcher\_articles} - list objektov typu Researcher\_Article
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie entity Vedec-Publikácia podľa ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Researcher\_article\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attribute\_name} - názov atribútu, podľa ktorého sa má vyhľadávať
+		\item \textit{attribute\_value} - hodnota atribútu, podľa ktorého sa má vyhľadávať
+		\item \textit{listOf.Integer()} - zoznam ID entít Vedec-Publikácia, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{researcher\_articles} - list objektov typu Researcher\_Article
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie entity spojovacej tabuľky Vedec - Publikácia}
+\textbf{Názov služby:} WS\_Researcher\_article\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{researcher\_article} - objekt typu Researcher\_Article s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej entity spojovacej tabuľky Vedec - Publikácia
+	\end{itemize}
+
+\subsubsection{Webová služba: Získanie vedca}
+\textbf{Názov služby:} WS\_Researcher\_find
+\textbf{Metóda služby:} getById
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID vedca
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{researcher} - objekt typu Researcher
+	\end{itemize}
+
+\subsubsection{Webová služba: Získanie všetkých vedcov}
+\textbf{Názov služby:} WS\_Researcher\_findAll
+\textbf{Metóda služby:} getAll
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{researchers} - list objektov typu Researcher
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získaj vedca podľa ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Researcher\_getByAttribute
+\textbf{Metóda služby:} getByAttributeValue
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{name} - názov atribútu, podľa ktorého sa má vyhľadávať
+		\item \textit{value} - hodnota atribútu, podľa ktorého sa má vyhľadávať
+		\item \textit{listOf.Integer()} - zoznam ID vedcov, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{researchers} - list objektov typu Researcher 
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie vedca}
+\textbf{Názov služby:} WS\_Reasercher\_insert
+\textbf{Metóda služby:} insert
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{researcher} - objekt typu Researcher s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvoreného vedca
+	\end{itemize}
+	
+\subsubsection{Webová služba: Poslanie emailovej notifikácie}
+\textbf{Názov služby:} WS\_Send\_email
+\textbf{Metóda služby:} notify
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{email} - emailová adresa príjemcu notifikácie
+		\item \textit{"You were added as a coauthor"} - predmet správy, ktorá sa odošle
+		\item \textit{"Coauthor of article: " + tw.local.article\_id.toString()} - správa, ktorá sa odošle, kde article\_id.toString() predstavuje ID článku, ktorého je príjemca spoluautorom
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{success} - pravdivostná hodnota, ktorá vyjadruje, či sa email podarilo odoslať
+	\end{itemize}
 
 \newpage
 

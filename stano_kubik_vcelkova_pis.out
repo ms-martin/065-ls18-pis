@@ -2,95 +2,93 @@
 \BOOKMARK [1][-]{section.2}{\227pecifik\341cia projektu: Repozit\341r - digit\341lna kni\236nica}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{\332vod}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{\227pecifik\341cia}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Obmedzenia}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Vypracovanie projektu}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{N\341vrh, anal\375za a opis biznis procesov}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{D\341tov\375 model}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Main Business Process}{section.3}% 9
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Ciel biznis procesu}{subsection.3.2}% 10
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Pou\236\355vatelsk\351 roly}{subsection.3.2}% 11
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Biznis objekty}{subsection.3.2}% 12
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Kroky Main Business Process}{subsection.3.2}% 13
-\BOOKMARK [1][-]{section.4}{Implement\341cia syst\351mov\375ch \372loh}{}% 14
-\BOOKMARK [2][-]{subsection.4.1}{Login as Librarian - pou\236\355vatelsk\341 \372loha}{section.4}% 15
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Webov\341 slu\236ba: Z\355skanie knihovn\355ka}{subsection.4.1}% 16
-\BOOKMARK [2][-]{subsection.4.2}{Login as Researcher - pou\236\355vatelsk\341 \372loha}{section.4}% 17
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Webov\341 slu\236ba: Z\355skanie vedca}{subsection.4.2}% 18
-\BOOKMARK [2][-]{subsection.4.3}{Add coauthors - pou\236\355vatelsk\341 \372loha}{section.4}% 19
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch in\235tit\372ci\355}{subsection.4.3}% 20
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Webov\341 slu\236ba: Z\355skaj vedca podla lubovoln\351ho atrib\372tu}{subsection.4.3}% 21
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Skript: Nastav afil\341ciu}{subsection.4.3}% 22
-\BOOKMARK [3][-]{subsubsection.4.3.4}{Skript: Vynuluj index spoluautorov}{subsection.4.3}% 23
-\BOOKMARK [3][-]{subsubsection.4.3.5}{Webov\341 slu\236ba: Vlo\236enie vedca}{subsection.4.3}% 24
-\BOOKMARK [3][-]{subsubsection.4.3.6}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsection.4.3}% 25
-\BOOKMARK [3][-]{subsubsection.4.3.7}{Skript: Pridaj nov\351ho spoluautora ku vedeckej publik\341cii}{subsection.4.3}% 26
-\BOOKMARK [3][-]{subsubsection.4.3.8}{Webov\341 slu\236ba: Vlo\236enie entity spojovacej tabulky Vedec - Publik\341cia}{subsection.4.3}% 27
-\BOOKMARK [3][-]{subsubsection.4.3.9}{Skript: Pridaj existuj\372ceho spoluautora ku vedeckej publik\341cii}{subsection.4.3}% 28
-\BOOKMARK [3][-]{subsubsection.4.3.10}{Skript: Inkrementuj index spoluautorov}{subsection.4.3}% 29
-\BOOKMARK [2][-]{subsection.4.4}{Add digital object by Researcher - pou\236\355vatelsk\341 \372loha}{section.4}% 30
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsection.4.4}% 31
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsection.4.4}% 32
-\BOOKMARK [3][-]{subsubsection.4.4.3}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsection.4.4}% 33
-\BOOKMARK [3][-]{subsubsection.4.4.4}{Webov\341 slu\236ba: Vlo\236enie digit\341lneho objektu}{subsection.4.4}% 34
-\BOOKMARK [3][-]{subsubsection.4.4.5}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsection.4.4}% 35
-\BOOKMARK [2][-]{subsection.4.5}{Send notification - syst\351mov\341 \372loha}{section.4}% 36
-\BOOKMARK [3][-]{subsubsection.4.5.1}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsection.4.5}% 37
-\BOOKMARK [3][-]{subsubsection.4.5.2}{Skript: Null counter}{subsection.4.5}% 38
-\BOOKMARK [3][-]{subsubsection.4.5.3}{Webov\341 slu\236ba: Z\355skanie vedca}{subsection.4.5}% 39
-\BOOKMARK [3][-]{subsubsection.4.5.4}{Webov\341 slu\236ba: Poslanie emailovej notifik\341cie}{subsection.4.5}% 40
-\BOOKMARK [3][-]{subsubsection.4.5.5}{Webov\341 slu\236ba: Telefonick\351 notifikovanie}{subsection.4.5}% 41
-\BOOKMARK [3][-]{subsubsection.4.5.6}{Skript: Increment counter}{subsection.4.5}% 42
-\BOOKMARK [2][-]{subsection.4.6}{Add digital object by Librarian - pou\236\355vatelsk\341 \372loha}{section.4}% 43
-\BOOKMARK [3][-]{subsubsection.4.6.1}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsection.4.6}% 44
-\BOOKMARK [3][-]{subsubsection.4.6.2}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsection.4.6}% 45
-\BOOKMARK [3][-]{subsubsection.4.6.3}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsection.4.6}% 46
-\BOOKMARK [3][-]{subsubsection.4.6.4}{Webov\341 slu\236ba: Vlo\236enie digit\341lneho objektu}{subsection.4.6}% 47
-\BOOKMARK [3][-]{subsubsection.4.6.5}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsection.4.6}% 48
-\BOOKMARK [2][-]{subsection.4.7}{Validate digital object - pou\236\355vatelsk\341 \372loha}{section.4}% 49
-\BOOKMARK [3][-]{subsubsection.4.7.1}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsection.4.7}% 50
-\BOOKMARK [3][-]{subsubsection.4.7.2}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsection.4.7}% 51
-\BOOKMARK [3][-]{subsubsection.4.7.3}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsection.4.7}% 52
-\BOOKMARK [3][-]{subsubsection.4.7.4}{Webov\341 slu\236ba: Z\355skanie digit\341lneho objektu na z\341klade lubovoln\351ho atrib\372tu}{subsection.4.7}% 53
-\BOOKMARK [3][-]{subsubsection.4.7.5}{Skript: Vyber len doteraz nezvalidovan\351 digit\341lne objekty}{subsection.4.7}% 54
-\BOOKMARK [3][-]{subsubsection.4.7.6}{Skript: Vynuluj index}{subsection.4.7}% 55
-\BOOKMARK [3][-]{subsubsection.4.7.7}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsection.4.7}% 56
-\BOOKMARK [3][-]{subsubsection.4.7.8}{Skript: Nabinduj d\341ta}{subsection.4.7}% 57
-\BOOKMARK [3][-]{subsubsection.4.7.9}{Webov\341 slu\236ba: Aktualizovanie \372dajov digit\341lneho objektu}{subsection.4.7}% 58
-\BOOKMARK [3][-]{subsubsection.4.7.10}{Skript: Inkrementuj index}{subsection.4.7}% 59
-\BOOKMARK [1][-]{section.5}{Formul\341re}{}% 60
-\BOOKMARK [1][-]{section.6}{Prehlad v\235etk\375ch webov\375ch slu\236ieb}{}% 61
-\BOOKMARK [2][-]{subsubsection.6.0.1}{Webov\341 slu\236ba: Z\355skanie vedeckej publik\341cie}{section.6}% 62
-\BOOKMARK [3][-]{subsubsection.6.0.2}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch publik\341ci\355}{subsubsection.6.0.1}% 63
-\BOOKMARK [3][-]{subsubsection.6.0.3}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsubsection.6.0.1}% 64
-\BOOKMARK [3][-]{subsubsection.6.0.4}{Webov\341 slu\236ba: Vlo\236enie vedeckej publik\341cie}{subsubsection.6.0.1}% 65
-\BOOKMARK [3][-]{subsubsection.6.0.5}{Webov\341 slu\236ba: Telefonick\351 notifikovanie}{subsubsection.6.0.1}% 66
-\BOOKMARK [3][-]{subsubsection.6.0.6}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsubsection.6.0.1}% 67
-\BOOKMARK [3][-]{subsubsection.6.0.7}{Webov\341 slu\236ba: Vlo\236enie vedeckej konferencie}{subsubsection.6.0.1}% 68
-\BOOKMARK [3][-]{subsubsection.6.0.8}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch digit\341lnych objektov}{subsubsection.6.0.1}% 69
-\BOOKMARK [3][-]{subsubsection.6.0.9}{Webov\341 slu\236ba: Vlo\236enie digit\341lneho objektu}{subsubsection.6.0.1}% 70
-\BOOKMARK [3][-]{subsubsection.6.0.10}{Webov\341 slu\236ba: Aktualizovanie \372dajov digit\341lneho objektu}{subsubsection.6.0.1}% 71
-\BOOKMARK [3][-]{subsubsection.6.0.11}{Webov\341 slu\236ba: Z\355skanie digit\341lneho objektu na z\341klade lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 72
-\BOOKMARK [3][-]{subsubsection.6.0.12}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsubsection.6.0.1}% 73
-\BOOKMARK [3][-]{subsubsection.6.0.13}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch in\235tit\372ci\355}{subsubsection.6.0.1}% 74
-\BOOKMARK [3][-]{subsubsection.6.0.14}{Webov\341 slu\236ba: Vlo\236enie in\235tit\372cie}{subsubsection.6.0.1}% 75
-\BOOKMARK [3][-]{subsubsection.6.0.15}{Webov\341 slu\236ba: Z\355skanie knihovn\355ka}{subsubsection.6.0.1}% 76
-\BOOKMARK [3][-]{subsubsection.6.0.16}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch knihovn\355kov}{subsubsection.6.0.1}% 77
-\BOOKMARK [3][-]{subsubsection.6.0.17}{Webov\341 slu\236ba: Vlo\236enie knihovn\355ka}{subsubsection.6.0.1}% 78
-\BOOKMARK [3][-]{subsubsection.6.0.18}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch zborn\355kov}{subsubsection.6.0.1}% 79
-\BOOKMARK [3][-]{subsubsection.6.0.19}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 80
-\BOOKMARK [3][-]{subsubsection.6.0.20}{Webov\341 slu\236ba: Z\355skanie zborn\355ka}{subsubsection.6.0.1}% 81
-\BOOKMARK [3][-]{subsubsection.6.0.21}{Webov\341 slu\236ba: Vlo\236enie zborn\355ka}{subsubsection.6.0.1}% 82
-\BOOKMARK [3][-]{subsubsection.6.0.22}{Webov\341 slu\236ba: Aktualizovanie \372dajov zborn\355ka}{subsubsection.6.0.1}% 83
-\BOOKMARK [3][-]{subsubsection.6.0.23}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch ent\355t spojovacej tabulky Vedec-Publik\341cia}{subsubsection.6.0.1}% 84
-\BOOKMARK [3][-]{subsubsection.6.0.24}{Webov\341 slu\236ba: Z\355skanie entity Vedec-Publik\341cia podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 85
-\BOOKMARK [3][-]{subsubsection.6.0.25}{Webov\341 slu\236ba: Vlo\236enie entity spojovacej tabulky Vedec - Publik\341cia}{subsubsection.6.0.1}% 86
-\BOOKMARK [3][-]{subsubsection.6.0.26}{Webov\341 slu\236ba: Z\355skanie vedca}{subsubsection.6.0.1}% 87
-\BOOKMARK [3][-]{subsubsection.6.0.27}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedcov}{subsubsection.6.0.1}% 88
-\BOOKMARK [3][-]{subsubsection.6.0.28}{Webov\341 slu\236ba: Z\355skaj vedca podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 89
-\BOOKMARK [3][-]{subsubsection.6.0.29}{Webov\341 slu\236ba: Vlo\236enie vedca}{subsubsection.6.0.1}% 90
-\BOOKMARK [3][-]{subsubsection.6.0.30}{Webov\341 slu\236ba: Poslanie emailovej notifik\341cie}{subsubsection.6.0.1}% 91
-\BOOKMARK [1][-]{section.7}{Zhrnutie}{}% 92
-\BOOKMARK [1][-]{section.8}{Report pr\341c clenov t\355mu}{}% 93
-\BOOKMARK [2][-]{subsection.8.1}{D\341vid Kub\355k}{section.8}% 94
-\BOOKMARK [2][-]{subsection.8.2}{Martin Stano}{section.8}% 95
-\BOOKMARK [2][-]{subsection.8.3}{Veronika Vcelkov\341}{section.8}% 96
+\BOOKMARK [2][-]{subsection.2.3}{Vypracovanie projektu}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{N\341vrh, anal\375za a opis biznis procesov}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{D\341tov\375 model}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Main Business Process}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Ciel biznis procesu}{subsection.3.2}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Pou\236\355vatelsk\351 roly}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Biznis objekty}{subsection.3.2}% 11
+\BOOKMARK [1][-]{section.4}{Implement\341cia syst\351mov\375ch \372loh}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Login as Librarian - pou\236\355vatelsk\341 \372loha}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Webov\341 slu\236ba: Z\355skanie knihovn\355ka}{subsection.4.1}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Login as Researcher - pou\236\355vatelsk\341 \372loha}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Webov\341 slu\236ba: Z\355skanie vedca}{subsection.4.2}% 16
+\BOOKMARK [2][-]{subsection.4.3}{Add coauthors - pou\236\355vatelsk\341 \372loha}{section.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch in\235tit\372ci\355}{subsection.4.3}% 18
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Webov\341 slu\236ba: Z\355skaj vedca podla lubovoln\351ho atrib\372tu}{subsection.4.3}% 19
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Skript: Nastav afil\341ciu}{subsection.4.3}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Skript: Vynuluj index spoluautorov}{subsection.4.3}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Webov\341 slu\236ba: Vlo\236enie vedca}{subsection.4.3}% 22
+\BOOKMARK [3][-]{subsubsection.4.3.6}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsection.4.3}% 23
+\BOOKMARK [3][-]{subsubsection.4.3.7}{Skript: Pridaj nov\351ho spoluautora ku vedeckej publik\341cii}{subsection.4.3}% 24
+\BOOKMARK [3][-]{subsubsection.4.3.8}{Webov\341 slu\236ba: Vlo\236enie entity spojovacej tabulky Vedec - Publik\341cia}{subsection.4.3}% 25
+\BOOKMARK [3][-]{subsubsection.4.3.9}{Skript: Pridaj existuj\372ceho spoluautora ku vedeckej publik\341cii}{subsection.4.3}% 26
+\BOOKMARK [3][-]{subsubsection.4.3.10}{Skript: Inkrementuj index spoluautorov}{subsection.4.3}% 27
+\BOOKMARK [2][-]{subsection.4.4}{Add digital object by Researcher - pou\236\355vatelsk\341 \372loha}{section.4}% 28
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsection.4.4}% 29
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsection.4.4}% 30
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsection.4.4}% 31
+\BOOKMARK [3][-]{subsubsection.4.4.4}{Webov\341 slu\236ba: Vlo\236enie digit\341lneho objektu}{subsection.4.4}% 32
+\BOOKMARK [3][-]{subsubsection.4.4.5}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsection.4.4}% 33
+\BOOKMARK [2][-]{subsection.4.5}{Send notification - syst\351mov\341 \372loha}{section.4}% 34
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsection.4.5}% 35
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Skript: Null counter}{subsection.4.5}% 36
+\BOOKMARK [3][-]{subsubsection.4.5.3}{Webov\341 slu\236ba: Z\355skanie vedca}{subsection.4.5}% 37
+\BOOKMARK [3][-]{subsubsection.4.5.4}{Webov\341 slu\236ba: Poslanie emailovej notifik\341cie}{subsection.4.5}% 38
+\BOOKMARK [3][-]{subsubsection.4.5.5}{Webov\341 slu\236ba: Telefonick\351 notifikovanie}{subsection.4.5}% 39
+\BOOKMARK [3][-]{subsubsection.4.5.6}{Skript: Increment counter}{subsection.4.5}% 40
+\BOOKMARK [2][-]{subsection.4.6}{Add digital object by Librarian - pou\236\355vatelsk\341 \372loha}{section.4}% 41
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsection.4.6}% 42
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsection.4.6}% 43
+\BOOKMARK [3][-]{subsubsection.4.6.3}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsection.4.6}% 44
+\BOOKMARK [3][-]{subsubsection.4.6.4}{Webov\341 slu\236ba: Vlo\236enie digit\341lneho objektu}{subsection.4.6}% 45
+\BOOKMARK [3][-]{subsubsection.4.6.5}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsection.4.6}% 46
+\BOOKMARK [2][-]{subsection.4.7}{Validate digital object - pou\236\355vatelsk\341 \372loha}{section.4}% 47
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsection.4.7}% 48
+\BOOKMARK [3][-]{subsubsection.4.7.2}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsection.4.7}% 49
+\BOOKMARK [3][-]{subsubsection.4.7.3}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsection.4.7}% 50
+\BOOKMARK [3][-]{subsubsection.4.7.4}{Webov\341 slu\236ba: Z\355skanie digit\341lneho objektu na z\341klade lubovoln\351ho atrib\372tu}{subsection.4.7}% 51
+\BOOKMARK [3][-]{subsubsection.4.7.5}{Skript: Vyber len doteraz nezvalidovan\351 digit\341lne objekty}{subsection.4.7}% 52
+\BOOKMARK [3][-]{subsubsection.4.7.6}{Skript: Vynuluj index}{subsection.4.7}% 53
+\BOOKMARK [3][-]{subsubsection.4.7.7}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsection.4.7}% 54
+\BOOKMARK [3][-]{subsubsection.4.7.8}{Skript: Nabinduj d\341ta}{subsection.4.7}% 55
+\BOOKMARK [3][-]{subsubsection.4.7.9}{Webov\341 slu\236ba: Aktualizovanie \372dajov digit\341lneho objektu}{subsection.4.7}% 56
+\BOOKMARK [3][-]{subsubsection.4.7.10}{Skript: Inkrementuj index}{subsection.4.7}% 57
+\BOOKMARK [1][-]{section.5}{Formul\341re}{}% 58
+\BOOKMARK [1][-]{section.6}{Prehlad v\235etk\375ch webov\375ch slu\236ieb}{}% 59
+\BOOKMARK [2][-]{subsubsection.6.0.1}{Webov\341 slu\236ba: Z\355skanie vedeckej publik\341cie}{section.6}% 60
+\BOOKMARK [3][-]{subsubsection.6.0.2}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch publik\341ci\355}{subsubsection.6.0.1}% 61
+\BOOKMARK [3][-]{subsubsection.6.0.3}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsubsection.6.0.1}% 62
+\BOOKMARK [3][-]{subsubsection.6.0.4}{Webov\341 slu\236ba: Vlo\236enie vedeckej publik\341cie}{subsubsection.6.0.1}% 63
+\BOOKMARK [3][-]{subsubsection.6.0.5}{Webov\341 slu\236ba: Telefonick\351 notifikovanie}{subsubsection.6.0.1}% 64
+\BOOKMARK [3][-]{subsubsection.6.0.6}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsubsection.6.0.1}% 65
+\BOOKMARK [3][-]{subsubsection.6.0.7}{Webov\341 slu\236ba: Vlo\236enie vedeckej konferencie}{subsubsection.6.0.1}% 66
+\BOOKMARK [3][-]{subsubsection.6.0.8}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch digit\341lnych objektov}{subsubsection.6.0.1}% 67
+\BOOKMARK [3][-]{subsubsection.6.0.9}{Webov\341 slu\236ba: Vlo\236enie digit\341lneho objektu}{subsubsection.6.0.1}% 68
+\BOOKMARK [3][-]{subsubsection.6.0.10}{Webov\341 slu\236ba: Aktualizovanie \372dajov digit\341lneho objektu}{subsubsection.6.0.1}% 69
+\BOOKMARK [3][-]{subsubsection.6.0.11}{Webov\341 slu\236ba: Z\355skanie digit\341lneho objektu na z\341klade lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 70
+\BOOKMARK [3][-]{subsubsection.6.0.12}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsubsection.6.0.1}% 71
+\BOOKMARK [3][-]{subsubsection.6.0.13}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch in\235tit\372ci\355}{subsubsection.6.0.1}% 72
+\BOOKMARK [3][-]{subsubsection.6.0.14}{Webov\341 slu\236ba: Vlo\236enie in\235tit\372cie}{subsubsection.6.0.1}% 73
+\BOOKMARK [3][-]{subsubsection.6.0.15}{Webov\341 slu\236ba: Z\355skanie knihovn\355ka}{subsubsection.6.0.1}% 74
+\BOOKMARK [3][-]{subsubsection.6.0.16}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch knihovn\355kov}{subsubsection.6.0.1}% 75
+\BOOKMARK [3][-]{subsubsection.6.0.17}{Webov\341 slu\236ba: Vlo\236enie knihovn\355ka}{subsubsection.6.0.1}% 76
+\BOOKMARK [3][-]{subsubsection.6.0.18}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch zborn\355kov}{subsubsection.6.0.1}% 77
+\BOOKMARK [3][-]{subsubsection.6.0.19}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 78
+\BOOKMARK [3][-]{subsubsection.6.0.20}{Webov\341 slu\236ba: Z\355skanie zborn\355ka}{subsubsection.6.0.1}% 79
+\BOOKMARK [3][-]{subsubsection.6.0.21}{Webov\341 slu\236ba: Vlo\236enie zborn\355ka}{subsubsection.6.0.1}% 80
+\BOOKMARK [3][-]{subsubsection.6.0.22}{Webov\341 slu\236ba: Aktualizovanie \372dajov zborn\355ka}{subsubsection.6.0.1}% 81
+\BOOKMARK [3][-]{subsubsection.6.0.23}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch ent\355t spojovacej tabulky Vedec-Publik\341cia}{subsubsection.6.0.1}% 82
+\BOOKMARK [3][-]{subsubsection.6.0.24}{Webov\341 slu\236ba: Z\355skanie entity Vedec-Publik\341cia podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 83
+\BOOKMARK [3][-]{subsubsection.6.0.25}{Webov\341 slu\236ba: Vlo\236enie entity spojovacej tabulky Vedec - Publik\341cia}{subsubsection.6.0.1}% 84
+\BOOKMARK [3][-]{subsubsection.6.0.26}{Webov\341 slu\236ba: Z\355skanie vedca}{subsubsection.6.0.1}% 85
+\BOOKMARK [3][-]{subsubsection.6.0.27}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedcov}{subsubsection.6.0.1}% 86
+\BOOKMARK [3][-]{subsubsection.6.0.28}{Webov\341 slu\236ba: Z\355skaj vedca podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 87
+\BOOKMARK [3][-]{subsubsection.6.0.29}{Webov\341 slu\236ba: Vlo\236enie vedca}{subsubsection.6.0.1}% 88
+\BOOKMARK [3][-]{subsubsection.6.0.30}{Webov\341 slu\236ba: Poslanie emailovej notifik\341cie}{subsubsection.6.0.1}% 89
+\BOOKMARK [1][-]{section.7}{Zhrnutie}{}% 90
+\BOOKMARK [1][-]{section.8}{Report pr\341c clenov t\355mu}{}% 91
+\BOOKMARK [2][-]{subsection.8.1}{D\341vid Kub\355k}{section.8}% 92
+\BOOKMARK [2][-]{subsection.8.2}{Martin Stano}{section.8}% 93
+\BOOKMARK [2][-]{subsection.8.3}{Veronika Vcelkov\341}{section.8}% 94

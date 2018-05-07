@@ -3,96 +3,107 @@
 \contentsline {section}{\numberline {2}\IeC {\v S}pecifik\IeC {\'a}cia projektu: Repozit\IeC {\'a}r - digit\IeC {\'a}lna kni\IeC {\v z}nica}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}\IeC {\'U}vod}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}\IeC {\v S}pecifik\IeC {\'a}cia}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Obmedzenia}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Vypracovanie projektu}{5}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.3}Vypracovanie projektu}{5}{subsection.2.3}
 \contentsline {section}{\numberline {3}N\IeC {\'a}vrh, anal\IeC {\'y}za a opis biznis procesov}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}D\IeC {\'a}tov\IeC {\'y} model}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Main Business Process}{6}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Cie\IeC {\v l} biznis procesu}{6}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} roly}{6}{subsubsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.3}Biznis objekty}{7}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Kroky Main Business Process}{9}{subsubsection.3.2.4}
-\contentsline {section}{\numberline {4}Implement\IeC {\'a}cia syst\IeC {\'e}mov\IeC {\'y}ch \IeC {\'u}loh}{15}{section.4}
-\contentsline {paragraph}{Biznis proces - Hlavn\IeC {\'y} biznis proces}{15}{section*.2}
-\contentsline {subsection}{\numberline {4.1}Login as Librarian - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{16}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie knihovn\IeC {\'\i }ka}{17}{subsubsection.4.1.1}
-\contentsline {subsection}{\numberline {4.2}Login as Researcher - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{17}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedca}{17}{subsubsection.4.2.1}
-\contentsline {subsection}{\numberline {4.3}Add coauthors - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{18}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch in\IeC {\v s}tit\IeC {\'u}ci\IeC {\'\i }}{18}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skaj vedca pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{18}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Skript: Nastav afil\IeC {\'a}ciu}{18}{subsubsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.4}Skript: Vynuluj index spoluautorov}{18}{subsubsection.4.3.4}
-\contentsline {subsubsection}{\numberline {4.3.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie vedca}{19}{subsubsection.4.3.5}
-\contentsline {subsubsection}{\numberline {4.3.6}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{19}{subsubsection.4.3.6}
-\contentsline {subsubsection}{\numberline {4.3.7}Skript: Pridaj nov\IeC {\'e}ho spoluautora ku vedeckej publik\IeC {\'a}cii}{19}{subsubsection.4.3.7}
-\contentsline {subsubsection}{\numberline {4.3.8}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie entity spojovacej tabu\IeC {\v l}ky Vedec - Publik\IeC {\'a}cia}{19}{subsubsection.4.3.8}
-\contentsline {subsubsection}{\numberline {4.3.9}Skript: Pridaj existuj\IeC {\'u}ceho spoluautora ku vedeckej publik\IeC {\'a}cii}{19}{subsubsection.4.3.9}
-\contentsline {subsubsection}{\numberline {4.3.10}Skript: Inkrementuj index spoluautorov}{19}{subsubsection.4.3.10}
-\contentsline {subsection}{\numberline {4.4}Add digital object by Researcher - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{20}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{20}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch konferenci\IeC {\'\i }}{20}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{20}{subsubsection.4.4.3}
-\contentsline {subsubsection}{\numberline {4.4.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie digit\IeC {\'a}lneho objektu}{21}{subsubsection.4.4.4}
-\contentsline {subsubsection}{\numberline {4.4.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{21}{subsubsection.4.4.5}
-\contentsline {subsection}{\numberline {4.5}Send notification - syst\IeC {\'e}mov\IeC {\'a} \IeC {\'u}loha}{21}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{21}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Skript: Null counter}{22}{subsubsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedca}{22}{subsubsection.4.5.3}
-\contentsline {subsubsection}{\numberline {4.5.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Poslanie emailovej notifik\IeC {\'a}cie}{22}{subsubsection.4.5.4}
-\contentsline {subsubsection}{\numberline {4.5.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Telefonick\IeC {\'e} notifikovanie}{22}{subsubsection.4.5.5}
-\contentsline {subsubsection}{\numberline {4.5.6}Skript: Increment counter}{22}{subsubsection.4.5.6}
-\contentsline {subsection}{\numberline {4.6}Add digital object by Librarian - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{23}{subsection.4.6}
-\contentsline {subsubsection}{\numberline {4.6.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{23}{subsubsection.4.6.1}
-\contentsline {subsubsection}{\numberline {4.6.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch konferenci\IeC {\'\i }}{23}{subsubsection.4.6.2}
-\contentsline {subsubsection}{\numberline {4.6.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{23}{subsubsection.4.6.3}
-\contentsline {subsubsection}{\numberline {4.6.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie digit\IeC {\'a}lneho objektu}{24}{subsubsection.4.6.4}
-\contentsline {subsubsection}{\numberline {4.6.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{24}{subsubsection.4.6.5}
-\contentsline {subsection}{\numberline {4.7}Validate digital object - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{24}{subsection.4.7}
-\contentsline {subsubsection}{\numberline {4.7.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch konferenci\IeC {\'\i }}{24}{subsubsection.4.7.1}
-\contentsline {subsubsection}{\numberline {4.7.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{25}{subsubsection.4.7.2}
-\contentsline {subsubsection}{\numberline {4.7.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{25}{subsubsection.4.7.3}
-\contentsline {subsubsection}{\numberline {4.7.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie digit\IeC {\'a}lneho objektu na z\IeC {\'a}klade \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{25}{subsubsection.4.7.4}
-\contentsline {subsubsection}{\numberline {4.7.5}Skript: Vyber len doteraz nezvalidovan\IeC {\'e} digit\IeC {\'a}lne objekty}{25}{subsubsection.4.7.5}
-\contentsline {subsubsection}{\numberline {4.7.6}Skript: Vynuluj index}{25}{subsubsection.4.7.6}
-\contentsline {subsubsection}{\numberline {4.7.7}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{25}{subsubsection.4.7.7}
-\contentsline {subsubsection}{\numberline {4.7.8}Skript: Nabinduj d\IeC {\'a}ta}{26}{subsubsection.4.7.8}
-\contentsline {subsubsection}{\numberline {4.7.9}Webov\IeC {\'a} slu\IeC {\v z}ba: Aktualizovanie \IeC {\'u}dajov digit\IeC {\'a}lneho objektu}{26}{subsubsection.4.7.9}
-\contentsline {subsubsection}{\numberline {4.7.10}Skript: Inkrementuj index}{26}{subsubsection.4.7.10}
-\contentsline {section}{\numberline {5}Formul\IeC {\'a}re}{26}{section.5}
-\contentsline {section}{\numberline {6}Preh\IeC {\v l}ad v\IeC {\v s}etk\IeC {\'y}ch webov\IeC {\'y}ch slu\IeC {\v z}ieb}{29}{section.6}
-\contentsline {subsubsection}{\numberline {6.0.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeckej publik\IeC {\'a}cie}{29}{subsubsection.6.0.1}
-\contentsline {subsubsection}{\numberline {6.0.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i }}{29}{subsubsection.6.0.2}
-\contentsline {subsubsection}{\numberline {6.0.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{29}{subsubsection.6.0.3}
-\contentsline {subsubsection}{\numberline {6.0.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie vedeckej publik\IeC {\'a}cie}{30}{subsubsection.6.0.4}
-\contentsline {subsubsection}{\numberline {6.0.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Telefonick\IeC {\'e} notifikovanie}{30}{subsubsection.6.0.5}
-\contentsline {subsubsection}{\numberline {6.0.6}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch konferenci\IeC {\'\i }}{30}{subsubsection.6.0.6}
-\contentsline {subsubsection}{\numberline {6.0.7}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie vedeckej konferencie}{30}{subsubsection.6.0.7}
-\contentsline {subsubsection}{\numberline {6.0.8}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch digit\IeC {\'a}lnych objektov}{30}{subsubsection.6.0.8}
-\contentsline {subsubsection}{\numberline {6.0.9}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie digit\IeC {\'a}lneho objektu}{31}{subsubsection.6.0.9}
-\contentsline {subsubsection}{\numberline {6.0.10}Webov\IeC {\'a} slu\IeC {\v z}ba: Aktualizovanie \IeC {\'u}dajov digit\IeC {\'a}lneho objektu}{31}{subsubsection.6.0.10}
-\contentsline {subsubsection}{\numberline {6.0.11}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie digit\IeC {\'a}lneho objektu na z\IeC {\'a}klade \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{31}{subsubsection.6.0.11}
-\contentsline {subsubsection}{\numberline {6.0.12}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{31}{subsubsection.6.0.12}
-\contentsline {subsubsection}{\numberline {6.0.13}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch in\IeC {\v s}tit\IeC {\'u}ci\IeC {\'\i }}{31}{subsubsection.6.0.13}
-\contentsline {subsubsection}{\numberline {6.0.14}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie in\IeC {\v s}tit\IeC {\'u}cie}{32}{subsubsection.6.0.14}
-\contentsline {subsubsection}{\numberline {6.0.15}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie knihovn\IeC {\'\i }ka}{32}{subsubsection.6.0.15}
-\contentsline {subsubsection}{\numberline {6.0.16}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch knihovn\IeC {\'\i }kov}{32}{subsubsection.6.0.16}
-\contentsline {subsubsection}{\numberline {6.0.17}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie knihovn\IeC {\'\i }ka}{32}{subsubsection.6.0.17}
-\contentsline {subsubsection}{\numberline {6.0.18}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch zborn\IeC {\'\i }kov}{32}{subsubsection.6.0.18}
-\contentsline {subsubsection}{\numberline {6.0.19}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{32}{subsubsection.6.0.19}
-\contentsline {subsubsection}{\numberline {6.0.20}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka}{33}{subsubsection.6.0.20}
-\contentsline {subsubsection}{\numberline {6.0.21}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie zborn\IeC {\'\i }ka}{33}{subsubsection.6.0.21}
-\contentsline {subsubsection}{\numberline {6.0.22}Webov\IeC {\'a} slu\IeC {\v z}ba: Aktualizovanie \IeC {\'u}dajov zborn\IeC {\'\i }ka}{33}{subsubsection.6.0.22}
-\contentsline {subsubsection}{\numberline {6.0.23}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch ent\IeC {\'\i }t spojovacej tabu\IeC {\v l}ky Vedec-Publik\IeC {\'a}cia}{33}{subsubsection.6.0.23}
-\contentsline {subsubsection}{\numberline {6.0.24}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie entity Vedec-Publik\IeC {\'a}cia pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{33}{subsubsection.6.0.24}
-\contentsline {subsubsection}{\numberline {6.0.25}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie entity spojovacej tabu\IeC {\v l}ky Vedec - Publik\IeC {\'a}cia}{34}{subsubsection.6.0.25}
-\contentsline {subsubsection}{\numberline {6.0.26}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedca}{34}{subsubsection.6.0.26}
-\contentsline {subsubsection}{\numberline {6.0.27}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedcov}{34}{subsubsection.6.0.27}
-\contentsline {subsubsection}{\numberline {6.0.28}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skaj vedca pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{34}{subsubsection.6.0.28}
-\contentsline {subsubsection}{\numberline {6.0.29}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie vedca}{34}{subsubsection.6.0.29}
-\contentsline {subsubsection}{\numberline {6.0.30}Webov\IeC {\'a} slu\IeC {\v z}ba: Poslanie emailovej notifik\IeC {\'a}cie}{35}{subsubsection.6.0.30}
-\contentsline {section}{\numberline {7}Zhrnutie}{36}{section.7}
-\contentsline {section}{\numberline {8}Report pr\IeC {\'a}c \IeC {\v c}lenov t\IeC {\'\i }mu}{36}{section.8}
-\contentsline {subsection}{\numberline {8.1}D\IeC {\'a}vid Kub\IeC {\'\i }k}{36}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Martin Sta\IeC {\v n}o}{36}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Veronika V\IeC {\v c}elkov\IeC {\'a}}{36}{subsection.8.3}
+\contentsline {section}{\numberline {4}Implement\IeC {\'a}cia syst\IeC {\'e}mov\IeC {\'y}ch \IeC {\'u}loh}{9}{section.4}
+\contentsline {paragraph}{Biznis proces - Hlavn\IeC {\'y} biznis proces}{9}{section*.2}
+\contentsline {subsection}{\numberline {4.1}Login as Librarian - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{10}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie knihovn\IeC {\'\i }ka}{11}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2}Login as Researcher - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{11}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedca}{11}{subsubsection.4.2.1}
+\contentsline {subsection}{\numberline {4.3}Add coauthors - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{11}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch in\IeC {\v s}tit\IeC {\'u}ci\IeC {\'\i }}{12}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skaj vedca pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{12}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Skript: Nastav afil\IeC {\'a}ciu}{12}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Skript: Vynuluj index spoluautorov}{12}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie vedca}{12}{subsubsection.4.3.5}
+\contentsline {subsubsection}{\numberline {4.3.6}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{13}{subsubsection.4.3.6}
+\contentsline {subsubsection}{\numberline {4.3.7}Skript: Pridaj nov\IeC {\'e}ho spoluautora ku vedeckej publik\IeC {\'a}cii}{13}{subsubsection.4.3.7}
+\contentsline {subsubsection}{\numberline {4.3.8}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie entity spojovacej tabu\IeC {\v l}ky Vedec - Publik\IeC {\'a}cia}{13}{subsubsection.4.3.8}
+\contentsline {subsubsection}{\numberline {4.3.9}Skript: Pridaj existuj\IeC {\'u}ceho spoluautora ku vedeckej publik\IeC {\'a}cii}{13}{subsubsection.4.3.9}
+\contentsline {subsubsection}{\numberline {4.3.10}Skript: Inkrementuj index spoluautorov}{13}{subsubsection.4.3.10}
+\contentsline {subsection}{\numberline {4.4}Add digital object by Researcher - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{13}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{14}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch konferenci\IeC {\'\i }}{14}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{14}{subsubsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie digit\IeC {\'a}lneho objektu}{15}{subsubsection.4.4.4}
+\contentsline {subsubsection}{\numberline {4.4.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{15}{subsubsection.4.4.5}
+\contentsline {subsection}{\numberline {4.5}Send notification - syst\IeC {\'e}mov\IeC {\'a} \IeC {\'u}loha}{15}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{16}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Skript: Null counter}{16}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedca}{16}{subsubsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Poslanie emailovej notifik\IeC {\'a}cie}{16}{subsubsection.4.5.4}
+\contentsline {subsubsection}{\numberline {4.5.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Telefonick\IeC {\'e} notifikovanie}{17}{subsubsection.4.5.5}
+\contentsline {subsubsection}{\numberline {4.5.6}Skript: Increment counter}{17}{subsubsection.4.5.6}
+\contentsline {subsection}{\numberline {4.6}Add digital object by Librarian - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{17}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{17}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch konferenci\IeC {\'\i }}{18}{subsubsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{18}{subsubsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie digit\IeC {\'a}lneho objektu}{18}{subsubsection.4.6.4}
+\contentsline {subsubsection}{\numberline {4.6.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{18}{subsubsection.4.6.5}
+\contentsline {subsection}{\numberline {4.7}Validate digital object - pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} \IeC {\'u}loha}{19}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch konferenci\IeC {\'\i }}{19}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{19}{subsubsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{19}{subsubsection.4.7.3}
+\contentsline {subsubsection}{\numberline {4.7.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie digit\IeC {\'a}lneho objektu na z\IeC {\'a}klade \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{20}{subsubsection.4.7.4}
+\contentsline {subsubsection}{\numberline {4.7.5}Skript: Vyber len doteraz nezvalidovan\IeC {\'e} digit\IeC {\'a}lne objekty}{20}{subsubsection.4.7.5}
+\contentsline {subsubsection}{\numberline {4.7.6}Skript: Vynuluj index}{20}{subsubsection.4.7.6}
+\contentsline {subsubsection}{\numberline {4.7.7}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{20}{subsubsection.4.7.7}
+\contentsline {subsubsection}{\numberline {4.7.8}Skript: Nabinduj d\IeC {\'a}ta}{20}{subsubsection.4.7.8}
+\contentsline {subsubsection}{\numberline {4.7.9}Webov\IeC {\'a} slu\IeC {\v z}ba: Aktualizovanie \IeC {\'u}dajov digit\IeC {\'a}lneho objektu}{20}{subsubsection.4.7.9}
+\contentsline {subsubsection}{\numberline {4.7.10}Skript: Inkrementuj index}{21}{subsubsection.4.7.10}
+\contentsline {section}{\numberline {5}Formul\IeC {\'a}re}{21}{section.5}
+\contentsline {paragraph}{Pridanie digit\IeC {\'a}lneho objektu}{21}{figure.10}
+\contentsline {paragraph}{Pridanie inform\IeC {\'a}ci\IeC {\'\i } o vedeckej publik\IeC {\'a}cii}{21}{figure.11}
+\contentsline {paragraph}{Pridanie nov\IeC {\'e}ho autora}{22}{figure.12}
+\contentsline {paragraph}{Zobrazenie in\IeC {\v s}tit\IeC {\'u}ci\IeC {\'\i }}{22}{figure.13}
+\contentsline {paragraph}{Zobrazenie vedcov}{23}{figure.14}
+\contentsline {paragraph}{Vybratie role}{23}{figure.15}
+\contentsline {paragraph}{Prihl\IeC {\'a}senie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}a}{23}{figure.16}
+\contentsline {paragraph}{V\IeC {\'y}ber akcie pridania publik\IeC {\'a}cie alebo digit\IeC {\'a}lneho objektu}{23}{figure.17}
+\contentsline {paragraph}{Validovanie vedeckej publik\IeC {\'a}cie}{24}{figure.18}
+\contentsline {paragraph}{Mo\IeC {\v z}nos\IeC {\v t} pridania spoluautorov}{24}{figure.19}
+\contentsline {paragraph}{V\IeC {\'y}ber vedeckej publik\IeC {\'a}cie}{24}{figure.20}
+\contentsline {paragraph}{V\IeC {\'y}ber vedeckej konferencie}{25}{figure.21}
+\contentsline {paragraph}{V\IeC {\'y}ber zborn\IeC {\'\i }ku}{25}{figure.22}
+\contentsline {section}{\numberline {6}Preh\IeC {\v l}ad v\IeC {\v s}etk\IeC {\'y}ch webov\IeC {\'y}ch slu\IeC {\v z}ieb}{25}{section.6}
+\contentsline {subsubsection}{\numberline {6.0.1}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeckej publik\IeC {\'a}cie}{25}{subsubsection.6.0.1}
+\contentsline {subsubsection}{\numberline {6.0.2}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i }}{26}{subsubsection.6.0.2}
+\contentsline {subsubsection}{\numberline {6.0.3}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedeck\IeC {\'y}ch publik\IeC {\'a}ci\IeC {\'\i } na z\IeC {\'a}klade atrib\IeC {\'u}tu}{26}{subsubsection.6.0.3}
+\contentsline {subsubsection}{\numberline {6.0.4}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie vedeckej publik\IeC {\'a}cie}{26}{subsubsection.6.0.4}
+\contentsline {subsubsection}{\numberline {6.0.5}Webov\IeC {\'a} slu\IeC {\v z}ba: Telefonick\IeC {\'e} notifikovanie}{26}{subsubsection.6.0.5}
+\contentsline {subsubsection}{\numberline {6.0.6}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedeck\IeC {\'y}ch konferenci\IeC {\'\i }}{27}{subsubsection.6.0.6}
+\contentsline {subsubsection}{\numberline {6.0.7}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie vedeckej konferencie}{27}{subsubsection.6.0.7}
+\contentsline {subsubsection}{\numberline {6.0.8}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch digit\IeC {\'a}lnych objektov}{27}{subsubsection.6.0.8}
+\contentsline {subsubsection}{\numberline {6.0.9}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie digit\IeC {\'a}lneho objektu}{27}{subsubsection.6.0.9}
+\contentsline {subsubsection}{\numberline {6.0.10}Webov\IeC {\'a} slu\IeC {\v z}ba: Aktualizovanie \IeC {\'u}dajov digit\IeC {\'a}lneho objektu}{27}{subsubsection.6.0.10}
+\contentsline {subsubsection}{\numberline {6.0.11}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie digit\IeC {\'a}lneho objektu na z\IeC {\'a}klade \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{28}{subsubsection.6.0.11}
+\contentsline {subsubsection}{\numberline {6.0.12}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie logovacieho z\IeC {\'a}znamu}{28}{subsubsection.6.0.12}
+\contentsline {subsubsection}{\numberline {6.0.13}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch in\IeC {\v s}tit\IeC {\'u}ci\IeC {\'\i }}{28}{subsubsection.6.0.13}
+\contentsline {subsubsection}{\numberline {6.0.14}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie in\IeC {\v s}tit\IeC {\'u}cie}{28}{subsubsection.6.0.14}
+\contentsline {subsubsection}{\numberline {6.0.15}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie knihovn\IeC {\'\i }ka}{29}{subsubsection.6.0.15}
+\contentsline {subsubsection}{\numberline {6.0.16}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch knihovn\IeC {\'\i }kov}{29}{subsubsection.6.0.16}
+\contentsline {subsubsection}{\numberline {6.0.17}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie knihovn\IeC {\'\i }ka}{29}{subsubsection.6.0.17}
+\contentsline {subsubsection}{\numberline {6.0.18}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch zborn\IeC {\'\i }kov}{29}{subsubsection.6.0.18}
+\contentsline {subsubsection}{\numberline {6.0.19}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{29}{subsubsection.6.0.19}
+\contentsline {subsubsection}{\numberline {6.0.20}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie zborn\IeC {\'\i }ka}{30}{subsubsection.6.0.20}
+\contentsline {subsubsection}{\numberline {6.0.21}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie zborn\IeC {\'\i }ka}{30}{subsubsection.6.0.21}
+\contentsline {subsubsection}{\numberline {6.0.22}Webov\IeC {\'a} slu\IeC {\v z}ba: Aktualizovanie \IeC {\'u}dajov zborn\IeC {\'\i }ka}{30}{subsubsection.6.0.22}
+\contentsline {subsubsection}{\numberline {6.0.23}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch ent\IeC {\'\i }t spojovacej tabu\IeC {\v l}ky Vedec-Publik\IeC {\'a}cia}{30}{subsubsection.6.0.23}
+\contentsline {subsubsection}{\numberline {6.0.24}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie entity Vedec-Publik\IeC {\'a}cia pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{31}{subsubsection.6.0.24}
+\contentsline {subsubsection}{\numberline {6.0.25}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie entity spojovacej tabu\IeC {\v l}ky Vedec - Publik\IeC {\'a}cia}{31}{subsubsection.6.0.25}
+\contentsline {subsubsection}{\numberline {6.0.26}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie vedca}{31}{subsubsection.6.0.26}
+\contentsline {subsubsection}{\numberline {6.0.27}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skanie v\IeC {\v s}etk\IeC {\'y}ch vedcov}{31}{subsubsection.6.0.27}
+\contentsline {subsubsection}{\numberline {6.0.28}Webov\IeC {\'a} slu\IeC {\v z}ba: Z\IeC {\'\i }skaj vedca pod\IeC {\v l}a \IeC {\v l}ubovo\IeC {\v l}n\IeC {\'e}ho atrib\IeC {\'u}tu}{31}{subsubsection.6.0.28}
+\contentsline {subsubsection}{\numberline {6.0.29}Webov\IeC {\'a} slu\IeC {\v z}ba: Vlo\IeC {\v z}enie vedca}{32}{subsubsection.6.0.29}
+\contentsline {subsubsection}{\numberline {6.0.30}Webov\IeC {\'a} slu\IeC {\v z}ba: Poslanie emailovej notifik\IeC {\'a}cie}{32}{subsubsection.6.0.30}
+\contentsline {section}{\numberline {7}Zhrnutie}{33}{section.7}
+\contentsline {section}{\numberline {8}Report pr\IeC {\'a}c \IeC {\v c}lenov t\IeC {\'\i }mu}{33}{section.8}
+\contentsline {subsection}{\numberline {8.1}D\IeC {\'a}vid Kub\IeC {\'\i }k}{33}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Martin Sta\IeC {\v n}o}{33}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Veronika V\IeC {\v c}elkov\IeC {\'a}}{33}{subsection.8.3}

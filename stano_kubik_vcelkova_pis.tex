@@ -135,15 +135,6 @@ Navrhnite procesy, ktoré umožnia spracovať a sprístupňovať repozitár publ
 
 \newpage
 
-\subsection{Obmedzenia}
-V nami implementovanom systéme sú nasledovné obmedzenia:
-\begin{itemize}
-\item na zobrazenie názvu, kľúčových slov a autorov bibliografického záznamu stačí, keď má vedec rank 0, to znamená, že tieto informácie sú dostupné pre všetkých prihlásených vedcov,
-\item na zobrazenie abstraktu a obsahu bibliografického záznamu, musí mať vedec rank aspoň 1,
-\item na zobrazenie náhľadu bibliografického záznamu, musí mať vedec rank aspoň 2,
-\item na zobrazenie plného textu bibliografického záznamu musí mať vedec rank 3.
-\end{itemize}
-
 \subsection{Vypracovanie projektu}
 Návrh aj implementácia nášho projektu bude realizovaná vo vývojovom prostredí IBM Business Process Designer 8.5.5. Diagram dátového modelu bude vytvorený vo webovom nástroji draw.io.
 
@@ -153,9 +144,9 @@ Návrh aj implementácia nášho projektu bude realizovaná vo vývojovom prostr
 V tomto projekte budú analyzované a implementované nasledujúce biznis procesy súvisiace s problémovou doménou:
 
 \begin{itemize}
-\item Nahranie digitálneho objektu pre bibliografický záznam
-\item Validácia digitálneho objektu
-\item Nahranie bibliografického záznamu
+\item nahranie digitálneho objektu pre bibliografický záznam,
+\item validácia digitálneho objektu,
+\item nahranie bibliografického záznamu.
 \end{itemize}
 
 \newpage
@@ -174,7 +165,7 @@ Vo vyššie pomenovaných biznis procesoch sme identifikovali nasledujúce entit
 V nasledujúcich podkapitolách sa bližšie pozrieme na hlavný biznis proces.
 
 \subsubsection{Cieľ biznis procesu}
-Cieľom tohto biznis procesu je nahranie bibliografického záznamu do konkrétneho digitálneho repozitára. Knihovník vykoná kontrolu údajov a potvrdí ich potencionálnu správnosť.
+Cieľom tohto biznis procesu je integrácia všetkej funkcionality poskytovanej systémom. Jednotlivé funkcionality sú integrované ako podprocesy tohto hlavného procesu.
 
 \subsubsection{Používateľské roly}
 Jednotlivé kroky procesu sú rozdelené vo viacerých plaveckých dráhach, ktoré predstavujú dva samostatné systémy.
@@ -219,7 +210,8 @@ Tento biznis objekt reprezentuje zamestnanca vedeckovýskumného pracoviska, kto
 \item \textbf{email:} emailová schránka pracovníka vedeckovýskumného ústavu,
 \item \textbf{rank:} úroveň pracovníka k sprístupneniu publikácií,
 \item \textbf{password:} prístupové heslo do systému,
-\item \textbf{institution\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu.
+\item \textbf{institution\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu,
+\item \textbf{phone:} telefónne číslo.
 \end{itemize}
 
 \textbf{Research\_Article}\\
@@ -229,7 +221,8 @@ Tento biznis objekt reprezentuje prepojovaciu tabuľku v systémovej databáze m
 \item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
 \item \textbf{affilation:} rola autora/spoluautora na danom bibliografickom zázname, napr. spoluautor, prekladateľ, ilustrátor,
 \item \textbf{researcher\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na autora publikovaného bibliografického záznamu v digitálnom repozitári,
-\item \textbf{article\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na publikovaný bibliografický záznam v digitálnom repozitári.
+\item \textbf{article\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na publikovaný bibliografický záznam v digitálnom repozitári,
+\item \textbf{work\_share:} podiel práce.
 \end{itemize}
 
 \textbf{Proceedings}\\
@@ -261,7 +254,11 @@ Tento biznis objekt reprezentuje vedeckú konferenciu. Parametre tohto biznis ob
 \item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
 \item \textbf{name:} názov vedeckej konferencie,
 \item \textbf{periodic:} vyjadruje pravdivostnú hodnotu periodicity vedeckej konferencie, či sa opakuje v pravidelných intervaloch,
-\item \textbf{category:} oblasť výskumu vedeckej konferencie.
+\item \textbf{category:} oblasť výskumu vedeckej konferencie,
+\item \textbf{calendar\_year:} kalendárny rok konania vedeckej konferencie,
+\item \textbf{conference\_year:} ročník konania vedeckej konferencie,
+\item \textbf{from\_date:} dátum začatia daného ročníka vedeckej konferencie,
+\item \textbf{to\_date:} dátum ukončenia daného ročníka vedeckej konferencie.
 \end{itemize}
 
 \textbf{Digital\_object}\\
@@ -277,259 +274,20 @@ Tento biznis objekt reprezentuje digitálny objekt uložený v digitálnom repoz
 \item \textbf{valid:} pravdivostná hodnota vyjadrujúca, či zadané údaje v digitálnom objekte sú korektné,
 \item \textbf{validated\_by:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na zamestnanca, ktorý kontroloval správnosť údajov digitálneho objektu,
 \item \textbf{inserted\_by:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na zamestnanca, ktorý vložil digitálny objekt do digitálneho repozitáru,
-\item \textbf{article\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na bibliografický záznam, z ktorého bol digitálny objekt vytvorený.
-\end{itemize}
+\item \textbf{article\_id:} cudzí kľúč v systémovej databáze, ktorý sa odkazuje na bibliografický záznam, z ktorého bol digitálny objekt vytvorený,
+\item \textbf{inserted\_date:} dátum vloženia digitálneho objektu do databázy,
+\item \textbf{validated\_date:} dátum validácie správnosti údajov digitálneho objektu.
+\end{itemize} 
 
-\subsubsection{Kroky Main Business Process}
-V tejto časti uvádzame podrobný opis krokov hlavného biznis procesu a rozhodovacích blokov tohto biznis procesu.
-
-\begin{itemize}
-\item \textbf{Choose role - ľudská úloha}
-\end{itemize}
-
-\textbf{Rola:} Super user\\
-\textbf{Výstup:} objekt \textit{chosen\_role} typu \textit{String}, ktorý vyjadruje používateľom zvolenú rolu.
-
-Prostredníctvom grafického používateľského rozhrania používateľ zvolí pod akou rolou chce vystupovať. Ak klikne na tlačidlo \textit{Researcher}, tak bude vystupovať v systéme ako vedec. Ak klikne na tlačidlo \textit{Librarian}, tak bude vystupovať v systéme ako knihovník.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.7]{forms/formChooseRole.jpg} 
-\caption{Formulár na výber role}
-\end{figure}
+\textbf{Event}\\
+Tento biznis objekt reprezentuje logovací záznam. Parametre tohto biznis objektu sú nasledovné:
 
 \begin{itemize}
-\item \textbf{Rozhodovací blok - As which role do you want to sign in?}
+\item \textbf{id:} unikátny primárny kľúč v systémovej databáze,
+\item \textbf{timestamp:} dátum a čas, kedy vznikol logovací záznam,
+\item \textbf{message:} správa, ktorá sa má zalogovať,
+\item \textbf{severity:} závažnosť (Info, Warning, Error).
 \end{itemize}
-
-\textbf{Atribút rozhodovania:} \textit{chosen\_role} - zisťujeme, či je obsah daného atribútu ekvivalentný s reťazcom "librarian". Ak áno, tak biznis proces pokračuje krokom \textit{Login as librarian}. Ak nie, tak biznis proces pokračuje krokom \textit{Login as researcher}.
-
-\begin{itemize}
-\item \textbf{Login as researcher - ľudská úloha}
-\end{itemize}
-
-\textbf{Rola:} Researcher\\
-\textbf{Výstup:} objekt \textit{researcher} typu \textit{Researcher} s nastavenými atribútmi:
-
-\begin{itemize}
-\item \textit{researcher.id} - unikátny primárny kľúč v systémovej databáze,
-\item \textit{researcher.name} - krstné meno uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
-\item \textit{researcher.surname} -  priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
-\item \textit{researcher.email} - emailová schránka pracovníka vedeckovýskumného ústavu,
-\item \textit{researcher.rank} - úroveň pracovníka k sprístupneniu publikácií,
-\item \textit{researcher.password} - prístupové heslo do systému,
-\item \textit{researcher.institution\_id} - cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu.
-\end{itemize}
-
-Prostredníctvom grafického používateľského rozhrania používateľ zadá \textit{login\_id} a \textit{password}, následne po stlačení tlačidla \textit{OK}, pokračuje hlavný biznis proces.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.7]{forms/formLogin.jpg} 
-\caption{Formulár prihlasovania vedca}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Add publication or digital object
- - ľudská úloha}
-\end{itemize}
-
-\textbf{Rola:} Researcher\\
-\textbf{Výstup:} objekt \textit{chosen\_action} typu \textit{String}, ktorý predstavuje voľbu používateľa, či chce pridať publikáciu alebo digitálny objekt.
-
-Prostredníctvom grafického používateľského rozhrania používateľ zvolí kliknutím vybraného tlačidla buď \textit{Add publication} - pridanie publikácie, alebo \textit{Add digital object} - pridanie digitálneho objektu.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.7]{forms/formChooseAction.jpg} 
-\caption{Formulár výberu akcie na pridanie publikácie alebo digitálneho objektu}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Rozhodovací blok - What do you want to add?}
-\end{itemize}
-
-\textbf{Atribút rozhodovania:} \textit{researcher\_chosen\_action} - zisťujeme, či je obsah daného atribútu ekvivalentný s reťazcom "digital\_object". Ak áno, tak biznis proces pokračuje krokom \textit{Add digital object}. Ak nie, tak biznis proces pokračuje krokom \textit{Add article}.
-
-\begin{itemize}
-\item \textbf{Add article - ľudská úloha}
-\end{itemize}
-
-\textbf{Rola:} Researcher\\
-
-Prostredníctvom grafického používateľského rozhrania používateľ zvolí vedeckú konferenciu a výber potvrdí tlačidlom \textit{Filter Proceedings}. To spôsobí, že sa vyfiltrujú v tabuľke zborníkov len tie zborníky, ktoré patria k danej vedeckej konferencii. Následne zvolí zborník vedeckej konferencie, názov článku, kľúčové slová a svoj výber potvrdí tlačidlo \textit{OK}.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/insert_article.png} 
-\caption{Formulár pridania informácií o článku}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Add coauthors - ľudská úloha}
-\end{itemize}
-
-\textbf{Rola:} Researcher\\
-\textbf{Výstup:} list objektov \textit{authors\_to\_add} typu \textit{Researcher} s nastavenými atribútmi:
-
-\begin{itemize}
-\item \textit{researcher.id} - unikátny primárny kľúč v systémovej databáze,
-\item \textit{researcher.name} - krstné meno uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
-\item \textit{researcher.surname} -  priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
-\item \textit{researcher.email} - emailová schránka pracovníka vedeckovýskumného ústavu,
-\item \textit{researcher.rank} - úroveň pracovníka k sprístupneniu publikácií,
-\item \textit{researcher.password} - prístupové heslo do systému,
-\item \textit{researcher.institution\_id} - cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu.
-\end{itemize}
-
-Tento podproces je realizovaný pomocou dvoch prepojených grafických používateľských rozhraní. Používateľ má možnosť buď pridať spolu-autora z tabuľky existujúcich vedcov alebo po kliknutí na príslušné tlačidlo môže pridať nového vedca do systému. O novom vedcovi vyplní údaje v príslušnom formulári.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/add_existing_coauthor.png} 
-\caption{Formulár pridania existujúceho vedca ako spolu-autora}
-\end{figure}
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/new_coauthor.png} 
-\caption{Formulár pridania existujúceho vedca ako spolu-autora}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Add digital object by researcher - ľudská úloha}
-\end{itemize}
-
-\textbf{Rola:} Researcher\\
-\textbf{Vstup:} objekt \textit{logged\_researcher}\\ typu \textit{Researcher}
-\textbf{Výstup:} objekt \textit{article} typu \textit{Article} s nastavenými atribútmi:
-
-\begin{itemize}
-\item \textit{researcher.id} - unikátny primárny kľúč v systémovej databáze,
-\item \textit{researcher.name} - krstné meno uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
-\item \textit{researcher.surname} -  priezvisko uvedené v rodnom liste pracovníka vedeckovýskumného ústavu,
-\item \textit{researcher.email} - emailová schránka pracovníka vedeckovýskumného ústavu,
-\item \textit{researcher.rank} - úroveň pracovníka k sprístupneniu publikácií,
-\item \textit{researcher.password} - prístupové heslo do systému,
-\item \textit{researcher.institution\_id} - cudzí kľúč v systémovej databáze, ktorý sa odkazuje na konkrétnu inštitúciu.
-\end{itemize}
-
-Prostredníctvom grafického používateľského rozhrania používateľ (vedec) postupne na základe konferencie \textit{(Conference)} a zberníka \textit{(Proceedings)} vyfiltruje články (\textit{Article}). Po vyplnení údajov o digitálnom objekte a kliknutí na potvrdzovacie tlačidlo sa k označenému článku priradí digitálny objekt.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/formAddDigital.png} 
-\caption{Formulár pridania digitálneho objektu}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Choice to add more digital objects by researcher
- - ľudská úloha}
-\end{itemize}
-
-\textbf{Rola:} Researcher\\
-\textbf{Výstup:} objekt \textit{more\_digital\_objects} typu \textit{Boolean} je nastavený na pravdivostnú hodnotu podľa toho, či vedec chce ešte pridať ďalší digitálny objekt alebo nie.
-
-Prostredníctvom grafického používateľského rozhrania používateľ zvolí kliknutím vybraného tlačidla buď \textit{Yes} - pridanie ďalšieho digitálneho objektu, alebo \textit{No} - ukončí sa pridávanie digitálnych objektov k článku.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/formDigitalObjects.jpg} 
-\caption{Formulár pridania informácií o článku}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Rozhodovací blok - Do you want to add more digital objects?}
-\end{itemize}
-
-\textbf{Atribút rozhodovania:} \textit{add\_more\_digital\_objects} - zisťujeme, či je hodnota daného atribútu ekvivalentná s pravdivostnou hodnotou false. Ak áno, tak biznis proces sa ukončí. Ak nie, tak biznis proces pokračuje krokom \textit{Add digital object by researcher}.
-
-\begin{itemize}
-\item \textbf{Validate digital object
- - ľudská úloha}
-\end{itemize}
-
-\textbf{Rola:} Librarian\\
-\textbf{Vstup:} objekt \textit{librarian} typu \textit{Librarian}.
-
-Prostredníctvom grafického používateľského rozhrania používateľ zvolí konferenciu a po kliknutí na tlačidlo \textit{Filter proceedings} vyfiltruje zborníky, ktoré patria k zvolenej konferencii. Následne používateľ vyberie konkrétny zborník a klikne na tlačidlo \textit{Filter articles}, to má za následok, že sa vyfiltrujú články pre zvolený zborník. Napokon používateľ vyberie konkrétny článok a klikne na tlačidlo \textit{Filter digital objects}. Následne si používateľ vyberie digitálny objekt a rozhodne, či sú jeho údaje korektné alebo nie.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/do_validation.png} 
-\caption{Formulár validácie digitálnych objektov}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Choice to add more digital objects by librarian
- - ľudská úloha}
-\end{itemize}
-
-\textbf{Rola:} Librarian\\
-\textbf{Výstup:} objekt \textit{more\_digital\_objects} typu \textit{Boolean} je nastavený na pravdivostnú hodnotu podľa toho, či knihovník chce ešte pridať ďalší digitálny objekt alebo nie.
-
-Prostredníctvom grafického používateľského rozhrania používateľ zvolí kliknutím vybraného tlačidla buď \textit{Yes} - pridanie ďalšieho digitálneho objektu, alebo \textit{No} - ukončí sa pridávanie digitálnych objektov k článku.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/formDigitalObjects.jpg} 
-\caption{Formulár pre výber možnosti pridania ďalšieho digitálneho objektu}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Rozhodovací blok - Do you want to add more digital objects?}
-\end{itemize}
-
-\textbf{Atribút rozhodovania:} \textit{add\_more\_digital\_objects} - zisťujeme, či je hodnota daného atribútu ekvivalentná s pravdivostnou hodnotou false. Ak áno, tak biznis proces sa ukončí. Ak nie, tak biznis proces pokračuje krokom \textit{Add digital object by librarian}.
-
-
-%Martinova cast
-
-\begin{itemize}
-\item \textbf{Login as Librarian}
-\end{itemize}
-
-\textbf{Rola:} Librarian\\
-\textbf{Výstup:} objekt \textit{logged\_librarian} typu \textit{Librarian}, ktorý vyjadruje prihláseného knihovníka.
-
-Prostredníctvom grafického používateľského rozhrania používateľ (knihovník) zadá svoje prihlasovacie údaje, ktoré sa v danom podprocese overia (prebehne autentifikácia). V prípade nesprávnych údajov za zobrazí chybová hláška a tok procesu prihlásenia sa vráti na začiatok procesu. V prípade správnych prihlasovacích údajov pokračuje biznis proces ďalšou aktivitou.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.7]{forms/formLogin.jpg} 
-\caption{Formulár prihlasovania vedca}
-\end{figure}
-
-\begin{itemize}
-\item \textbf{Validate or Add Digital Object}
-\end{itemize}
-
-\textbf{Rola:} Librarian\\
-\textbf{Výstup:} objekt \textit{chosen\_action} typu \textit{String}, ktorý vyjadruje akciu zvolenú používateľom (knihovníkom).
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.7]{forms/formChooseActionLib.png} 
-\caption{Formulár na vybratie akcie, či validovať alebo pridať digitálny objekt}
-\end{figure}
-
-Prostredníctvom grafického používateľského rozhrania používateľ (knihovník) na základe kliknutia na jedno z dvoch tlačidiel zvolí akciu ktorú si želá ďalej v rámci biznis procesu vykonať.
-
-\begin{itemize}
-\item \textbf{Add Digital Object by Librarian}
-\end{itemize}
-
-\textbf{Rola:} Librarian\\
-\textbf{Vstup:} objekt \textit{librarian} typu \textit{Librarian},  ktorý predstavuje prihláseného knihovníka
-\textbf{Výstup:} objekt \textit{article} typu \textit{Article}, článok ku ktorému bol pridaný digitálny objekt. Článok je výstup procesu pretože, po tomto procese nasleduje proces \textit{Send Notifications by Librarian}, ktorý každému spoluatorovi článku ku ktorému bol pridaný digitálny objekt pošle notifikáciu.
-
-Prostredníctvom grafického používateľského rozhrania používateľ (knihovník) postupne na základe konferencie \textit{(Conference)} a zberníka \textit{(Proceedings)} vyfiltruje články (\textit{Article}). Po vyplnení údajov o digitálnom objekte a kliknutí na potvrdzovacie tlačidlo sa k označenému článku priradí digitálny objekt.
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/formAddDigital.png} 
-\caption{Formulár pridania digitálneho objektu}
-\end{figure}
 
 \section{Implementácia systémových úloh}
 \paragraph{Biznis proces - Hlavný biznis proces}
@@ -544,7 +302,7 @@ Používateľ zadá svoje prihlasovacie údaje. Systém overí správnosť tých
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{diagrams/diagUpload.jpg} 
+\includegraphics[scale=0.35]{diagrams/diagUpload.jpg} 
 \caption{Diagram hlavného biznis procesu}
 \end{figure}
 
@@ -567,8 +325,8 @@ Používateľ zadá svoje prihlasovacie údaje. Systém overí správnosť tých
 \end{figure}
 
 \subsubsection{Webová služba: Získanie knihovníka}
-\textbf{Názov služby:} WS\_Librarian\_find
-\textbf{Metóda služby:} getById
+\textbf{Názov služby:} WS\_Librarian\_find\\
+\textbf{Metóda služby:} getById\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{id} - ID knihovníka
@@ -595,8 +353,8 @@ Používateľ zadá svoje prihlasovacie údaje. Systém overí správnosť tých
 \end{figure}
 
 \subsubsection{Webová služba: Získanie vedca}
-\textbf{Názov služby:} WS\_Researcher\_find
-\textbf{Metóda služby:} getById
+\textbf{Názov služby:} WS\_Researcher\_find\\
+\textbf{Metóda služby:} getById\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{id} - ID vedca
@@ -623,16 +381,16 @@ Používateľ si vyberie článok, ku ktorému chce pridať spoluautorov a násl
 \end{figure}
 
 \subsubsection{Webová služba: Získanie všetkých inštitúcií}
-\textbf{Názov služby:} WS\_Institution\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Institution\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{institutions} - list objektov typu Institution
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získaj vedca podľa ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Researcher\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Researcher\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{name} - názov atribútu, podľa ktorého sa má vyhľadávať
@@ -651,8 +409,8 @@ Skript na naplnenie pola na data do grafickeho rozhrania ku radio buttonom.
 Skript, ktorý nastaví index na nulu. Je to potrebné kvôli cykleniu.
 
 \subsubsection{Webová služba: Vloženie vedca}
-\textbf{Názov služby:} WS\_Reasercher\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Reasercher\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -665,8 +423,8 @@ Skript, ktorý nastaví index na nulu. Je to potrebné kvôli cykleniu.
 	\end{itemize}
 
 \subsubsection{Webová služba: Vloženie logovacieho záznamu}
-\textbf{Názov služby:} WS\_Events\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Events\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -682,8 +440,8 @@ Skript, ktorý nastaví index na nulu. Je to potrebné kvôli cykleniu.
 Skript na vytvorenie nového objektu, ktorý priradí nového spoluautora k danej vedeckej publikácii. Potom tento objekt pridá webová služba do prepojovacej tabuľky Researcher\_Article.
 
 \subsubsection{Webová služba: Vloženie entity spojovacej tabuľky Vedec - Publikácia}
-\textbf{Názov služby:} WS\_Researcher\_article\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Researcher\_article\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -724,8 +482,8 @@ Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú pub
 \end{figure}
 
 \subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
-\textbf{Názov služby:} WS\_Article\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Article\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attributes\_name} - názov atribútu
@@ -738,16 +496,16 @@ Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú pub
 	\end{itemize}
 
 \subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
-\textbf{Názov služby:} WS\_Conference\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Conference\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{conferences} - list objektov typu Conference
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Proceedings\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attributes\_name} - názov atribútu
@@ -760,8 +518,8 @@ Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú pub
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie digitálneho objektu}
-\textbf{Názov služby:} WS\_Digital\_object\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Digital\_object\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -774,8 +532,8 @@ Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú pub
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie logovacieho záznamu}
-\textbf{Názov služby:} WS\_Events\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Events\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -804,8 +562,8 @@ Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltru
 \end{figure}
 
 \subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
-\textbf{Názov služby:} WS\_Article\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Article\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attributes\_name} - názov atribútu
@@ -821,8 +579,8 @@ Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltru
 Vynuluje počítadlo autorov vedeckej publikácie. Tento skript je potrebný pre správne fungovanie cyklu pre poslanie emailovej a telefonickej notifikácie všetkým spoluautorom.
 
 \subsubsection{Webová služba: Získanie vedca}
-\textbf{Názov služby:} WS\_Researcher\_find
-\textbf{Metóda služby:} getById
+\textbf{Názov služby:} WS\_Researcher\_find\\
+\textbf{Metóda služby:} getById\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{id} - ID vedca
@@ -833,8 +591,8 @@ Vynuluje počítadlo autorov vedeckej publikácie. Tento skript je potrebný pre
 	\end{itemize}
 
 \subsubsection{Webová služba: Poslanie emailovej notifikácie}
-\textbf{Názov služby:} WS\_Send\_email
-\textbf{Metóda služby:} notify
+\textbf{Názov služby:} WS\_Send\_email\\
+\textbf{Metóda služby:} notify\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -849,8 +607,8 @@ Vynuluje počítadlo autorov vedeckej publikácie. Tento skript je potrebný pre
 	\end{itemize}
 
 \subsubsection{Webová služba: Telefonické notifikovanie}
-\textbf{Názov služby:} WS\_Call
-\textbf{Metóda služby:} notify
+\textbf{Názov služby:} WS\_Call\\
+\textbf{Metóda služby:} notify\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -890,8 +648,8 @@ Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú pub
 \end{figure}
 
 \subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
-\textbf{Názov služby:} WS\_Article\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Article\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attributes\_name} - názov atribútu
@@ -904,16 +662,16 @@ Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú pub
 	\end{itemize}
 
 \subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
-\textbf{Názov služby:} WS\_Conference\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Conference\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{conferences} - list objektov typu Conference
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Proceedings\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attributes\_name} - názov atribútu
@@ -926,8 +684,8 @@ Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú pub
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie digitálneho objektu}
-\textbf{Názov služby:} WS\_Digital\_object\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Digital\_object\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -940,8 +698,8 @@ Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú pub
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie logovacieho záznamu}
-\textbf{Názov služby:} WS\_Events\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Events\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -970,16 +728,16 @@ Používateľ vyberie konferenciu, zborník, a článok, pre ktorý sa načítaj
 \end{figure}
 
 \subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
-\textbf{Názov služby:} WS\_Conference\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Conference\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{conferences} - list objektov typu Conference
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Proceedings\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attributes\_name} - názov atribútu
@@ -992,8 +750,8 @@ Používateľ vyberie konferenciu, zborník, a článok, pre ktorý sa načítaj
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
-\textbf{Názov služby:} WS\_Article\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Article\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attributes\_name} - názov atribútu
@@ -1006,8 +764,8 @@ Používateľ vyberie konferenciu, zborník, a článok, pre ktorý sa načítaj
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie digitálneho objektu na základe ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Digital\_objects\_getByAttibute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Digital\_objects\_getByAttibute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attribute} - názov atribútu, podľa ktorého sa má vyhľadávať
@@ -1026,8 +784,8 @@ Skript, ktorý vyberie digitálne objekty, ktoré ešte neboli validované a dá
 Skript na vynulovanie index digitálnych objektov. Je to potrebné pre správne fungovanie cyklu.
 
 \subsubsection{Webová služba: Vloženie logovacieho záznamu}
-\textbf{Názov služby:} WS\_Events\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Events\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1043,8 +801,8 @@ Skript na vynulovanie index digitálnych objektov. Je to potrebné pre správne 
 Skript na nabindovanie dát ku digitálnemu objektu.
 
 \subsubsection{Webová služba: Aktualizovanie údajov digitálneho objektu}
-\textbf{Názov služby:} WS\_Digital\_object\_update
-\textbf{Metóda služby:} update
+\textbf{Názov služby:} WS\_Digital\_object\_update\\
+\textbf{Metóda služby:} update\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1061,6 +819,9 @@ Skript na nabindovanie dát ku digitálnemu objektu.
 Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre správne fungovanie cyklu.
 
 \section{Formuláre}
+V tejto kapitole sú opísané všetky formuláre, ktoré nami implementované systémy používajú pri poskytovaní svojich funkcionalít.
+
+\paragraph{Pridanie digitálneho objektu}
 
 \begin{figure} [H]
 \centering
@@ -1068,11 +829,19 @@ Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre spr�
 \caption{Formulár pre pridanie digitálneho objektu}
 \end{figure}
 
+Tento formulár slúži na pridávanie digitálneho objektu (typu \textit{Digital{\_}object}) k existujúcej vedeckej publikácií (typu \textit{Article}). Digitálny objekt je pri tom uložení v digitálnom repozitáry. V tomto formuláry má používateľ možnosť si zvoliť typ digitálneho objektu (Abstract, Plný Text, Náhľad, Obsah), ktorý pridáva k publikácií. Následne zadá jeho názov a vyberie typ perzistentného identifikátora a zadá jeho adresu (hodnotu). Tlačidlom OK používateľ potvrdí pridanie digitálneho objektu.
+
+\paragraph{Pridanie informácií o vedeckej publikácii}
+
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.4]{forms/Coach for adding information about article.png} 
 \caption{Formulár pre pridanie informácií o vedeckej publikácii}
 \end{figure}
+
+Tento formulár slúži na pridanie novej vedeckej publikácie do knižničného informačného systému. Používateľ pri tomto procese zadá názov publikácie a jej kľúčové slová. Pridaním novej publikácie sa k nej zároveň ako prvý autor priradí práve prihlásený vedecký pracovník. Tým pádom je si nutné vybrať afiliáciu tohto autora, zadať jeho podieľ práce a prípadné poznámky k práci. Pridanie článku sa potvrdí kliknutím na tlačidlo OK.
+
+\paragraph{Pridanie nového autora}
 
 \begin{figure} [H]
 \centering
@@ -1080,11 +849,19 @@ Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre spr�
 \caption{Formulár pre pridanie nového autora}
 \end{figure}
 
+Tento formulár slúži na pridanie nového vedeckého pracovníka ako spolu-autora vedeckej publikácie. Tento formulár sa využíva pri pridávaní spolu-autorov k publikácií. Pridávaný vedecký pracovník sa uloží do databázy. Inštitúcia ku ktorej pracovník patrí je zvolená formulárom v jednom z predchádzajúcich krokov. O autorovi sú vyplnené nasledujúce údaje: meno, priezvisko, email, telefónne cislo, jeho afiliácia, podiel práce a poznámky k práci. Pridanie spolu-autora sa potvrdí kliknutím na tlačidlo Add.
+
+\paragraph{Zobrazenie inštitúcií}
+
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.4]{forms/Coach for Display Institutions.png} 
 \caption{Formulár pre zobrazenie inštitúcií}
 \end{figure}
+
+Tento formular slúži na výber inštitúcie z ktorej v neskoršom kroku pridáme spolu-autora k vedeckej publikácií. Vybrať je možné jednu inštitúciu z tabuľky a výber je potvrdený tlačidlom Choose.
+
+\paragraph{Zobrazenie vedcov}
 
 \begin{figure} [H]
 \centering
@@ -1092,11 +869,19 @@ Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre spr�
 \caption{Formulár pre zobrazenie vedcov}
 \end{figure}
 
+V tomto formulári si používateľ môže zvoliť či chce pridať existujúcich vedeckých pracovníkov zo skôr vybranej inštitúcie ako spolu-autorov, alebo chce pridať nového autora. V prípade pridávania existujúcich spolu-autorov si používateľ vyberie jedného alebo viac vedeckých pracovníkov z tabuľky a výber potvrdí kliknutím na tlačidlo Add Selected Co-Authors. V prípade rozhodnutia pridať nového spolu-autora klikne používateľ na tlačidlo Add New Co-Author a bude presmerovaný na formulár New Author Information.
+
+\paragraph{Vybratie role}
+
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.4]{forms/Coach for choosing role.png} 
 \caption{Formulár pre vybratie role}
 \end{figure}
+
+V tomto formulári si používateľ vyberá či sa chce prihlásiť do systému ako výskumný pracovník alebo knihovník.
+
+\paragraph{Prihlásenie používateľa}
 
 \begin{figure} [H]
 \centering
@@ -1104,11 +889,20 @@ Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre spr�
 \caption{Formulár pre prihlásenie}
 \end{figure}
 
+Tento formulár slúži na prihásenie používateľa v akejkoľvek role (vedeckého pracovníka i knihovníka). Po kliknutí na tlačidlo OK dostane používateľ spatnú väzbu či bolo zadané heslo správne.
+
+\paragraph{Výber akcie pridania publikácie alebo digitálneho objektu}
+
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.4]{forms/Coach for research action.png} 
 \caption{Formulár pre výber akcie pridania publikácie alebo digitálneho objektu}
 \end{figure}
+
+Tento formulár slúži na výber akcie pre výskumníka, ktorý má dve možnosti buď pridať publikáciu, alebo pridať digitálny objekt k existujúcej publikácii.
+Po vybraní príslučnej akcie sa výskumníkovi zobrazí príslušný formulár, ktorý s danou akciou súvisí.
+
+\paragraph{Validovanie vedeckej publikácie}
 
 \begin{figure} [H]
 \centering
@@ -1116,11 +910,19 @@ Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre spr�
 \caption{Formulár pre validovanie vedeckej publikácie}
 \end{figure}
 
+Pointa formulára tkvie vo výbere diginálych objektov, ktoré chce knihovník označiť za validné, vrámci digitálneho repozitáru. Zo zoznamu vyfiltrovaných digitálnych objektov si vyberie jeden alebo viacero objektov, o ktorých validnosti chce rozhodnúť a následne vyberie príšlú akciu.
+
+\paragraph{Možnosť pridania spoluautorov}
+
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.4]{forms/Coach choice to add couthors.png} 
 \caption{Formulár možnosti pridania spoluautorov}
 \end{figure}
+
+Formulár slúži na získanie rozhodnutia od výskumníka, ktorý buď chce, alebo nechce pridať spoluautorov vloženej publikácie, s ktorými sa pracuje v knižničnom informačnom systéme.
+
+\paragraph{Výber vedeckej publikácie}
 
 \begin{figure} [H]
 \centering
@@ -1128,11 +930,19 @@ Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre spr�
 \caption{Formulár pre výber vedeckej publikácie}
 \end{figure}
 
+Tento formulár, ktorý je súčasťou knižničného informačného systému, slúži na výber vedeckého článku. Tieto články boli vyfiltrované, na základe zvoleného zborníku, ktoré boli rovnakým spôsobom filtorované zo zvolenej konferencie.
+
+\paragraph{Výber vedeckej konferencie}
+
 \begin{figure} [H]
 \centering
 \includegraphics[scale=0.4]{forms/Coach choose conference.png} 
 \caption{Formulár pre výber vedeckej konferencie}
 \end{figure}
+
+Formulár slúži na výber konferencie zo zoznamu dostupných konferencií, čo v knižničnom informačnom systéme, ale aj v diginálnom repozitári, slúži k tomu, aby sa knihovník aj výskumník dostali k zborníkom, na základe zvolenej konferencie. To je potrebné pri viacerých biznis procesoch, ako napríklad: pridávanie digitálneho objektu ku konktétnemu článku, ktorý spadá pod zborník danej konferencie, ktorý môže pridať výskumník aj knihovník alebo pridávanie publikácie výskumníkom, ktorá sa opäť pridáva ku konkrétnemu zborníku vybranej konferencie.
+
+\paragraph{Výber zborníku}
 
 \begin{figure} [H]
 \centering
@@ -1140,13 +950,15 @@ Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre spr�
 \caption{Formulár pre výber zborníku}
 \end{figure}
 
+Výber zborníku, k čomu slúži tento formulár, nasleduje za výberom konferencie, na základe ktorej sa vyfiltrujú zborníky danej konferencie. Podobne ako výber konferencie aj výber zborníku sa nachádza v knižničnom ifnromačnom systéme aj digitálnom repozitári, nakoľko sa podieľa pri viacerých biznis procesoch.
+
 \section{Prehľad všetkých webových služieb}
 Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané webové služby na jedno miesto.
 
 \subsubsection{Webová služba: Získanie vedeckej publikácie}
-\textbf{Názov služby:} WS\_Article\_find
-\textbf{Metóda služby:} getById
-\textbf{Vstupy:}
+\textbf{Názov služby:} WS\_Article\_find\\
+\textbf{Metóda služby:} getById\\
+\textbf{Vstupy:}\\
 	\begin{itemize}
 		\item \textit{id} - ID vedeckej publikácie
 	\end{itemize}
@@ -1156,17 +968,17 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie všetkých vedeckých publikácií}
-\textbf{Názov služby:}  WS\_Article\_findAll
-\textbf{Metóda služby:} getAll
-\textbf{Výstupy:}
+\textbf{Názov služby:}  WS\_Article\_findAll\\
+\textbf{Metóda služby:} getAll\\
+\textbf{Výstupy:}\\
 	\begin{itemize}
 		\item \textit{articles} - list objektov typu Article
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie vedeckých publikácií na základe atribútu}
-\textbf{Názov služby:} WS\_Article\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
-\textbf{Vstupy:}
+\textbf{Názov služby:} WS\_Article\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
+\textbf{Vstupy:}\\
 	\begin{itemize}
 		\item \textit{attributes\_name} - názov atribútu
 		\item \textit{attributes\_value} - hodnota atribútu
@@ -1178,9 +990,9 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie vedeckej publikácie}
-\textbf{Názov služby:} WS\_Article\_insert
-\textbf{Metóda služby:} insert
-\textbf{Vstupy:}
+\textbf{Názov služby:} WS\_Article\_insert\\
+\textbf{Metóda služby:} insert\\
+\textbf{Vstupy:}\\
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
 		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
@@ -1192,8 +1004,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Telefonické notifikovanie}
-\textbf{Názov služby:} WS\_Call
-\textbf{Metóda služby:} notify
+\textbf{Názov služby:} WS\_Call\\
+\textbf{Metóda služby:} notify\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1208,16 +1020,16 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
-\textbf{Názov služby:} WS\_Conference\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Conference\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{conferences} - list objektov typu Conference
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie vedeckej konferencie}
-\textbf{Názov služby:} WS\_Conference\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Conference\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1230,16 +1042,16 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie všetkých digitálnych objektov}
-\textbf{Názov služby:} WS\_Digital\_object\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Digital\_object\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{digital\_objects} - list objektov typu Digital\_object
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie digitálneho objektu}
-\textbf{Názov služby:} WS\_Digital\_object\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Digital\_object\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1252,8 +1064,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Aktualizovanie údajov digitálneho objektu}
-\textbf{Názov služby:} WS\_Digital\_object\_update
-\textbf{Metóda služby:} update
+\textbf{Názov služby:} WS\_Digital\_object\_update\\
+\textbf{Metóda služby:} update\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1267,8 +1079,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie digitálneho objektu na základe ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Digital\_objects\_getByAttibute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Digital\_objects\_getByAttibute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attribute} - názov atribútu, podľa ktorého sa má vyhľadávať
@@ -1281,8 +1093,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie logovacieho záznamu}
-\textbf{Názov služby:} WS\_Events\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Events\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1295,16 +1107,16 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie všetkých inštitúcií}
-\textbf{Názov služby:} WS\_Institution\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Institution\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{institutions} - list objektov typu Institution
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie inštitúcie}
-\textbf{Názov služby:} WS\_Institution\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Institution\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1317,8 +1129,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie knihovníka}
-\textbf{Názov služby:} WS\_Librarian\_find
-\textbf{Metóda služby:} getById
+\textbf{Názov služby:} WS\_Librarian\_find\\
+\textbf{Metóda služby:} getById\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{id} - ID knihovníka
@@ -1329,16 +1141,16 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie všetkých knihovníkov}
-\textbf{Názov služby:} WS\_Librarian\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Librarian\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{librarians} - list objektov typu Librarian
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie knihovníka}
-\textbf{Názov služby:} WS\_Librarian\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Librarian\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1351,16 +1163,16 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie všetkých zborníkov}
-\textbf{Názov služby:} WS\_Proceedings\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Proceedings\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{proceedingss} - list objektov typu Proceedings
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Proceedings\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attributes\_name} - názov atribútu
@@ -1373,8 +1185,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie zborníka}
-\textbf{Názov služby:} WS\_Proceedings\_getById
-\textbf{Metóda služby:} getById
+\textbf{Názov služby:} WS\_Proceedings\_getById\\
+\textbf{Metóda služby:} getById\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{id} - ID zborníka
@@ -1385,8 +1197,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie zborníka}
-\textbf{Názov služby:} WS\_Proceedings\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Proceedings\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1399,8 +1211,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Aktualizovanie údajov zborníka}
-\textbf{Názov služby:} WS\_Proceedings\_update
-\textbf{Metóda služby:} update
+\textbf{Názov služby:} WS\_Proceedings\_update\\
+\textbf{Metóda služby:} update\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1414,16 +1226,16 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie všetkých entít spojovacej tabuľky Vedec-Publikácia}
-\textbf{Názov služby:} WS\_Researcher\_Article\_getAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Researcher\_Article\_getAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{researcher\_articles} - list objektov typu Researcher\_Article
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získanie entity Vedec-Publikácia podľa ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Researcher\_article\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Researcher\_article\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{attribute\_name} - názov atribútu, podľa ktorého sa má vyhľadávať
@@ -1436,8 +1248,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie entity spojovacej tabuľky Vedec - Publikácia}
-\textbf{Názov služby:} WS\_Researcher\_article\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Researcher\_article\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1450,8 +1262,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 
 \subsubsection{Webová služba: Získanie vedca}
-\textbf{Názov služby:} WS\_Researcher\_find
-\textbf{Metóda služby:} getById
+\textbf{Názov služby:} WS\_Researcher\_find\\
+\textbf{Metóda služby:} getById\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{id} - ID vedca
@@ -1462,16 +1274,16 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 
 \subsubsection{Webová služba: Získanie všetkých vedcov}
-\textbf{Názov služby:} WS\_Researcher\_findAll
-\textbf{Metóda služby:} getAll
+\textbf{Názov služby:} WS\_Researcher\_findAll\\
+\textbf{Metóda služby:} getAll\\
 \textbf{Výstupy:}
 	\begin{itemize}
 		\item \textit{researchers} - list objektov typu Researcher
 	\end{itemize}
 	
 \subsubsection{Webová služba: Získaj vedca podľa ľubovoľného atribútu}
-\textbf{Názov služby:} WS\_Researcher\_getByAttribute
-\textbf{Metóda služby:} getByAttributeValue
+\textbf{Názov služby:} WS\_Researcher\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{name} - názov atribútu, podľa ktorého sa má vyhľadávať
@@ -1484,8 +1296,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Vloženie vedca}
-\textbf{Názov služby:} WS\_Reasercher\_insert
-\textbf{Metóda služby:} insert
+\textbf{Názov služby:} WS\_Reasercher\_insert\\
+\textbf{Metóda služby:} insert\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1498,8 +1310,8 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 	\end{itemize}
 	
 \subsubsection{Webová služba: Poslanie emailovej notifikácie}
-\textbf{Názov služby:} WS\_Send\_email
-\textbf{Metóda služby:} notify
+\textbf{Názov služby:} WS\_Send\_email\\
+\textbf{Metóda služby:} notify\\
 \textbf{Vstupy:}
 	\begin{itemize}
 		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
@@ -1518,17 +1330,17 @@ Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané w
 \section{Zhrnutie}
 Táto práca je výsledkom analýzy získanej témy pre zadávanie bibliografických dokumentov a digitálnych objektov v systéme digitálneho repozitáru. Spracované sú biznis procesy, ktoré boli identifikované na základe zadania a následných konzultácií. Podobným spôsobom boli identifikované roly používateľov systému, ktoré majú rôzne práva. 
 
-Základom práce bolo navrhnúť proces predstavujúci najpodstatnejšiu časť systému, a to pridanie článku, so všetkými atribútmi, ktoré ho definujú a pridanie a validovanie digitálneho objektu článku - príkladom je náhľad alebo abstrakt konkrétneho bibliografického dokumentu. Spolu s tým boli definované jeho podprocesy spolu s formulármi, ktoré sú základom k implementovaniu funkcionality systému. Formuláre boli navrhnuté tak, aby boli čo najviac prehľadné, intuitívne a aby nimi boli zabezpečené správne entitno-relačné prepojenia v databáze, kde sme sa snažili vyhnúť zadávaniu id objektu, na ktorý má byť vytváraný objekt mapovaný. Riešením bolo ponúknuť používateľovi na výber z dostupných možností alebo ponúknutie vytvorenia objektu a jeho následné mapovanie.
+Navrhli sme dva systémy, ktoré spolu komunikujú - knižničný informačný systém a digitálny repozitár. Základom práce bolo navrhnúť proces a jeho podprocesy, ktoré predstavujú najpodstatnejšiu časť systému, a to pridanie článku, so všetkými atribútmi, ktoré ho definujú a pridanie a validovanie digitálneho objektu článku. Príkladom je náhľad alebo abstrakt konkrétneho bibliografického dokumentu. Spolu s tým boli definované jeho podprocesy spolu s formulármi, ktoré sú základom k implementovaniu funkcionality systému. Formuláre boli navrhnuté tak, aby boli čo najviac prehľadné, intuitívne a aby nimi boli zabezpečené správne entitno-relačné prepojenia v databáze, kde sme sa snažili vyhnúť zadávaniu id objektu, na ktorý má byť vytváraný objekt mapovaný. Riešením bolo ponúknuť používateľovi na výber z dostupných možností alebo ponúknutie vytvorenia objektu a jeho následné mapovanie.
 
 Kvôli komplexnosti problémov vyplývajúcim zo zadania sa však používatelia prihlasujú práve pod spomínaným id a heslom, kde id poskytuje jednoznačný identifikátor, ktorý bolo vhodné použiť pri identifikácii.
 
 V návrhu sú zahrnuté webové služby, najmä na notifikáciu používateľov ale i iné, súvisiace s databázou objektov a manipuláciou s nimi.
 
-Návrhom sme sa snažili pokryť zadanie čo najlepšie nám to dané prostriedky a webové služby dovoľovali.
+Návrhom sme sa snažili pokryť zadanie čo najlepšie, ako nám to dané prostriedky a webové služby dovoľovali.
 
 \section{Report prác členov tímu}
 \subsection{Dávid Kubík}
-K vypracovaniu analýzy zadanej témy sme sa podielali v prvotných krokoch spoločne, kde sa definovali roly používateľov systému a entitno-relačný model. Potom sme prácu spracovávali paralelne v IBM Designer, pričom sme stále medzi sebou konzultovali nápady. To zahŕňalo definovanie webových služieb a najmä tvorbu formulárov. Jedným z ďalších bodov, na ktorom som sa výrazne podielal, bola tvorba dokumentácie k našej analýze, opísanie procesu, podprocesov, biznis objektov a celkovo fungovaniu návrhu.
+K vypracovaniu analýzy zadanej témy sme sa podielali v prvotných krokoch spoločne, kde sa definovali roly používateľov systému a entitno-relačný model. Potom sme prácu spracovávali paralelne v IBM Designer, pričom sme stále medzi sebou konzultovali nápady.  To zahŕňalo definovanie webových služieb a najmä tvorbu formulárov. Jedným z ďalších bodov, na ktorom som sa výrazne podielal, bolo tvorba dokumentácie k našej analýze, opísanie procesu, podprocesov, biznis objektov a celkovo fungovaniu návrhu.
 \subsection{Martin Staňo}
 K tomu, aby sme boli schopní vypracovať zadanie spoločne bez zbytočných nedorozumení sme zvolili prvotný brainstorming, kde sa definovali základné myšlienky, roly, procesy. Všetko sa konzultovalo až do bodu, kedy bola rozdelená ďalšia práca na projekte. V IBM som následne definoval základné služby, ktoré sme potrebovali k ďalšej práce a následne som pracoval na formulároch pre podprocesy a aj na samotných podprocesoch. Pri dokumentácii som prispel opisom vybraných podprocesov a pridaním screenshotov formulárov, ktoré v práci opisujeme.
 \subsection{Veronika Včelková}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.23)  29 APR 2018 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.23)  7 MAY 2018 20:20
 entering extended mode
 **./stano_kubik_vcelkova_pis.tex
 (stano_kubik_vcelkova_pis.tex
@@ -733,9 +733,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 ...trib\IeC {\'u}tu}{25}{subsubsection.4.7.3}
+l.54 ...{\'a}lne objekty}{20}{subsubsection.4.7.5}
                                                    [1]
-Overfull \hbox (2.64531pt too wide) in paragraph at lines 86--86
+Overfull \hbox (2.64531pt too wide) in paragraph at lines 97--97
  [][] [][]\IL2/cmr/m/n/10 Webová slu-¾ba: Zís-ka-nie v¹et-kých en-tít spo-jo-va
 -cej ta-bu-µky Vedec-Publikácia[] []  
  []
@@ -785,750 +785,562 @@ Overfull \hbox (49.37485pt too wide) in paragraph at lines 90--110
  []
 
 [3] [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 141.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
 
 
 ("C:\Users\David\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
 
 [5]
-<datovy_model.png, id=523, 881.2925pt x 668.4975pt>
+<datovy_model.png, id=513, 881.2925pt x 668.4975pt>
 File: datovy_model.png Graphic file (type png)
 <use datovy_model.png>
-Package pdftex.def Info: datovy_model.png  used on input line 169.
+Package pdftex.def Info: datovy_model.png  used on input line 160.
 (pdftex.def)             Requested size: 352.51076pt x 267.39426pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 176.
+(hyperref)                removing `\textasciicaron' on input line 167.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 179.
+(hyperref)                removing `\textasciicaron' on input line 170.
 
 [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.188 \newpage
+l.179 \newpage
                <./datovy_model.png>] [7] [8]
-<forms/formChooseRole.jpg, id=540, 221.32687pt x 71.51718pt>
-File: forms/formChooseRole.jpg Graphic file (type jpg)
-<use forms/formChooseRole.jpg>
-Package pdftex.def Info: forms/formChooseRole.jpg  used on input line 297.
-(pdftex.def)             Requested size: 154.92773pt x 50.06168pt.
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.325 
-       <./forms/formChooseRole.jpg>]
-<forms/formLogin.jpg, id=547, 249.93375pt x 153.57375pt>
-File: forms/formLogin.jpg Graphic file (type jpg)
-<use forms/formLogin.jpg>
-Package pdftex.def Info: forms/formLogin.jpg  used on input line 328.
-(pdftex.def)             Requested size: 174.95242pt x 107.50089pt.
-<forms/formChooseAction.jpg, id=548, 292.84406pt x 71.51718pt>
-File: forms/formChooseAction.jpg Graphic file (type jpg)
-<use forms/formChooseAction.jpg>
-Package pdftex.def Info: forms/formChooseAction.jpg  used on input line 344.
-(pdftex.def)             Requested size: 204.98944pt x 50.06168pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
-
- []
-
-<forms/insert_article.png, id=549, 427.5975pt x 370.38374pt>
-File: forms/insert_article.png Graphic file (type png)
-<use forms/insert_article.png>
-Package pdftex.def Info: forms/insert_article.png  used on input line 364.
-(pdftex.def)             Requested size: 171.03596pt x 148.15086pt.
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.367 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.367 
-       <./forms/formLogin.jpg> <./forms/formChooseAction.jpg>]
-<forms/add_existing_coauthor.png, id=556, 438.8897pt x 281.55188pt>
-File: forms/add_existing_coauthor.png Graphic file (type png)
-<use forms/add_existing_coauthor.png>
-Package pdftex.def Info: forms/add_existing_coauthor.png  used on input line 38
-9.
-(pdftex.def)             Requested size: 175.55276pt x 112.61874pt.
-<forms/new_coauthor.png, id=557, 447.17062pt x 155.07938pt>
-File: forms/new_coauthor.png Graphic file (type png)
-<use forms/new_coauthor.png>
-Package pdftex.def Info: forms/new_coauthor.png  used on input line 395.
-(pdftex.def)             Requested size: 178.86507pt x 62.03064pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.398 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.398 
-       <./forms/insert_article.png> <./forms/add_existing_coauthor.png>]
-<forms/formAddDigital.png, id=566, 435.12563pt x 531.48563pt>
-File: forms/formAddDigital.png Graphic file (type png)
-<use forms/formAddDigital.png>
-Package pdftex.def Info: forms/formAddDigital.png  used on input line 421.
-(pdftex.def)             Requested size: 174.04716pt x 212.59048pt.
-
-[12pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.432 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.432 
-       <./forms/new_coauthor.png> <./forms/formAddDigital.png>]
-<forms/formDigitalObjects.jpg, id=576, 229.60782pt x 70.76437pt>
-File: forms/formDigitalObjects.jpg Graphic file (type jpg)
-<use forms/formDigitalObjects.jpg>
-Package pdftex.def Info: forms/formDigitalObjects.jpg  used on input line 437.
-(pdftex.def)             Requested size: 91.84149pt x 28.30524pt.
-<forms/do_validation.png, id=577, 432.86719pt x 487.8225pt>
-File: forms/do_validation.png Graphic file (type png)
-<use forms/do_validation.png>
-Package pdftex.def Info: forms/do_validation.png  used on input line 459.
-(pdftex.def)             Requested size: 173.1438pt x 195.12553pt.
-File: forms/formDigitalObjects.jpg Graphic file (type jpg)
-<use forms/formDigitalObjects.jpg>
-Package pdftex.def Info: forms/formDigitalObjects.jpg  used on input line 475.
-(pdftex.def)             Requested size: 91.84149pt x 28.30524pt.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.478 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.478 
-       <./forms/formDigitalObjects.jpg> <./forms/do_validation.png>]
-File: forms/formLogin.jpg Graphic file (type jpg)
-<use forms/formLogin.jpg>
-Package pdftex.def Info: forms/formLogin.jpg  used on input line 499.
-(pdftex.def)             Requested size: 174.95242pt x 107.50089pt.
-<forms/formChooseActionLib.png, id=585, 242.40562pt x 51.94406pt>
-File: forms/formChooseActionLib.png Graphic file (type png)
-<use forms/formChooseActionLib.png>
-Package pdftex.def Info: forms/formChooseActionLib.png  used on input line 512.
-
-(pdftex.def)             Requested size: 169.68277pt x 36.36058pt.
-File: forms/formAddDigital.png Graphic file (type png)
-<use forms/formAddDigital.png>
-Package pdftex.def Info: forms/formAddDigital.png  used on input line 530.
-(pdftex.def)             Requested size: 174.04716pt x 212.59048pt.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.11
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.532 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.532 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.13}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.532 \end{figure}
-                   <./forms/formChooseActionLib.png>]
-<diagrams/diagUpload.jpg, id=594, 1318.17468pt x 919.18407pt>
+<diagrams/diagUpload.jpg, id=530, 1318.17468pt x 919.18407pt>
 File: diagrams/diagUpload.jpg Graphic file (type jpg)
 <use diagrams/diagUpload.jpg>
-Package pdftex.def Info: diagrams/diagUpload.jpg  used on input line 547.
-(pdftex.def)             Requested size: 527.26054pt x 367.66711pt.
+Package pdftex.def Info: diagrams/diagUpload.jpg  used on input line 305.
+(pdftex.def)             Requested size: 461.36806pt x 321.71924pt.
 
-Overfull \hbox (117.6551pt too wide) in paragraph at lines 547--548
+Overfull \hbox (51.76262pt too wide) in paragraph at lines 305--306
  [][] 
  []
 
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.550 
-      ]
+[9]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 553.
+(hyperref)                removing `\textasciicaron' on input line 311.
 
-<diagrams/diagLoginLibrarian.jpg, id=601, 753.5653pt x 219.82124pt>
+<diagrams/diagLoginLibrarian.jpg, id=536, 753.5653pt x 219.82124pt>
 File: diagrams/diagLoginLibrarian.jpg Graphic file (type jpg)
 <use diagrams/diagLoginLibrarian.jpg>
-Package pdftex.def Info: diagrams/diagLoginLibrarian.jpg  used on input line 56
-5.
+Package pdftex.def Info: diagrams/diagLoginLibrarian.jpg  used on input line 32
+3.
 (pdftex.def)             Requested size: 301.42078pt x 87.92693pt.
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
-) has been already used, duplicate ignored
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.568 
-       <./diagrams/diagUpload.jpg>]
+l.331 	\begin{itemize}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.331 	\begin{itemize}
+                       <./diagrams/diagUpload.jpg> <./diagrams/diagLoginLibrari
+an.jpg>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 581.
+(hyperref)                removing `\textasciicaron' on input line 339.
 
-<diagrams/diagLoginResearcher.jpg, id=607, 848.4197pt x 310.15875pt>
+<diagrams/diagLoginResearcher.jpg, id=543, 848.4197pt x 310.15875pt>
 File: diagrams/diagLoginResearcher.jpg Graphic file (type jpg)
 <use diagrams/diagLoginResearcher.jpg>
-Package pdftex.def Info: diagrams/diagLoginResearcher.jpg  used on input line 5
-93.
+Package pdftex.def Info: diagrams/diagLoginResearcher.jpg  used on input line 3
+51.
 (pdftex.def)             Requested size: 339.36186pt x 124.0613pt.
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 609.
+(hyperref)                removing `\textasciicaron' on input line 367.
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.618 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-17}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.618 
-       <./diagrams/diagLoginLibrarian.jpg> <./diagrams/diagLoginResearcher.jpg>
-]
-<diagrams/diagAddCoauthors.jpg, id=614, 1065.9825pt x 320.69812pt>
+<diagrams/diagAddCoauthors.jpg, id=544, 1065.9825pt x 320.69812pt>
 File: diagrams/diagAddCoauthors.jpg Graphic file (type jpg)
 <use diagrams/diagAddCoauthors.jpg>
-Package pdftex.def Info: diagrams/diagAddCoauthors.jpg  used on input line 621.
+Package pdftex.def Info: diagrams/diagAddCoauthors.jpg  used on input line 379.
 
 (pdftex.def)             Requested size: 426.38545pt x 128.27696pt.
 
-Overfull \hbox (16.78001pt too wide) in paragraph at lines 621--622
+Overfull \hbox (16.78001pt too wide) in paragraph at lines 379--380
  [][] 
  []
 
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 633.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 633.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 633.
-
-
-Overfull \hbox (11.19531pt too wide) in paragraph at lines 634--637
-\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Researcher[]getByAttribute 
-\IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \I
-L2/cmr/bx/n/10 Vstupy: 
- []
-
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.18}
-) has been already used, duplicate ignored
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.664 		\item \textit
-                     {id} - ID novo vytvorenÃ©ho vedca <./diagrams/diagAddCoaut
-hors.jpg>]
+l.382 
+       <./diagrams/diagLoginResearcher.jpg>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 684.
+(hyperref)                removing `\textasciicaron' on input line 391.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 704.
+(hyperref)                removing `\textasciicaron' on input line 391.
 
-<diagrams/diagAddDigital.jpg, id=621, 788.9475pt x 188.20313pt>
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 391.
+
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.429 	\begin{itemize}
+                       <./diagrams/diagAddCoauthors.jpg>]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 442.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 462.
+
+<diagrams/diagAddDigital.jpg, id=557, 788.9475pt x 188.20313pt>
 File: diagrams/diagAddDigital.jpg Graphic file (type jpg)
 <use diagrams/diagAddDigital.jpg>
-Package pdftex.def Info: diagrams/diagAddDigital.jpg  used on input line 722.
+Package pdftex.def Info: diagrams/diagAddDigital.jpg  used on input line 480.
 (pdftex.def)             Requested size: 315.5734pt x 75.2799pt.
-[19]
+[13]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 748.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 748.
+(hyperref)                removing `\textasciicaron' on input line 506.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 748.
+(hyperref)                removing `\textasciicaron' on input line 506.
 
 
-Overfull \hbox (16.1676pt too wide) in paragraph at lines 749--752
-\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Proceedings[]getByAttribute
- \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \
-IL2/cmr/bx/n/10 Vstupy: 
- []
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 506.
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.19}
-) has been already used, duplicate ignored
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.770 	\end{itemize}
+l.528 	\end{itemize}
                      <./diagrams/diagAddDigital.jpg>]
-<diagrams/diagNotification.jpg, id=631, 922.94812pt x 238.64156pt>
+<diagrams/diagNotification.jpg, id=567, 922.94812pt x 238.64156pt>
 File: diagrams/diagNotification.jpg Graphic file (type jpg)
 <use diagrams/diagNotification.jpg>
-Package pdftex.def Info: diagrams/diagNotification.jpg  used on input line 802.
+Package pdftex.def Info: diagrams/diagNotification.jpg  used on input line 560.
 
 (pdftex.def)             Requested size: 369.1727pt x 95.45493pt.
- [21pdfTeX warning (ext4): destination with the same identifier (name{figure.20
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.823 \subsubsection
-                    {WebovÃ¡ sluÅ¾ba: ZÃ­skanie vedca} <./diagrams/diagNotifica
-tion.jpg>]
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 870.
-
-[22]
-<diagrams/diagAddDigitalLib.jpg, id=641, 765.6103pt x 174.6525pt>
-File: diagrams/diagAddDigitalLib.jpg Graphic file (type jpg)
-<use diagrams/diagAddDigitalLib.jpg>
-Package pdftex.def Info: diagrams/diagAddDigitalLib.jpg  used on input line 888
-.
-(pdftex.def)             Requested size: 306.2387pt x 69.85976pt.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 914.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 914.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 914.
-
-
-Overfull \hbox (16.1676pt too wide) in paragraph at lines 915--918
-\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Proceedings[]getByAttribute
- \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \
-IL2/cmr/bx/n/10 Vstupy: 
- []
-
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.21}
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.936 	\end{itemize}
+l.572 	\end{itemize}
+                     <./diagrams/diagNotification.jpg>] [16]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 628.
+
+<diagrams/diagAddDigitalLib.jpg, id=577, 765.6103pt x 174.6525pt>
+File: diagrams/diagAddDigitalLib.jpg Graphic file (type jpg)
+<use diagrams/diagAddDigitalLib.jpg>
+Package pdftex.def Info: diagrams/diagAddDigitalLib.jpg  used on input line 646
+.
+(pdftex.def)             Requested size: 306.2387pt x 69.85976pt.
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.662 	\end{itemize}
                      <./diagrams/diagAddDigitalLib.jpg>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 956.
+(hyperref)                removing `\textasciicaron' on input line 672.
 
-<diagrams/diagValidate.jpg, id=647, 1285.05093pt x 218.31563pt>
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 672.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 672.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 714.
+
+[18]
+<diagrams/diagValidate.jpg, id=588, 1285.05093pt x 218.31563pt>
 File: diagrams/diagValidate.jpg Graphic file (type jpg)
 <use diagrams/diagValidate.jpg>
-Package pdftex.def Info: diagrams/diagValidate.jpg  used on input line 968.
+Package pdftex.def Info: diagrams/diagValidate.jpg  used on input line 726.
 (pdftex.def)             Requested size: 514.01128pt x 87.32469pt.
 
-Overfull \hbox (104.40584pt too wide) in paragraph at lines 968--969
+Overfull \hbox (104.40584pt too wide) in paragraph at lines 726--727
  [][] 
  []
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 980.
+(hyperref)                removing `\textasciicaron' on input line 738.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 980.
+(hyperref)                removing `\textasciicaron' on input line 738.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 980.
+(hyperref)                removing `\textasciicaron' on input line 738.
 
 
-Overfull \hbox (16.1676pt too wide) in paragraph at lines 981--984
-\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Proceedings[]getByAttribute
- \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \
-IL2/cmr/bx/n/10 Vstupy: 
- []
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 766.
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.22}
-) has been already used, duplicate ignored
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 766.
+
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.991 		\item \textit
-                     {proceedings} - list objektov typu Proceeding <./diagrams/
-diagValidate.jpg>]
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1008.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1008.
-
-
-Overfull \hbox (24.4343pt too wide) in paragraph at lines 1009--1012
-\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Digital[]objects[]getByAtti
-bute \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-l
-ue \IL2/cmr/bx/n/10 Vstupy: 
- []
-
-[25]
+l.770 	\begin{itemize}
+                       <./diagrams/diagValidate.jpg>] [20]
 
 LaTeX Warning: File `forms/Coach for Add digital object.png' not found on input
- line 1067.
+ line 828.
 
-<forms/Coach for Add digital object.png, id=658, 296.10625pt x 413.545pt>
+<forms/Coach for Add digital object.png, id=598, 296.10625pt x 413.545pt>
 File: forms/Coach for Add digital object.png Graphic file (type png)
 <use forms/Coach for Add digital object.png>
 Package pdftex.def Info: forms/Coach for Add digital object.png  used on input 
-line 1067.
+line 828.
 (pdftex.def)             Requested size: 118.44038pt x 165.41505pt.
 
 LaTeX Warning: File `forms/Coach for adding information about article.png' not 
-found on input line 1073.
+found on input line 838.
 
-<forms/Coach for adding information about article.png, id=659, 346.29375pt x 32
+<forms/Coach for adding information about article.png, id=599, 346.29375pt x 32
 6.21875pt>
 File: forms/Coach for adding information about article.png Graphic file (type p
 ng)
 <use forms/Coach for adding information about article.png>
 Package pdftex.def Info: forms/Coach for adding information about article.png  
-used on input line 1073.
+used on input line 838.
 (pdftex.def)             Requested size: 138.51503pt x 130.48518pt.
-
-LaTeX Warning: File `forms/Coach for adding new author.png' not found on input 
-line 1079.
-
-<forms/Coach for adding new author.png, id=660, 313.17pt x 412.54124pt>
-File: forms/Coach for adding new author.png Graphic file (type png)
-<use forms/Coach for adding new author.png>
-Package pdftex.def Info: forms/Coach for adding new author.png  used on input l
-ine 1079.
-(pdftex.def)             Requested size: 125.26576pt x 165.01357pt.
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.23}
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1082 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.24}) has been already used, duplicate ignored
+l.844 \paragraph
+                {Pridanie novÃ©ho autora}pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.11}) has been already used, duplicate ignore
+d
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1082 
-        <./forms/Coach for Add digital object.png> <./forms/Coach for adding in
-formation about article.png>]
+l.844 \paragraph
+                {Pridanie novÃ©ho autora} <./forms/Coach for Add digital object
+.png> <./forms/Coach for adding information about article.png>]
+
+LaTeX Warning: File `forms/Coach for adding new author.png' not found on input 
+line 848.
+
+<forms/Coach for adding new author.png, id=610, 313.17pt x 412.54124pt>
+File: forms/Coach for adding new author.png Graphic file (type png)
+<use forms/Coach for adding new author.png>
+Package pdftex.def Info: forms/Coach for adding new author.png  used on input l
+ine 848.
+(pdftex.def)             Requested size: 125.26576pt x 165.01357pt.
 
 LaTeX Warning: File `forms/Coach for Display Institutions.png' not found on inp
-ut line 1085.
+ut line 858.
 
-<forms/Coach for Display Institutions.png, id=669, 776.9025pt x 225.84375pt>
+<forms/Coach for Display Institutions.png, id=611, 776.9025pt x 225.84375pt>
 File: forms/Coach for Display Institutions.png Graphic file (type png)
 <use forms/Coach for Display Institutions.png>
 Package pdftex.def Info: forms/Coach for Display Institutions.png  used on inpu
-t line 1085.
+t line 858.
 (pdftex.def)             Requested size: 310.7555pt x 90.33589pt.
 
-Overfull \hbox (25.09477pt too wide) in paragraph at lines 1085--1086
+Overfull \hbox (25.09477pt too wide) in paragraph at lines 858--859
  [][] 
  []
 
 
 LaTeX Warning: File `forms/Coach for displaying researchers.png' not found on i
-nput line 1091.
+nput line 868.
 
-<forms/Coach for displaying researchers.png, id=670, 765.86125pt x 243.91125pt>
+<forms/Coach for displaying researchers.png, id=612, 765.86125pt x 243.91125pt>
 
 File: forms/Coach for displaying researchers.png Graphic file (type png)
 <use forms/Coach for displaying researchers.png>
 Package pdftex.def Info: forms/Coach for displaying researchers.png  used on in
-put line 1091.
+put line 868.
 (pdftex.def)             Requested size: 306.33907pt x 97.56276pt.
 
-Overfull \hbox (29.23386pt too wide) in paragraph at lines 1091--1092
+Overfull \hbox (29.23386pt too wide) in paragraph at lines 868--869
  [][] 
  []
 
-
-LaTeX Warning: File `forms/Coach for choosing role.png' not found on input line
- 1097.
-
-<forms/Coach for choosing role.png, id=671, 231.86626pt x 97.36375pt>
-File: forms/Coach for choosing role.png Graphic file (type png)
-<use forms/Coach for choosing role.png>
-Package pdftex.def Info: forms/Coach for choosing role.png  used on input line 
-1097.
-(pdftex.def)             Requested size: 92.74484pt x 38.9448pt.
-
-LaTeX Warning: File `forms/Coach for login.png' not found on input line 1103.
-
-<forms/Coach for login.png, id=672, 265.99374pt x 173.64874pt>
-File: forms/Coach for login.png Graphic file (type png)
-<use forms/Coach for login.png>
-Package pdftex.def Info: forms/Coach for login.png  used on input line 1103.
-(pdftex.def)             Requested size: 106.3956pt x 69.45825pt.
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.25}
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1106 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.26}) has been already used, duplicate ignored
+l.871 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1106 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.27}) has been already used, duplicate ignored
+l.871 
+       <./forms/Coach for adding new author.png> <./forms/Coach for Display Ins
+titutions.png>]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1106 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.28}) has been already used, duplicate ignored
+LaTeX Warning: File `forms/Coach for choosing role.png' not found on input line
+ 878.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1106 
-        <./forms/Coach for adding new author.png> <./forms/Coach for Display In
-stitutions.png> <./forms/Coach for displaying researchers.png> <./forms/Coach f
-or choosing role.png>]
+<forms/Coach for choosing role.png, id=623, 231.86626pt x 97.36375pt>
+File: forms/Coach for choosing role.png Graphic file (type png)
+<use forms/Coach for choosing role.png>
+Package pdftex.def Info: forms/Coach for choosing role.png  used on input line 
+878.
+(pdftex.def)             Requested size: 92.74484pt x 38.9448pt.
+
+LaTeX Warning: File `forms/Coach for login.png' not found on input line 888.
+
+<forms/Coach for login.png, id=624, 265.99374pt x 173.64874pt>
+File: forms/Coach for login.png Graphic file (type png)
+<use forms/Coach for login.png>
+Package pdftex.def Info: forms/Coach for login.png  used on input line 888.
+(pdftex.def)             Requested size: 106.3956pt x 69.45825pt.
 
 LaTeX Warning: File `forms/Coach for research action.png' not found on input li
-ne 1109.
+ne 898.
 
-<forms/Coach for research action.png, id=685, 333.245pt x 91.34125pt>
+<forms/Coach for research action.png, id=625, 333.245pt x 91.34125pt>
 File: forms/Coach for research action.png Graphic file (type png)
 <use forms/Coach for research action.png>
 Package pdftex.def Info: forms/Coach for research action.png  used on input lin
-e 1109.
+e 898.
 (pdftex.def)             Requested size: 133.29562pt x 36.53584pt.
 
 LaTeX Warning: File `forms/Coach for validating publication.png' not found on i
-nput line 1115.
+nput line 909.
 
-<forms/Coach for validating publication.png, id=686, 791.95876pt x 211.79124pt>
+<forms/Coach for validating publication.png, id=626, 791.95876pt x 211.79124pt>
 
 File: forms/Coach for validating publication.png Graphic file (type png)
 <use forms/Coach for validating publication.png>
 Package pdftex.def Info: forms/Coach for validating publication.png  used on in
-put line 1115.
+put line 909.
 (pdftex.def)             Requested size: 316.7779pt x 84.715pt.
 
-Overfull \hbox (40.25613pt too wide) in paragraph at lines 1115--1116
+Overfull \hbox (40.25613pt too wide) in paragraph at lines 909--910
  [][] 
  []
 
-
-LaTeX Warning: File `forms/Coach choice to add couthors.png' not found on input
- line 1121.
-
-<forms/Coach choice to add couthors.png, id=687, 323.2075pt x 94.3525pt>
-File: forms/Coach choice to add couthors.png Graphic file (type png)
-<use forms/Coach choice to add couthors.png>
-Package pdftex.def Info: forms/Coach choice to add couthors.png  used on input 
-line 1121.
-(pdftex.def)             Requested size: 129.2807pt x 37.74031pt.
-
-LaTeX Warning: File `forms/Coach Choose article.png' not found on input line 11
-27.
-
-<forms/Coach Choose article.png, id=688, 787.94376pt x 266.9975pt>
-File: forms/Coach Choose article.png Graphic file (type png)
-<use forms/Coach Choose article.png>
-Package pdftex.def Info: forms/Coach Choose article.png  used on input line 112
-7.
-(pdftex.def)             Requested size: 315.17192pt x 106.79709pt.
-
-LaTeX Warning: File `forms/Coach choose conference.png' not found on input line
- 1133.
-
-<forms/Coach choose conference.png, id=689, 800.9925pt x 289.08pt>
-File: forms/Coach choose conference.png Graphic file (type png)
-<use forms/Coach choose conference.png>
-Package pdftex.def Info: forms/Coach choose conference.png  used on input line 
-1133.
-(pdftex.def)             Requested size: 320.39133pt x 115.62994pt.
-
-Overfull \hbox (10.03604pt too wide) in paragraph at lines 1133--1134
- [][] 
- []
-
-[28pdfTeX warning (ext4): destination with the same identifier (name{figure.29}
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1136 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.30}) has been already used, duplicate ignored
+l.912 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1136 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.31}) has been already used, duplicate ignored
+l.912 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1136 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.32}) has been already used, duplicate ignored
+l.912 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1136 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.33}) has been already used, duplicate ignored
+l.912 
+       <./forms/Coach for displaying researchers.png> <./forms/Coach for choosi
+ng role.png> <./forms/Coach for login.png> <./forms/Coach for research action.p
+ng>]
+
+LaTeX Warning: File `forms/Coach choice to add couthors.png' not found on input
+ line 919.
+
+<forms/Coach choice to add couthors.png, id=643, 323.2075pt x 94.3525pt>
+File: forms/Coach choice to add couthors.png Graphic file (type png)
+<use forms/Coach choice to add couthors.png>
+Package pdftex.def Info: forms/Coach choice to add couthors.png  used on input 
+line 919.
+(pdftex.def)             Requested size: 129.2807pt x 37.74031pt.
+
+LaTeX Warning: File `forms/Coach Choose article.png' not found on input line 92
+9.
+
+<forms/Coach Choose article.png, id=644, 787.94376pt x 266.9975pt>
+File: forms/Coach Choose article.png Graphic file (type png)
+<use forms/Coach Choose article.png>
+Package pdftex.def Info: forms/Coach Choose article.png  used on input line 929
+.
+(pdftex.def)             Requested size: 315.17192pt x 106.79709pt.
+
+LaTeX Warning: File `forms/Coach choose conference.png' not found on input line
+ 939.
+
+<forms/Coach choose conference.png, id=645, 800.9925pt x 289.08pt>
+File: forms/Coach choose conference.png Graphic file (type png)
+<use forms/Coach choose conference.png>
+Package pdftex.def Info: forms/Coach choose conference.png  used on input line 
+939.
+(pdftex.def)             Requested size: 320.39133pt x 115.62994pt.
+
+Overfull \hbox (10.03604pt too wide) in paragraph at lines 939--940
+ [][] 
+ []
+
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.18}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1136 
-        <./forms/Coach for login.png> <./forms/Coach for research action.png> <
-./forms/Coach for validating publication.png> <./forms/Coach choice to add cout
-hors.png> <./forms/Coach Choose article.png>]
+l.942 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+19}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.942 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+20}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.942 
+       <./forms/Coach for validating publication.png> <./forms/Coach choice to 
+add couthors.png> <./forms/Coach Choose article.png>]
 
 LaTeX Warning: File `forms/Choach choose proceeding.png' not found on input lin
-e 1139.
+e 949.
 
-<forms/Choach choose proceeding.png, id=704, 753.81625pt x 223.83624pt>
+<forms/Choach choose proceeding.png, id=660, 753.81625pt x 223.83624pt>
 File: forms/Choach choose proceeding.png Graphic file (type png)
 <use forms/Choach choose proceeding.png>
 Package pdftex.def Info: forms/Choach choose proceeding.png  used on input line
- 1139.
+ 949.
 (pdftex.def)             Requested size: 301.52116pt x 89.5329pt.
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1143.
+(hyperref)                removing `\textasciicaron' on input line 955.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1146.
+(hyperref)                than one, level fixed on input line 958.
 
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.34}
+
+Underfull \hbox (badness 10000) in paragraph at lines 959--962
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--974
+
+ []
+
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.21}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1185 		\item \textit
-                      {team\_id} - ID tÃ­mu, slÃºÅ¾i na autentifikÃ¡ciu webo...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.35}) h
-as been already used, duplicate ignored
+l.974 	\begin{itemize}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1185 		\item \textit
-                      {team\_id} - ID tÃ­mu, slÃºÅ¾i na autentifikÃ¡ciu webo...
- <./forms/Coach choose conference.png> <./forms/Choach choose proceeding.png>]
-[30]
+l.974 	\begin{itemize}
+                       <./forms/Coach choose conference.png> <./forms/Choach ch
+oose proceeding.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 979--982
 
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1269.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1269.
-
-
-Overfull \hbox (24.4343pt too wide) in paragraph at lines 1270--1273
-\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Digital[]objects[]getByAtti
-bute \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-l
-ue \IL2/cmr/bx/n/10 Vstupy: 
  []
 
-[31]
 
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1361.
+Underfull \hbox (badness 10000) in paragraph at lines 993--996
 
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1361.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1361.
-
-
-Overfull \hbox (16.1676pt too wide) in paragraph at lines 1362--1365
-\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Proceedings[]getByAttribute
- \IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \
-IL2/cmr/bx/n/10 Vstupy: 
  []
 
-[32]
-Overfull \hbox (7.21718pt too wide) in paragraph at lines 1416--1416
+[26]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1081.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1081.
+
+[27] [28]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1173.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1173.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1173.
+
+[29]
+Overfull \hbox (7.21718pt too wide) in paragraph at lines 1228--1228
 []\IL2/cmr/bx/n/10 Webová slu-¾ba: Zís-ka-nie v¹et-kých en-tít spo-jo-va-cej ta
 -bu-µky Vedec-Publikácia 
  []
@@ -1536,87 +1348,80 @@ Overfull \hbox (7.21718pt too wide) in paragraph at lines 1416--1416
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1416.
+(hyperref)                removing `\textasciicaron' on input line 1228.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1424.
+(hyperref)                removing `\textasciicaron' on input line 1236.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1424.
+(hyperref)                removing `\textasciicaron' on input line 1236.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1424.
+(hyperref)                removing `\textasciicaron' on input line 1236.
+
+[30]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1250.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1438.
-
-[33]
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1472.
+(hyperref)                removing `\textasciicaron' on input line 1284.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1472.
+(hyperref)                removing `\textasciicaron' on input line 1284.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1472.
+(hyperref)                removing `\textasciicaron' on input line 1284.
 
-
-Overfull \hbox (11.19531pt too wide) in paragraph at lines 1473--1476
-\IL2/cmr/bx/n/10 Názov slu-¾by: \IL2/cmr/m/n/10 WS[]Researcher[]getByAttribute 
-\IL2/cmr/bx/n/10 Me-tóda slu-¾by: \IL2/cmr/m/n/10 get-By-Att-ri-bu-te-Va-lue \I
-L2/cmr/bx/n/10 Vstupy: 
- []
-
-[34] [35]
+[31] [32]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1529.
+(hyperref)                removing `\textasciicaron' on input line 1341.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+n'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1532.
+(hyperref)                removing `\textasciicaron' on input line 1344.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1534.
+(hyperref)                removing `\textasciicaron' on input line 1346.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1537.
-[36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1537.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1349.
+[33]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1349.
  (stano_kubik_vcelkova_pis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1537.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1537.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1349.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1349.
 
 Package rerunfilecheck Info: File `stano_kubik_vcelkova_pis.out' has not change
 d.
-(rerunfilecheck)             Checksum: D1A37E861BE3155CF1FB8CC842532B4B;10625.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1537.
+(rerunfilecheck)             Checksum: 1E6F81CA1A58167CE03D5568B48B8A1B;10476.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1349.
  ) 
 Here is how much of TeX's memory you used:
- 8769 strings out of 493305
- 130773 string characters out of 3129802
+ 8709 strings out of 493305
+ 129279 string characters out of 3129802
  225098 words of memory out of 3000000
- 12022 multiletter control sequences out of 15000+200000
+ 11977 multiletter control sequences out of 15000+200000
  13477 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,32p,874b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,8n,32p,1009b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi6
 00\csti10.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\c
 sfonts\dpi600\csbx12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
@@ -1632,9 +1437,9 @@ r\public\csfonts\dpi600\csr12.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\font
 s\pk\ljfour\public\csfonts\dpi864\cscsc10.pk> <C:\Users\David\AppData\Local\MiK
 TeX\2.9\fonts\pk\ljfour\public\csfonts\dpi1037\cscsc10.pk><C:/Users/David/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on stano_kubik_vcelkova_pis.pdf (37 pages, 1710469 bytes).
+Output written on stano_kubik_vcelkova_pis.pdf (34 pages, 1484250 bytes).
 PDF statistics:
- 1299 PDF objects out of 1440 (max. 8388607)
- 170 named destinations out of 1000 (max. 500000)
- 929 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1245 PDF objects out of 1440 (max. 8388607)
+ 165 named destinations out of 1000 (max. 500000)
+ 863 words of extra memory for PDF output out of 10000 (max. 10000000)
 

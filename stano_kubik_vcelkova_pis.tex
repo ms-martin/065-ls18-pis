@@ -553,7 +553,7 @@ Používateľ si vyberie konferenciu, zborník a napokon konkrétnu vedeckú pub
 \item \textbf{article} - objekt typu Article
 \end{itemize}
 
-Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltruje tie záznamy, ktoré zodpovedajú konkrétnemu článku. Pre každý vyfiltrovaný záznam získa vedca a tomu pošle notifikáciu. Vedec je notifikovaný email-om a prostredníctvo telefonického hovoru.
+Systém získa všetky entity prepojovacej tabuľky Article-Researcher. Vyfiltruje tie záznamy, ktoré zodpovedajú konkrétnemu článku. Pre každý vyfiltrovaný záznam získa vedca a tomu pošle notifikáciu. Toto sa deje v cykle Vedec je notifikovaný email-om a prostredníctvo telefonického hovoru.
 
 \begin{figure} [H]
 \centering
@@ -818,64 +818,103 @@ Skript na nabindovanie dát ku digitálnemu objektu.
 \subsubsection{Skript: Inkrementuj index}
 Skript na inkrementovanie indexu digitálnych objektov. Je to potrebné pre správne fungovanie cyklu.
 
+\subsection{Add Article}
+
+\textbf{Rola:} Vedecký pracovník\\
+\textbf{Vstup:}
+
+\begin{itemize}
+\item \textbf{researcher} - objekt typu Researcher \\ 
+\end{itemize}
+
+\textbf{Výstup:}
+\begin{itemize}
+\item \textbf{article{\_}id} - objekt typu Integer
+\end{itemize}
+
+Používateľ vyberie konferenciu a zborník do ktorého chce pridať nový vedecký článok. Následne o tomto článku vyplní údaje a potvrdí jeho pridanie.
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{diagrams/diagAddArticle.png} 
+\caption{Diagram podprocesu pridania vedeckej publikácie}
+\end{figure}
+
+\subsubsection{Webová služba: Získanie všetkých vedeckých konferencií}
+\textbf{Názov služby:} WS\_Conference\_findAll\\
+\textbf{Metóda služby:} getAll\\
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{conferences} - list objektov typu Conference
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID zborníkov, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{proceedings} - list objektov typu Proceeding
+	\end{itemize}
+	
+\subsubsection{Webová služba: Získanie zborníka podľa ľubovoľného atribútu}
+\textbf{Názov služby:} WS\_Proceedings\_getByAttribute\\
+\textbf{Metóda služby:} getByAttributeValue\\
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{attributes\_name} - názov atribútu
+		\item \textit{attributes\_value} - hodnota atribútu
+		\item \textit{listOf.Integer()} - zoznam ID zborníkov, z ktorých sa má hľadať, vytvárame nový prázdny list, aby metóda služby hľadala v celom rozsahu (všetkých IDs)
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{proceedings} - list objektov typu Proceeding
+	\end{itemize}
+	
+\subsubsection{Webová služba: Vloženie vedeckej publikácie}
+\textbf{Názov služby:} WS\_Article\_insert\\
+\textbf{Metóda služby:} insert\\
+\textbf{Vstupy:}\\
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{Article} - objekt typu Article s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej vedeckej publikácie
+	\end{itemize}
+	
+	\subsubsection{Skript: Pridaj nového spoluautora ku vedeckej publikácii}
+Skript na vytvorenie nového objektu, ktorý priradí nového spoluautora k danej vedeckej publikácii. Potom tento objekt pridá webová služba do prepojovacej tabuľky Researcher\_Article.
+
+\subsubsection{Webová služba: Vloženie entity spojovacej tabuľky Vedec - Publikácia}
+\textbf{Názov služby:} WS\_Researcher\_article\_insert\\
+\textbf{Metóda služby:} insert\\
+\textbf{Vstupy:}
+	\begin{itemize}
+		\item \textit{team\_id} - ID tímu, slúži na autentifikáciu webovej služby
+		\item \textit{team\_password} - heslo, slúži na autentifikáciu webovej služby
+		\item \textit{researcher\_article} - objekt typu Researcher\_Article s vyplnenými údajmi
+	\end{itemize}
+\textbf{Výstupy:}
+	\begin{itemize}
+		\item \textit{id} - ID novo vytvorenej entity spojovacej tabuľky Vedec - Publikácia
+	\end{itemize}
+
 \section{Formuláre}
 V tejto kapitole sú opísané všetky formuláre, ktoré nami implementované systémy používajú pri poskytovaní svojich funkcionalít.
-
-\paragraph{Pridanie digitálneho objektu}
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/Coach for Add digital object.png} 
-\caption{Formulár pre pridanie digitálneho objektu}
-\end{figure}
-
-Tento formulár slúži na pridávanie digitálneho objektu (typu \textit{Digital{\_}object}) k existujúcej vedeckej publikácií (typu \textit{Article}). Digitálny objekt je pri tom uložení v digitálnom repozitáry. V tomto formuláry má používateľ možnosť si zvoliť typ digitálneho objektu (Abstract, Plný Text, Náhľad, Obsah), ktorý pridáva k publikácií. Následne zadá jeho názov a vyberie typ perzistentného identifikátora a zadá jeho adresu (hodnotu). Tlačidlom OK používateľ potvrdí pridanie digitálneho objektu.
-
-\paragraph{Pridanie informácií o vedeckej publikácii}
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/Coach for adding information about article.png} 
-\caption{Formulár pre pridanie informácií o vedeckej publikácii}
-\end{figure}
-
-Tento formulár slúži na pridanie novej vedeckej publikácie do knižničného informačného systému. Používateľ pri tomto procese zadá názov publikácie a jej kľúčové slová. Pridaním novej publikácie sa k nej zároveň ako prvý autor priradí práve prihlásený vedecký pracovník. Tým pádom je si nutné vybrať afiliáciu tohto autora, zadať jeho podieľ práce a prípadné poznámky k práci. Pridanie článku sa potvrdí kliknutím na tlačidlo OK.
-
-\paragraph{Pridanie nového autora}
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/Coach for adding new author.png} 
-\caption{Formulár pre pridanie nového autora}
-\end{figure}
-
-Tento formulár slúži na pridanie nového vedeckého pracovníka ako spolu-autora vedeckej publikácie. Tento formulár sa využíva pri pridávaní spolu-autorov k publikácií. Pridávaný vedecký pracovník sa uloží do databázy. Inštitúcia ku ktorej pracovník patrí je zvolená formulárom v jednom z predchádzajúcich krokov. O autorovi sú vyplnené nasledujúce údaje: meno, priezvisko, email, telefónne cislo, jeho afiliácia, podiel práce a poznámky k práci. Pridanie spolu-autora sa potvrdí kliknutím na tlačidlo Add.
-
-\paragraph{Zobrazenie inštitúcií}
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/Coach for Display Institutions.png} 
-\caption{Formulár pre zobrazenie inštitúcií}
-\end{figure}
-
-Tento formular slúži na výber inštitúcie z ktorej v neskoršom kroku pridáme spolu-autora k vedeckej publikácií. Vybrať je možné jednu inštitúciu z tabuľky a výber je potvrdený tlačidlom Choose.
-
-\paragraph{Zobrazenie vedcov}
-
-\begin{figure} [H]
-\centering
-\includegraphics[scale=0.4]{forms/Coach for displaying researchers.png} 
-\caption{Formulár pre zobrazenie vedcov}
-\end{figure}
-
-V tomto formulári si používateľ môže zvoliť či chce pridať existujúcich vedeckých pracovníkov zo skôr vybranej inštitúcie ako spolu-autorov, alebo chce pridať nového autora. V prípade pridávania existujúcich spolu-autorov si používateľ vyberie jedného alebo viac vedeckých pracovníkov z tabuľky a výber potvrdí kliknutím na tlačidlo Add Selected Co-Authors. V prípade rozhodnutia pridať nového spolu-autora klikne používateľ na tlačidlo Add New Co-Author a bude presmerovaný na formulár New Author Information.
 
 \paragraph{Vybratie role}
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/Coach for choosing role.png} 
+\includegraphics[scale=0.4]{forms/Coachforchoosingrole.png} 
 \caption{Formulár pre vybratie role}
 \end{figure}
 
@@ -885,7 +924,7 @@ V tomto formulári si používateľ vyberá či sa chce prihlásiť do systému 
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/Coach for login.png} 
+\includegraphics[scale=0.4]{forms/Coachforlogin.png} 
 \caption{Formulár pre prihlásenie}
 \end{figure}
 
@@ -895,38 +934,48 @@ Tento formulár slúži na prihásenie používateľa v akejkoľvek role (vedeck
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/Coach for research action.png} 
+\includegraphics[scale=0.4]{forms/Coachforresearchaction.png} 
 \caption{Formulár pre výber akcie pridania publikácie alebo digitálneho objektu}
 \end{figure}
 
 Tento formulár slúži na výber akcie pre výskumníka, ktorý má dve možnosti buď pridať publikáciu, alebo pridať digitálny objekt k existujúcej publikácii.
 Po vybraní príslučnej akcie sa výskumníkovi zobrazí príslušný formulár, ktorý s danou akciou súvisí.
 
-\paragraph{Validovanie vedeckej publikácie}
+\paragraph{Pridanie nového autora}
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/Coach for validating publication.png} 
-\caption{Formulár pre validovanie vedeckej publikácie}
+\includegraphics[scale=0.4]{forms/Coachforaddingnewauthor.png} 
+\caption{Formulár pre pridanie nového autora}
 \end{figure}
 
-Pointa formulára tkvie vo výbere diginálych objektov, ktoré chce knihovník označiť za validné, vrámci digitálneho repozitáru. Zo zoznamu vyfiltrovaných digitálnych objektov si vyberie jeden alebo viacero objektov, o ktorých validnosti chce rozhodnúť a následne vyberie príšlú akciu.
+Tento formulár slúži na pridanie nového vedeckého pracovníka ako spolu-autora vedeckej publikácie. Tento formulár sa využíva pri pridávaní spolu-autorov k publikácií. Pridávaný vedecký pracovník sa uloží do databázy. Inštitúcia ku ktorej pracovník patrí je zvolená formulárom v jednom z predchádzajúcich krokov. O autorovi sú vyplnené nasledujúce údaje: meno, priezvisko, email, telefónne cislo, jeho afiliácia, podiel práce a poznámky k práci. Pridanie spolu-autora sa potvrdí kliknutím na tlačidlo Add.
 
-\paragraph{Možnosť pridania spoluautorov}
+\paragraph{Zobrazenie inštitúcií}
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/Coach choice to add couthors.png} 
-\caption{Formulár možnosti pridania spoluautorov}
+\includegraphics[scale=0.4]{forms/CoachforDisplayInstitutions.png} 
+\caption{Formulár pre zobrazenie inštitúcií}
 \end{figure}
 
-Formulár slúži na získanie rozhodnutia od výskumníka, ktorý buď chce, alebo nechce pridať spoluautorov vloženej publikácie, s ktorými sa pracuje v knižničnom informačnom systéme.
+Tento formular slúži na výber inštitúcie z ktorej v neskoršom kroku pridáme spolu-autora k vedeckej publikácií. Vybrať je možné jednu inštitúciu z tabuľky a výber je potvrdený tlačidlom Choose.
+
+\paragraph{Zobrazenie vedcov}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coachfordisplayingresearchers.png} 
+\caption{Formulár pre zobrazenie vedcov}
+\end{figure}
+
+V tomto formulári si používateľ môže zvoliť či chce pridať existujúcich vedeckých pracovníkov zo skôr vybranej inštitúcie ako spolu-autorov, alebo chce pridať nového autora. V prípade pridávania existujúcich spolu-autorov si používateľ vyberie jedného alebo viac vedeckých pracovníkov z tabuľky a výber potvrdí kliknutím na tlačidlo Add Selected Co-Authors. V prípade rozhodnutia pridať nového spolu-autora klikne používateľ na tlačidlo Add New Co-Author a bude presmerovaný na formulár New Author Information. 
 
 \paragraph{Výber vedeckej publikácie}
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/Coach Choose article.png} 
+\includegraphics[scale=0.4]{forms/CoachChoosearticle.png} 
 \caption{Formulár pre výber vedeckej publikácie}
 \end{figure}
 
@@ -936,7 +985,7 @@ Tento formulár, ktorý je súčasťou knižničného informačného systému, s
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/Coach choose conference.png} 
+\includegraphics[scale=0.4]{forms/Coachchooseconference.png} 
 \caption{Formulár pre výber vedeckej konferencie}
 \end{figure}
 
@@ -946,11 +995,51 @@ Formulár slúži na výber konferencie zo zoznamu dostupných konferencií, čo
 
 \begin{figure} [H]
 \centering
-\includegraphics[scale=0.4]{forms/Choach choose proceeding.png} 
+\includegraphics[scale=0.4]{forms/Choachchooseproceeding.png} 
 \caption{Formulár pre výber zborníku}
 \end{figure}
 
 Výber zborníku, k čomu slúži tento formulár, nasleduje za výberom konferencie, na základe ktorej sa vyfiltrujú zborníky danej konferencie. Podobne ako výber konferencie aj výber zborníku sa nachádza v knižničnom ifnromačnom systéme aj digitálnom repozitári, nakoľko sa podieľa pri viacerých biznis procesoch.
+
+\paragraph{Validovanie vedeckej publikácie}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coachforvalidatingpublication.png} 
+\caption{Formulár pre validovanie vedeckej publikácie}
+\end{figure}
+
+Pointa formulára tkvie vo výbere diginálych objektov, ktoré chce knihovník označiť za validné, vrámci digitálneho repozitáru. Zo zoznamu vyfiltrovaných digitálnych objektov si vyberie jeden alebo viacero objektov, o ktorých validnosti chce rozhodnúť a následne vyberie príšlú akciu.
+
+\paragraph{Možnosť pridania spoluautorov}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coachchoicetoaddcouthors.png} 
+\caption{Formulár možnosti pridania spoluautorov}
+\end{figure}
+
+Formulár slúži na získanie rozhodnutia od výskumníka, ktorý buď chce, alebo nechce pridať spoluautorov vloženej publikácie, s ktorými sa pracuje v knižničnom informačnom systéme.
+
+\paragraph{Pridanie digitálneho objektu}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/CoachforAdddigitalobject.png} 
+\caption{Formulár pre pridanie digitálneho objektu}
+\end{figure}
+
+Tento formulár slúži na pridávanie digitálneho objektu (typu \textit{Digital{\_}object}) k existujúcej vedeckej publikácií (typu \textit{Article}). Digitálny objekt je pri tom uložení v digitálnom repozitáry. V tomto formuláry má používateľ možnosť si zvoliť typ digitálneho objektu (Abstract, Plný Text, Náhľad, Obsah), ktorý pridáva k publikácií. Následne zadá jeho názov a vyberie typ perzistentného identifikátora a zadá jeho adresu (hodnotu). Tlačidlom OK používateľ potvrdí pridanie digitálneho objektu.
+
+\paragraph{Pridanie informácií o vedeckej publikácii}
+
+\begin{figure} [H]
+\centering
+\includegraphics[scale=0.4]{forms/Coachforaddinginformationaboutarticle.png} 
+\caption{Formulár pre pridanie informácií o vedeckej publikácii}
+\end{figure}
+
+Tento formulár slúži na pridanie novej vedeckej publikácie do knižničného informačného systému. Používateľ pri tomto procese zadá názov publikácie a jej kľúčové slová. Pridaním novej publikácie sa k nej zároveň ako prvý autor priradí práve prihlásený vedecký pracovník. Tým pádom je si nutné vybrať afiliáciu tohto autora, zadať jeho podieľ práce a prípadné poznámky k práci. Pridanie článku sa potvrdí kliknutím na tlačidlo OK.
 
 \section{Prehľad všetkých webových služieb}
 Z dôvodu prehľadnosti sme sa rozhodli zoskupiť všetky vyššie spomínané webové služby na jedno miesto.

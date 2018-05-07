@@ -55,40 +55,47 @@
 \BOOKMARK [3][-]{subsubsection.4.7.8}{Skript: Nabinduj d\341ta}{subsection.4.7}% 55
 \BOOKMARK [3][-]{subsubsection.4.7.9}{Webov\341 slu\236ba: Aktualizovanie \372dajov digit\341lneho objektu}{subsection.4.7}% 56
 \BOOKMARK [3][-]{subsubsection.4.7.10}{Skript: Inkrementuj index}{subsection.4.7}% 57
-\BOOKMARK [1][-]{section.5}{Formul\341re}{}% 58
-\BOOKMARK [1][-]{section.6}{Prehlad v\235etk\375ch webov\375ch slu\236ieb}{}% 59
-\BOOKMARK [2][-]{subsubsection.6.0.1}{Webov\341 slu\236ba: Z\355skanie vedeckej publik\341cie}{section.6}% 60
-\BOOKMARK [3][-]{subsubsection.6.0.2}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch publik\341ci\355}{subsubsection.6.0.1}% 61
-\BOOKMARK [3][-]{subsubsection.6.0.3}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsubsection.6.0.1}% 62
-\BOOKMARK [3][-]{subsubsection.6.0.4}{Webov\341 slu\236ba: Vlo\236enie vedeckej publik\341cie}{subsubsection.6.0.1}% 63
-\BOOKMARK [3][-]{subsubsection.6.0.5}{Webov\341 slu\236ba: Telefonick\351 notifikovanie}{subsubsection.6.0.1}% 64
-\BOOKMARK [3][-]{subsubsection.6.0.6}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsubsection.6.0.1}% 65
-\BOOKMARK [3][-]{subsubsection.6.0.7}{Webov\341 slu\236ba: Vlo\236enie vedeckej konferencie}{subsubsection.6.0.1}% 66
-\BOOKMARK [3][-]{subsubsection.6.0.8}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch digit\341lnych objektov}{subsubsection.6.0.1}% 67
-\BOOKMARK [3][-]{subsubsection.6.0.9}{Webov\341 slu\236ba: Vlo\236enie digit\341lneho objektu}{subsubsection.6.0.1}% 68
-\BOOKMARK [3][-]{subsubsection.6.0.10}{Webov\341 slu\236ba: Aktualizovanie \372dajov digit\341lneho objektu}{subsubsection.6.0.1}% 69
-\BOOKMARK [3][-]{subsubsection.6.0.11}{Webov\341 slu\236ba: Z\355skanie digit\341lneho objektu na z\341klade lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 70
-\BOOKMARK [3][-]{subsubsection.6.0.12}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsubsection.6.0.1}% 71
-\BOOKMARK [3][-]{subsubsection.6.0.13}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch in\235tit\372ci\355}{subsubsection.6.0.1}% 72
-\BOOKMARK [3][-]{subsubsection.6.0.14}{Webov\341 slu\236ba: Vlo\236enie in\235tit\372cie}{subsubsection.6.0.1}% 73
-\BOOKMARK [3][-]{subsubsection.6.0.15}{Webov\341 slu\236ba: Z\355skanie knihovn\355ka}{subsubsection.6.0.1}% 74
-\BOOKMARK [3][-]{subsubsection.6.0.16}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch knihovn\355kov}{subsubsection.6.0.1}% 75
-\BOOKMARK [3][-]{subsubsection.6.0.17}{Webov\341 slu\236ba: Vlo\236enie knihovn\355ka}{subsubsection.6.0.1}% 76
-\BOOKMARK [3][-]{subsubsection.6.0.18}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch zborn\355kov}{subsubsection.6.0.1}% 77
-\BOOKMARK [3][-]{subsubsection.6.0.19}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 78
-\BOOKMARK [3][-]{subsubsection.6.0.20}{Webov\341 slu\236ba: Z\355skanie zborn\355ka}{subsubsection.6.0.1}% 79
-\BOOKMARK [3][-]{subsubsection.6.0.21}{Webov\341 slu\236ba: Vlo\236enie zborn\355ka}{subsubsection.6.0.1}% 80
-\BOOKMARK [3][-]{subsubsection.6.0.22}{Webov\341 slu\236ba: Aktualizovanie \372dajov zborn\355ka}{subsubsection.6.0.1}% 81
-\BOOKMARK [3][-]{subsubsection.6.0.23}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch ent\355t spojovacej tabulky Vedec-Publik\341cia}{subsubsection.6.0.1}% 82
-\BOOKMARK [3][-]{subsubsection.6.0.24}{Webov\341 slu\236ba: Z\355skanie entity Vedec-Publik\341cia podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 83
-\BOOKMARK [3][-]{subsubsection.6.0.25}{Webov\341 slu\236ba: Vlo\236enie entity spojovacej tabulky Vedec - Publik\341cia}{subsubsection.6.0.1}% 84
-\BOOKMARK [3][-]{subsubsection.6.0.26}{Webov\341 slu\236ba: Z\355skanie vedca}{subsubsection.6.0.1}% 85
-\BOOKMARK [3][-]{subsubsection.6.0.27}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedcov}{subsubsection.6.0.1}% 86
-\BOOKMARK [3][-]{subsubsection.6.0.28}{Webov\341 slu\236ba: Z\355skaj vedca podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 87
-\BOOKMARK [3][-]{subsubsection.6.0.29}{Webov\341 slu\236ba: Vlo\236enie vedca}{subsubsection.6.0.1}% 88
-\BOOKMARK [3][-]{subsubsection.6.0.30}{Webov\341 slu\236ba: Poslanie emailovej notifik\341cie}{subsubsection.6.0.1}% 89
-\BOOKMARK [1][-]{section.7}{Zhrnutie}{}% 90
-\BOOKMARK [1][-]{section.8}{Report pr\341c clenov t\355mu}{}% 91
-\BOOKMARK [2][-]{subsection.8.1}{D\341vid Kub\355k}{section.8}% 92
-\BOOKMARK [2][-]{subsection.8.2}{Martin Stano}{section.8}% 93
-\BOOKMARK [2][-]{subsection.8.3}{Veronika Vcelkov\341}{section.8}% 94
+\BOOKMARK [2][-]{subsection.4.8}{Add Article}{section.4}% 58
+\BOOKMARK [3][-]{subsubsection.4.8.1}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsection.4.8}% 59
+\BOOKMARK [3][-]{subsubsection.4.8.2}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsection.4.8}% 60
+\BOOKMARK [3][-]{subsubsection.4.8.3}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsection.4.8}% 61
+\BOOKMARK [3][-]{subsubsection.4.8.4}{Webov\341 slu\236ba: Vlo\236enie vedeckej publik\341cie}{subsection.4.8}% 62
+\BOOKMARK [3][-]{subsubsection.4.8.5}{Skript: Pridaj nov\351ho spoluautora ku vedeckej publik\341cii}{subsection.4.8}% 63
+\BOOKMARK [3][-]{subsubsection.4.8.6}{Webov\341 slu\236ba: Vlo\236enie entity spojovacej tabulky Vedec - Publik\341cia}{subsection.4.8}% 64
+\BOOKMARK [1][-]{section.5}{Formul\341re}{}% 65
+\BOOKMARK [1][-]{section.6}{Prehlad v\235etk\375ch webov\375ch slu\236ieb}{}% 66
+\BOOKMARK [2][-]{subsubsection.6.0.1}{Webov\341 slu\236ba: Z\355skanie vedeckej publik\341cie}{section.6}% 67
+\BOOKMARK [3][-]{subsubsection.6.0.2}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch publik\341ci\355}{subsubsection.6.0.1}% 68
+\BOOKMARK [3][-]{subsubsection.6.0.3}{Webov\341 slu\236ba: Z\355skanie vedeck\375ch publik\341ci\355 na z\341klade atrib\372tu}{subsubsection.6.0.1}% 69
+\BOOKMARK [3][-]{subsubsection.6.0.4}{Webov\341 slu\236ba: Vlo\236enie vedeckej publik\341cie}{subsubsection.6.0.1}% 70
+\BOOKMARK [3][-]{subsubsection.6.0.5}{Webov\341 slu\236ba: Telefonick\351 notifikovanie}{subsubsection.6.0.1}% 71
+\BOOKMARK [3][-]{subsubsection.6.0.6}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedeck\375ch konferenci\355}{subsubsection.6.0.1}% 72
+\BOOKMARK [3][-]{subsubsection.6.0.7}{Webov\341 slu\236ba: Vlo\236enie vedeckej konferencie}{subsubsection.6.0.1}% 73
+\BOOKMARK [3][-]{subsubsection.6.0.8}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch digit\341lnych objektov}{subsubsection.6.0.1}% 74
+\BOOKMARK [3][-]{subsubsection.6.0.9}{Webov\341 slu\236ba: Vlo\236enie digit\341lneho objektu}{subsubsection.6.0.1}% 75
+\BOOKMARK [3][-]{subsubsection.6.0.10}{Webov\341 slu\236ba: Aktualizovanie \372dajov digit\341lneho objektu}{subsubsection.6.0.1}% 76
+\BOOKMARK [3][-]{subsubsection.6.0.11}{Webov\341 slu\236ba: Z\355skanie digit\341lneho objektu na z\341klade lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 77
+\BOOKMARK [3][-]{subsubsection.6.0.12}{Webov\341 slu\236ba: Vlo\236enie logovacieho z\341znamu}{subsubsection.6.0.1}% 78
+\BOOKMARK [3][-]{subsubsection.6.0.13}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch in\235tit\372ci\355}{subsubsection.6.0.1}% 79
+\BOOKMARK [3][-]{subsubsection.6.0.14}{Webov\341 slu\236ba: Vlo\236enie in\235tit\372cie}{subsubsection.6.0.1}% 80
+\BOOKMARK [3][-]{subsubsection.6.0.15}{Webov\341 slu\236ba: Z\355skanie knihovn\355ka}{subsubsection.6.0.1}% 81
+\BOOKMARK [3][-]{subsubsection.6.0.16}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch knihovn\355kov}{subsubsection.6.0.1}% 82
+\BOOKMARK [3][-]{subsubsection.6.0.17}{Webov\341 slu\236ba: Vlo\236enie knihovn\355ka}{subsubsection.6.0.1}% 83
+\BOOKMARK [3][-]{subsubsection.6.0.18}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch zborn\355kov}{subsubsection.6.0.1}% 84
+\BOOKMARK [3][-]{subsubsection.6.0.19}{Webov\341 slu\236ba: Z\355skanie zborn\355ka podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 85
+\BOOKMARK [3][-]{subsubsection.6.0.20}{Webov\341 slu\236ba: Z\355skanie zborn\355ka}{subsubsection.6.0.1}% 86
+\BOOKMARK [3][-]{subsubsection.6.0.21}{Webov\341 slu\236ba: Vlo\236enie zborn\355ka}{subsubsection.6.0.1}% 87
+\BOOKMARK [3][-]{subsubsection.6.0.22}{Webov\341 slu\236ba: Aktualizovanie \372dajov zborn\355ka}{subsubsection.6.0.1}% 88
+\BOOKMARK [3][-]{subsubsection.6.0.23}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch ent\355t spojovacej tabulky Vedec-Publik\341cia}{subsubsection.6.0.1}% 89
+\BOOKMARK [3][-]{subsubsection.6.0.24}{Webov\341 slu\236ba: Z\355skanie entity Vedec-Publik\341cia podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 90
+\BOOKMARK [3][-]{subsubsection.6.0.25}{Webov\341 slu\236ba: Vlo\236enie entity spojovacej tabulky Vedec - Publik\341cia}{subsubsection.6.0.1}% 91
+\BOOKMARK [3][-]{subsubsection.6.0.26}{Webov\341 slu\236ba: Z\355skanie vedca}{subsubsection.6.0.1}% 92
+\BOOKMARK [3][-]{subsubsection.6.0.27}{Webov\341 slu\236ba: Z\355skanie v\235etk\375ch vedcov}{subsubsection.6.0.1}% 93
+\BOOKMARK [3][-]{subsubsection.6.0.28}{Webov\341 slu\236ba: Z\355skaj vedca podla lubovoln\351ho atrib\372tu}{subsubsection.6.0.1}% 94
+\BOOKMARK [3][-]{subsubsection.6.0.29}{Webov\341 slu\236ba: Vlo\236enie vedca}{subsubsection.6.0.1}% 95
+\BOOKMARK [3][-]{subsubsection.6.0.30}{Webov\341 slu\236ba: Poslanie emailovej notifik\341cie}{subsubsection.6.0.1}% 96
+\BOOKMARK [1][-]{section.7}{Zhrnutie}{}% 97
+\BOOKMARK [1][-]{section.8}{Report pr\341c clenov t\355mu}{}% 98
+\BOOKMARK [2][-]{subsection.8.1}{D\341vid Kub\355k}{section.8}% 99
+\BOOKMARK [2][-]{subsection.8.2}{Martin Stano}{section.8}% 100
+\BOOKMARK [2][-]{subsection.8.3}{Veronika Vcelkov\341}{section.8}% 101
